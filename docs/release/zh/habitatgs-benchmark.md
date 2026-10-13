@@ -57,6 +57,10 @@ habitatgs-scenes/
 资产未备齐时，不能仅靠下载标注运行仿真。原始压缩 PLY 改名、任意重烘焙的 NavMesh
 都不能代替经过验证的运行资产。
 
+下面的上游检查要求 `GS_SCENES` 中备齐全部 140 个场景文件，并拒绝解析到该目录外的
+符号链接。使用外部符号链接或只准备部分场景时，继续执行下一节的转换：
+`supernav prepare habitatgs` 会在写入输出前验证所选任务每个 PLY/NavMesh 的大小和 SHA256。
+
 ```bash
 python "$GS_DATA/evaluation/verify.py" "$GS_DATA" --scene-root "$GS_SCENES"
 ```
@@ -140,7 +144,8 @@ supernav export-habitatgs \
   --reference global_shortest --output "$GS_WORK/$GS_TASK/scores.json"
 ```
 
-导出的 submission 也可交给同版本 HF `evaluation/score.py`。
+导出的 submission 也可交给同版本 HF `evaluation/score.py`。该上游命令即使只提交部分任务，
+也要求完整场景目录，并拒绝解析到场景根目录外的资产符号链接。
 SuperNav 保留公开评分器的逐任务 SR/SPL 合同，并额外输出多目标 `stage_sr`。
 评分只需正确的 NavMesh，不需要渲染场景或调用模型；加载前校验 NavMesh 哈希。
 旧运行只有工具终点或去重轨迹时，导出器会拒绝伪造缺失动作，需要重新采集合规证据。

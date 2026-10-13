@@ -61,6 +61,11 @@ source-to-runtime conversion and matching-navmesh distribution route. Annotation
 alone cannot run the simulator. Renaming compressed source PLY files or arbitrarily
 rebaking a navmesh does not produce verified runtime assets.
 
+The following upstream check requires all 140 scene files under `GS_SCENES`.
+It rejects symlinks that resolve outside that directory. For external symlinks or
+a subset of scenes, continue to preparation instead: `supernav prepare habitatgs`
+verifies the size and SHA256 of every selected PLY/NavMesh before writing outputs.
+
 ```bash
 python "$GS_DATA/evaluation/verify.py" "$GS_DATA" --scene-root "$GS_SCENES"
 ```
@@ -152,7 +157,9 @@ supernav export-habitatgs \
   --reference global_shortest --output "$GS_WORK/$GS_TASK/scores.json"
 ```
 
-The submission also works with the pinned HF `evaluation/score.py`. SuperNav
+The submission also works with the pinned HF `evaluation/score.py`. That upstream
+command requires the full scene layout, even for missing submissions, and rejects
+asset symlinks that resolve outside its scene root. SuperNav
 preserves its episode SR/SPL contract and adds ordered `stage_sr` aggregates.
 Scoring uses verified navmeshes, without rendering or model calls. Historical
 runs with only tool endpoints or deduplicated trajectories cannot be exported as
