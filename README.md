@@ -47,6 +47,8 @@
 
 > **[2026-10]** 🎉 The InteriorGS **ObjectNav and Multi-ObjectNav test episodes** (150 each, with reference trajectories) are released in [HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark). See the [benchmark guide](https://github.com/zju3dv/habitat-gs/blob/main/docs/benchmark/README.md) for data and evaluation.
 
+Download the original scene data from [InteriorGS](https://huggingface.co/datasets/spatialverse/InteriorGS).
+
 ## 🧭 What Is SuperNav?
 
 **SuperNav** is an agentic navigation system that uses a pretrained multimodal
