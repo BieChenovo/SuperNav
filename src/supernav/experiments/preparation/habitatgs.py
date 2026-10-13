@@ -14,6 +14,36 @@ from supernav.paths import resolve_asset_path, workspace_root
 from supernav.runtime.config import slugify
 
 
+def configure_multi_goal_arms(config: dict) -> None:
+    """Bind each supported executor to its multi-goal policy and ledger tool."""
+    families = {
+        "visual_point": ("geo-based-executor", "localnav-pointnav-geo-based-executor"),
+        "localnav": ("learned-executor", "localnav-pointnav"),
+    }
+    arms = config.get("arms")
+    if not isinstance(arms, dict) or not arms:
+        raise ValueError("multi-objectnav template must define native executor arms")
+    for name, arm in arms.items():
+        if not isinstance(arm, dict) or arm.get("movement") not in families or arm.get("skill_mode") != "native":
+            raise ValueError(f"multi-objectnav arm {name!r} must use a native Geo or learned executor")
+        family, local_skill = families[arm["movement"]]
+        base_skill = f"global-navigation-{family}"
+        multi_skill = f"multi-global-navigation-{family}"
+        if arm.get("skill_name") not in (base_skill, multi_skill):
+            raise ValueError(f"multi-objectnav arm {name!r} must use {base_skill} or {multi_skill}")
+        skills = arm.get("skill_names", [base_skill, local_skill])
+        whitelist = arm.get("tool_whitelist")
+        if not isinstance(skills, list) or not all(isinstance(s, str) for s in skills):
+            raise ValueError(f"arm {name!r} skill_names must be a list of names")
+        if not isinstance(whitelist, list) or not all(isinstance(t, str) for t in whitelist):
+            raise ValueError(f"arm {name!r} must declare a tool_whitelist")
+        arm["skill_name"] = multi_skill
+        # The wrapper explicitly reads the base global skill and its references.
+        # Include those dependencies in the selected run-local skill bundle.
+        arm["skill_names"] = list(dict.fromkeys([multi_skill, base_skill, local_skill, *skills]))
+        arm["tool_whitelist"] = list(dict.fromkeys([*whitelist, "hab_nav_goals"]))
+
+
 def instruction_row(episode: dict, sensor_height: float, provenance: dict) -> dict:
     ident = episode["episode_id"]
     # run-one normalizes task IDs. Fail instead of silently losing case/identity.
@@ -53,6 +83,8 @@ def prepare(*, dataset_root: Path, task: str, scene_root: Path, output_dir: Path
     config = load_experiment_config(template_config)
     if config.get("environment", {}).get("backend") != "habitat":
         raise ValueError("template must use the Habitat backend")
+    if task == "multi-objectnav":
+        configure_multi_goal_arms(config)
     # Complete validation before creating any output.
     rows = [instruction_row(e, sensor_height, provenance) for e in episodes]
     scenes = {e["scene"]["id"]: e for e in episodes}

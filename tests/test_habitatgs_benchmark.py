@@ -5,6 +5,8 @@ import copy
 import json
 import math
 from pathlib import Path
+import sys
+import tomllib
 from types import SimpleNamespace
 
 import numpy as np
@@ -156,11 +158,98 @@ def release(tmp_path):
         p.write_text("synthetic runtime asset for checksum tests")
         assets[name] = {"bytes": p.stat().st_size, "sha256": sha256(p)}
     put("scene-assets/v1/manifest.json", {"files": assets})
-    put("multi-objectnav/v1/episodes.json", {"episodes": [e]})
-    put("multi-objectnav/v1/episode_v1.schema.json", {
-        "type": "object", "required": ["instruction"], "properties": {"instruction": {"type": "string"}}})
+    for task, row in (("objectnav", episode(count=1)), ("multi-objectnav", e)):
+        put(f"{task}/v1/episodes.json", {"episodes": [row]})
+        put(f"{task}/v1/episode_v1.schema.json", {
+            "type": "object", "required": ["instruction"], "properties": {"instruction": {"type": "string"}}})
     (root / "manifest.json").write_text(json.dumps({"schema": "habitat_gs_public_release/v1", "files": files}))
     return root, scenes
+
+
+@pytest.mark.parametrize("task", ["objectnav", "multi-objectnav"])
+@pytest.mark.parametrize("executor,local_skill,movement_tool", [
+    ("geo-based-executor", "localnav-pointnav-geo-based-executor", "hab_visual_point_navigate"),
+    ("learned-executor", "localnav-pointnav", "hab_local_navigate"),
+])
+def test_prepared_runtime_tools_skills_and_private_prompt(
+    release, tmp_path, monkeypatch, task, executor, local_skill, movement_tool,
+):
+    from supernav.experiments import sweep
+    from supernav.runtime.codex_agent import CodexAgent
+
+    private_bindings = []
+    prepare_project = CodexAgent.prepare_project
+
+    def capture_project(agent, **kwargs):
+        project = prepare_project(agent, **kwargs)
+        private_bindings.append(dict(agent._benchmark_process_environment))
+        return project
+
+    monkeypatch.setattr(CodexAgent, "prepare_project", capture_project)
+    dataset, scenes = release
+    out = tmp_path / "prepared"
+    prepare(dataset_root=dataset, task=task, scene_root=scenes, output_dir=out,
+            template_config=ROOT / f"configs/experiments/habitat-{executor}.json",
+            sensor_height=1.25, dataset_revision="a" * 40)
+    monkeypatch.setattr(sys, "argv", [
+        "supernav run", "--config", str(out / "run.json"),
+        "--dry-run", "--output-dir", str(out / "dry-run"),
+    ])
+    assert sweep.main() == 0
+    assert len(private_bindings) == 1
+    runs = list((out / "dry-run").glob("*/run.json"))
+    assert len(runs) == 1
+    run = runs[0].parent
+    prompt = (run / "prompt.txt").read_text()
+    project = run / "codex_project" / ".codex_home"
+    client = tomllib.loads((project / "config.toml").read_text())
+    server = client["mcp_servers"]["habitat-gs"]
+    env = server["env"]
+    private = private_bindings[0]
+    # Private values live only in the launcher environment; TOML forwards names.
+    assert set(server["env_vars"]) == set(private)
+    assert "HAB_MCP_INIT_DEFAULTS_JSON" not in env
+    assert "HAB_MCP_NAV_GOALS_JSON" not in env
+    defaults = json.loads(private["HAB_MCP_INIT_DEFAULTS_JSON"])
+    assert defaults["start_position"] == episode()["start"]["position"]
+    tools = env["HAB_MCP_TOOL_WHITELIST"].split(",")
+    assert movement_tool in tools and "hab_close_session" in tools
+    assert "start_position" not in prompt and "start_rotation" not in prompt
+    assert str(out / "scenes.scene_dataset_config.json") not in prompt
+    assert "Execute this initialization call exactly once" in prompt
+    if task == "multi-objectnav":
+        assert tools.count("hab_nav_goals") == 1
+        goals = json.loads(private["HAB_MCP_NAV_GOALS_JSON"])
+        assert [g["index"] for g in goals["targets"]] == [1, 2]
+        assert "ORDERED GOALS (2 total)" in prompt
+        expected_skill = f"multi-global-navigation-{executor}"
+        assert expected_skill in prompt
+        required = [expected_skill, f"global-navigation-{executor}", local_skill]
+    else:
+        assert "hab_nav_goals" not in tools
+        assert "HAB_MCP_NAV_GOALS_JSON" not in private
+        required = [f"global-navigation-{executor}", local_skill]
+    for name in required:
+        assert (project / "skills" / name / "SKILL.md").is_file(), name
+
+
+@pytest.mark.parametrize("override", [
+    {"movement": "primitive"}, {"skill_mode": "none"},
+    {"skill_name": "unrelated-skill"}, {"tool_whitelist": None},
+])
+def test_multi_prepare_rejects_unsupported_arm_before_writing(release, tmp_path, override):
+    from supernav.experiments.config import load_experiment_config
+
+    dataset, scenes = release
+    config = load_experiment_config(ROOT / "configs/experiments/habitat-geo-based-executor.json")
+    config["arms"]["default"].update(override)
+    template = tmp_path / "unsupported.json"
+    template.write_text(json.dumps(config))
+    out = tmp_path / "rejected"
+    with pytest.raises(ValueError, match="arm"):
+        prepare(dataset_root=dataset, task="multi-objectnav", scene_root=scenes, output_dir=out,
+                template_config=template, sensor_height=1.25, dataset_revision="a" * 40)
+    assert not out.exists()
 
 
 def test_prepare_preserves_identity_order_pose_and_excludes_gt(release, tmp_path):

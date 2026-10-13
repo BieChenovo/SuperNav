@@ -84,7 +84,10 @@ supernav prepare habitatgs \
 | `preparation.json` | 数据版本、哈希、选中任务 ID、相机高度与资产验证记录 |
 
 多目标的零基 target index 会转换成 `hab_nav_goals` 所需的一基索引，目标顺序保持不变。
-标记工具用于 Agent 记忆，**最终成绩不依赖标记**。转换器保留数据集 NavMesh，禁止自动
+标记工具用于 Agent 记忆，**最终成绩不依赖标记**。多目标转换会开放 `hab_nav_goals`，
+按 Geo 或学习型执行器选择多目标原生 Skill，并安装其依赖的全局与局部 Skill。
+多目标转换支持这两种原生执行器模板；不支持的 arm/Skill 组合会在写文件前报错。
+转换器保留数据集 NavMesh，禁止自动
 按 Agent 参数重建。输出目录必须不存在，以免覆盖已有任务或运行证据。
 
 相机高度 `1.25` 是此示例的显式设置，不是数据集规定的唯一设置。模型、图像参数、
@@ -118,6 +121,7 @@ supernav run --config "$GS_WORK/$GS_TASK/run.json"
 仿真器在 `visuals/<session_id>.primitive.jsonl` 记录真实起点、每个底层动作后的位置及
 显式关闭会话对应的 STOP。转向、碰撞和微小位移都会保留；普通清理/进程退出不会制造 STOP。
 中途重设 Agent 位姿会记录为 runtime error。该文件属于 evaluator 证据，不返回给策略。
+MCP artifact 资源的列表与读取接口均排除逐动作轨迹文件。
 
 ## 5. 导出并评分
 

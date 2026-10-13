@@ -22,6 +22,7 @@ import subprocess
 import sys
 import sysconfig
 import tempfile
+import tomllib
 
 
 SOURCE_ROOT = Path(__file__).resolve().parents[1]
@@ -108,6 +109,9 @@ def _worker() -> None:
     _check("--experiment" in cli("run-one", "--help"), "Episode help is missing named experiments")
     _check("--port" in cli("habitat-bridge", "--help"), "Habitat HTTP help requires a simulator")
     _check("--request-json" in cli("habitat-adapter", "--help"), "Habitat stdio help requires a simulator")
+    _check("--dataset-root" in cli("prepare", "habitatgs", "--help"), "GS preparation help did not render")
+    _check("--visuals-root" in cli("export-habitatgs", "--help"), "GS export help did not render")
+    _check("--reference" in cli("score-habitatgs", "--help"), "GS scoring help requires a simulator")
     names = list_experiments()
     _check(set(names) == {"ai2thor-primitive", "habitat-geo-based-executor", "habitat-learned-executor"}, f"Unexpected installed recipes: {names}")
     listed = cli("config", "list")
@@ -130,6 +134,7 @@ def _worker() -> None:
     guides = {
         "README.md", "configuration.md", "assets-and-skills.md", "habitat.md", "ai2thor.md",
         "web-viewer.md", "architecture.md", "layout.md", "tool-authoring-guide.md", "hm3d-and-ovon.md",
+        "habitatgs-benchmark.md",
     }
     for language in ("en", "zh"):
         installed_guides = {path.name for path in (documentation / language).glob("*.md")}
@@ -139,6 +144,13 @@ def _worker() -> None:
         _check((assets / resource).is_file(), f"Release documentation resource is missing: {resource}")
     _check(not list((assets / "docs").glob("*.md")), "Unclassified documentation entered the distribution")
     print("Bilingual release documentation and SVG assets; no development handoffs: OK")
+    for name in ("common_visual_point.md", "movement_visual_point.md", "common_localnav.md", "movement_localnav.md"):
+        _check((assets / "configs/benchmarks/multi_global_task/prompts" / name).is_file(),
+               f"Multi-goal prompt is missing: {name}")
+    for executor in ("geo-based-executor", "learned-executor"):
+        for prefix in ("global-navigation", "multi-global-navigation"):
+            skill = f"{prefix}-{executor}"
+            _check((assets / "skills" / skill / "SKILL.md").is_file(), f"Multi-goal skill dependency is missing: {skill}")
     for old in ("bench/config/main/config.json", "tools/habitat_agent/prompts", "config/context_budget.yaml"):
         _check(not resolve_asset_path(old, base=Path.cwd()).exists(), f"Unsupported path resolves: {old}")
     habitat_recipes = [name for name in names if name != "ai2thor-primitive"]
@@ -206,6 +218,38 @@ def _worker() -> None:
                f"External task overrides did not reach the episode: {name}")
         _check(len(list((output / "_sweeps").glob("*/instructions.resolved.json"))) == 1,
                f"Sweep did not freeze its selected, expanded task rows: {name}")
+    # Exercise the installed multi-goal policy assets, not just their presence.
+    # Schema validation belongs to the evaluation extra; these base-only checks
+    # use synthetic, already-converted task metadata.
+    from supernav.experiments.preparation.habitatgs import configure_multi_goal_arms
+
+    for name in habitat_recipes:
+        config = load_experiment_config(resolve_experiment(name))
+        configure_multi_goal_arms(config)
+        config["prompts_dir"] = str(assets / "configs/benchmarks/multi_global_task/prompts")
+        path = Path.cwd() / f"multi-{name}.json"
+        path.write_text(json.dumps(config))
+        result = json.loads(cli(
+            "run-one", "--config", str(path), "--arm", "default",
+            "--slug", "multi-smoke", "--run-id", f"multi-{name}",
+            "--scene", "synthetic_smoke_scene", "--instruction", "Find both synthetic objects in order.",
+            "--spawn", '{"start_position": [12.0, 0.0, -34.0]}',
+            "--metadata", json.dumps({"ordered": True, "targets": [
+                {"index": 1, "description": "red cube"}, {"index": 2, "description": "blue sphere"},
+            ]}), "--output-dir", str(Path.cwd() / "runs"), "--dry-run",
+        ))
+        prompt = (Path(result["run_dir"]) / "prompt.txt").read_text()
+        _check("ORDERED GOALS (2 total)" in prompt, f"Multi-goal instruction missing: {name}")
+        _check("start_position" not in prompt and "start_rotation" not in prompt,
+               f"Private spawn entered the multi-goal prompt: {name}")
+        project = Path(result["project_dir"]) / ".codex_home"
+        server = tomllib.loads((project / "config.toml").read_text())["mcp_servers"]["habitat-gs"]
+        _check("hab_nav_goals" in server["env"]["HAB_MCP_TOOL_WHITELIST"].split(","),
+               f"Multi-goal ledger tool missing: {name}")
+        _check("HAB_MCP_NAV_GOALS_JSON" in server["env_vars"], f"Multi-goal binding missing: {name}")
+        for skill in config["arms"]["default"]["skill_names"]:
+            _check((project / "skills" / skill / "SKILL.md").is_file(), f"Multi-goal skill missing: {skill}")
+    print("Installed multi-goal Geo and learned dry-runs, private prompts, ledger and skill dependencies: OK")
     _check(not simulator_imports, f"Simulator imports were attempted: {simulator_imports}")
     print("Synthetic external task dry-runs across two Habitat recipes, prompts and native skills: OK")
     print("No simulator SDKs installed or imported: OK")

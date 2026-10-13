@@ -90,6 +90,10 @@ PLY/navmesh contents. It produces:
 
 Zero-based target indexes become one-based indexes for `hab_nav_goals`, preserving
 order. Marks are agent memory; **scores do not depend on marks**. The converter
+enables `hab_nav_goals` for multi-object tasks and selects the Geo or learned
+multi-goal native skill, including its base global and local skill dependencies.
+Multi-object preparation supports the native Geo and learned executor templates;
+unsupported arm/skill combinations are rejected before output is written. The converter
 preserves the dataset navmesh and disables automatic agent-specific rebaking.
 The preparation directory must not already exist.
 
@@ -128,6 +132,7 @@ every primitive-action position, and STOP on explicit session closure. Turns,
 collisions and tiny displacements are retained. Cleanup/process exit does not
 invent STOP. Mid-episode pose resets record a runtime error. This trace is private
 evaluator evidence and its path/positions are not added to policy responses.
+Primitive traces are excluded from both MCP artifact listings and artifact reads.
 
 ## 5. Export and score
 
