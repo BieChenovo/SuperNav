@@ -1069,7 +1069,7 @@ class HabitatAdapterNavigationMixin:
                 "action": None,
                 "collided": False,
                 "step_count": session.step_count,
-                "error": str(exc),
+                "error": str(exc) or type(exc).__name__,
                 "observation": self._serialize_observation(
                     session.last_sensor_obs,
                     include_data=include_data,
@@ -1128,6 +1128,7 @@ class HabitatAdapterNavigationMixin:
         # happened and should re-fetch via get_visuals on the next
         # round instead of retrying navigate().
         observation_error: Optional[str] = None
+        navigation_error: Optional[str] = None
 
         def _capture_step_observation(raw_obs: Mapping[str, Any]) -> Any:
             """Read the step-result observation, optionally re-capturing.
@@ -1224,7 +1225,19 @@ class HabitatAdapterNavigationMixin:
                     nav_status = "blocked"
                     break
 
-                next_action = follower.next_action_along(goal)
+                try:
+                    next_action = follower.next_action_along(goal)
+                except Exception as exc:  # noqa: BLE001
+                    # The burst has already moved and recorded those actions.
+                    # Return that evidence and its latest observation so callers
+                    # can recover without treating the entire hop as unexecuted.
+                    navigation_error = str(exc) or type(exc).__name__
+                    nav_status = "error"
+                    self._logger.warning(
+                        "_navigate_step: follower failed after %s actions at step_count=%s: %s",
+                        len(actions_taken), session.step_count, navigation_error,
+                    )
+                    break
                 if next_action is None:
                     nav_status = "reached"
                     break
@@ -1270,6 +1283,8 @@ class HabitatAdapterNavigationMixin:
         }
         if observation_error is not None:
             response["observation_error"] = observation_error
+        if navigation_error is not None:
+            response["error"] = navigation_error
         if metrics is not None:
             response["metrics"] = metrics
 

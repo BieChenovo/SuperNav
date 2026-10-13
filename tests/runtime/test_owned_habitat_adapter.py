@@ -105,6 +105,57 @@ def test_completed_action_is_recorded_before_sensor_capture_failure(tmp_path, mo
     assert events[-1]["position"] == [0, 0, -.25]
 
 
+@pytest.mark.parametrize("completed_steps", [0, 1])
+def test_follower_failure_preserves_partial_motion_and_reports_reason(tmp_path, monkeypatch, completed_steps):
+    from supernav.backends.habitat.primitive_trace import start_trace
+    from supernav.backends.habitat.simulator import motion
+
+    class GreedyFollowerError(Exception):
+        pass
+
+    class Follower:
+        calls = 0
+
+        def next_action_along(self, goal):
+            self.calls += 1
+            if self.calls > completed_steps:
+                raise GreedyFollowerError()
+            return "move_forward"
+
+    class Pathfinder:
+        is_loaded = True
+
+        def find_path(self, path):
+            path.points = [path.requested_start, path.requested_end]
+            path.geodesic_distance = float(np.linalg.norm(path.requested_end - path.requested_start))
+            return True
+
+    adapter, session = make_adapter()
+    session.last_sensor_obs = session.simulator.get_sensor_observations(agent_ids=0)
+    session.simulator.pathfinder = Pathfinder()
+    monkeypatch.setattr(motion, "habitat_sim", SimpleNamespace(ShortestPath=SimpleNamespace))
+    monkeypatch.setattr(session.simulator, "make_greedy_follower", lambda **kwargs: Follower(), raising=False)
+    monkeypatch.setenv("SUPERNAV_PRIMITIVE_TRACE_DIR", str(tmp_path))
+    start_trace(session, [0, 0, 0])
+    response = adapter.handle_request({
+        "action": "navigate_step", "session_id": session.session_id,
+        "payload": {"goal": [0, 0, -1], "max_steps": 10, "include_visuals": True, "output_dir": str(tmp_path)},
+    })
+    assert response["ok"] is True, response
+    result = response["result"]
+    assert result["nav_status"] == "error"
+    assert result["error"] == "GreedyFollowerError"
+    assert result.get("steps_executed", 0) == completed_steps
+    assert session.step_count == session.simulator.calls == completed_steps
+    assert result["observation"]["color_sensor"]["shape"] == [2, 3, 3]
+    if completed_steps:
+        assert result["actions_taken"] == ["move_forward"]
+        assert result["visuals"]["color_sensor"]["path"]
+    events = [json.loads(line) for line in (tmp_path / "session.primitive.jsonl").read_text().splitlines()]
+    assert len(events) == completed_steps + 1
+    assert events[-1]["position"] == [0, 0, -.25 * completed_steps]
+
+
 def test_navigation_observation_probe_restores_pose_on_failure(monkeypatch):
     adapter, session = make_adapter()
     monkeypatch.setattr(navigation_access, "habitat_sim", SimpleNamespace(AgentState=SimpleNamespace))
