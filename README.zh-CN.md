@@ -44,6 +44,8 @@
 
 > **[2026-10]** 🎉 InteriorGS **ObjectNav 与 Multi-ObjectNav 测试回合**（各 150 个，含参考轨迹）已在 [HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark) 发布，数据与评测方式见 [benchmark 指南](https://github.com/zju3dv/habitat-gs/blob/main/docs/benchmark/README.md)。
 
+原始场景数据请从 [InteriorGS](https://huggingface.co/datasets/spatialverse/InteriorGS) 下载。
+
 公开 `habitat_gs/objectnav/v1` 文件需要先转换才能交给 `supernav run`。
 转换、运行、逐动作轨迹导出及 SR/SPL、SR1～SR5 评分见
 [SuperNav GS benchmark 指南](docs/release/zh/habitatgs-benchmark.md)。
