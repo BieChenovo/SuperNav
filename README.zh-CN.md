@@ -40,6 +40,10 @@
 
 </div>
 
+## 📢 News
+
+> **[2026-10]** 🎉 InteriorGS **ObjectNav 与 Multi-ObjectNav 测试回合**（各 150 个，含参考轨迹）已在 [HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark) 发布，数据与评测方式见 [benchmark 指南](https://github.com/zju3dv/habitat-gs/blob/main/docs/benchmark/README.md)。
+
 ## 🧭 SuperNav 是什么？
 
 **SuperNav** 是面向多种任务与场景的智能体导航系统。预训练多模态模型通过工具调用、
@@ -63,7 +67,7 @@
 
 - [x] 智能体运行时、导航工具与 Skills、实验配方及评测
 - [x] Learned Executor 权重（[Hugging Face](https://huggingface.co/the0xka1/SuperNav-Learned-Executor)）
-- [ ] InteriorGS 单目标/多目标导航 benchmark
+- [x] InteriorGS 单目标/多目标导航 benchmark（[HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark)）
 - [ ] AI2-THOR 需求驱动导航 benchmark
 - [ ] 真机部署（Unitree Go2）：四路 RGB，基于 LiDAR 的几何执行
 
