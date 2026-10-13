@@ -10,8 +10,10 @@ This directory provides general prompt templates for the experiment recipes in
 
 Task instructions, episode selections, scene annotations, and ground truth are
 external inputs. Set `instructions_file` in an ignored `configs/local/` overlay
-or pass `--instructions /path/to/tasks.json` when running a recipe. The paper's
-task lists and ground truth are excluded from the public release.
+or pass `--instructions /path/to/tasks.json` when running a recipe.
+The public HabitatGS-Benchmark is distributed separately. Its `episodes.json`
+requires conversion with `supernav prepare habitatgs`; see the
+[GS conversion, run and scoring guide](../../docs/release/en/habitatgs-benchmark.md).
 
 Discover recipes and inspect their settings from the repository root:
 

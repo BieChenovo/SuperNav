@@ -47,6 +47,10 @@
 
 > **[2026-10]** 🎉 The InteriorGS **ObjectNav and Multi-ObjectNav test episodes** (150 each, with reference trajectories) are released in [HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark). See the [benchmark guide](https://github.com/zju3dv/habitat-gs/blob/main/docs/benchmark/README.md) for data and evaluation.
 
+The public `habitat_gs/objectnav/v1` files need conversion before `supernav run`.
+See the [SuperNav GS workflow](docs/release/en/habitatgs-benchmark.md) for conversion,
+running, primitive-trace export and SR/SPL plus SR1–SR5 scoring.
+
 ## 🧭 What Is SuperNav?
 
 **SuperNav** is an agentic navigation system that uses a pretrained multimodal
@@ -156,7 +160,8 @@ continuing, or use another terminal.
 
 SuperNav provides the code, general prompts, and configuration templates. Supply
 matching ground truth when required for scoring or by the selected method.
-The paper's task lists and ground truth are excluded from this release.
+Task lists and ground truth are distributed separately from the source package;
+the public GS release and its adapter are described in the [GS benchmark guide](docs/release/en/habitatgs-benchmark.md).
 
 Inspect the example experiment configurations:
 
@@ -319,6 +324,9 @@ evaluation and export commands with:
 ```bash
 supernav score-objectnav --help
 supernav score-multi-objectnav --help
+supernav prepare habitatgs --help
+supernav export-habitatgs --help
+supernav score-habitatgs --help
 supernav aggregate --help
 supernav video --help
 ```
@@ -338,6 +346,7 @@ All release guides are available in [English](docs/release/en/README.md) and
 | [Configuration](docs/release/en/configuration.md) | Experiments, models, local settings, and task manifests |
 | [Scene assets and Skills](docs/release/en/assets-and-skills.md) | Backend requirements, external assets, and navigation Skills |
 | [Habitat-GS](docs/release/en/habitat.md) | Simulator installation and scene integration |
+| [HabitatGS-Benchmark](docs/release/en/habitatgs-benchmark.md) | Public GS dataset conversion, navigation, SR/SPL and stage SR |
 | [HM3D v2 and OVON](docs/release/en/hm3d-and-ovon.md) | Scene and episode data, task preparation, navigation, and offline scoring |
 | [AI2-THOR](docs/release/en/ai2thor.md) | Dataset, Unity build, observations, and execution |
 | [Web viewer](docs/release/en/web-viewer.md) | Live observation and recorded runs |

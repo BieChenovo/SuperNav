@@ -7,8 +7,8 @@ This directory provides prompt templates for the
 and [`habitat-learned-executor`](../../experiments/habitat-learned-executor.json)
 recipes.
 
-Supply your task manifest with instructions, scene and spawn settings, goals,
-and ground truth as required by the method or scorer. Set its path as `instructions_file` in a
+Supply your task manifest with instructions, scene and spawn settings.
+Keep scoring ground truth separate from policy inputs. Set the task path as `instructions_file` in a
 `configs/local/` overlay that extends the chosen recipe. Select episodes with
 `--task-ids` using IDs from your manifest.
 
@@ -21,3 +21,8 @@ supernav run --config configs/local/habitat.json
 The [configuration guide](../../../docs/release/en/configuration.md) shows the
 overlay format and external task setup. Shared recipe fragments define the
 agent, model, and navigation method.
+
+For the public HabitatGS-Benchmark `episodes.json`, first use
+`supernav prepare habitatgs`. Follow the
+[GS benchmark guide](../../../docs/release/en/habitatgs-benchmark.md)
+for conversion, primitive trajectory export and SR/SPL scoring.

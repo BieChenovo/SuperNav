@@ -44,6 +44,10 @@
 
 > **[2026-10]** 🎉 InteriorGS **ObjectNav 与 Multi-ObjectNav 测试回合**（各 150 个，含参考轨迹）已在 [HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark) 发布，数据与评测方式见 [benchmark 指南](https://github.com/zju3dv/habitat-gs/blob/main/docs/benchmark/README.md)。
 
+公开 `habitat_gs/objectnav/v1` 文件需要先转换才能交给 `supernav run`。
+转换、运行、逐动作轨迹导出及 SR/SPL、SR1～SR5 评分见
+[SuperNav GS benchmark 指南](docs/release/zh/habitatgs-benchmark.md)。
+
 ## 🧭 SuperNav 是什么？
 
 **SuperNav** 是面向多种任务与场景的智能体导航系统。预训练多模态模型通过工具调用、
@@ -292,6 +296,9 @@ supernav web --live-dir "$SUPERNAV_LIVE_DIR" --runs-root data/runs
 ```bash
 supernav score-objectnav --help
 supernav score-multi-objectnav --help
+supernav prepare habitatgs --help
+supernav export-habitatgs --help
+supernav score-habitatgs --help
 supernav aggregate --help
 supernav video --help
 ```
@@ -310,6 +317,7 @@ supernav video --help
 | [配置](docs/release/zh/configuration.md) | 实验、模型、本机设置和任务 manifest |
 | [场景资产与 Skills](docs/release/zh/assets-and-skills.md) | 后端要求、外部资产和导航 Skills |
 | [Habitat-GS](docs/release/zh/habitat.md) | 仿真器安装与场景接入 |
+| [HabitatGS-Benchmark](docs/release/zh/habitatgs-benchmark.md) | 公开 GS 数据转换、运行、SR/SPL 与分阶段 SR |
 | [HM3D v2 与 OVON](docs/release/zh/hm3d-and-ovon.md) | 场景与任务数据、任务转换、导航运行和离线评分 |
 | [AI2-THOR](docs/release/zh/ai2thor.md) | 数据集、Unity 构建、观测和执行 |
 | [Web 查看器](docs/release/zh/web-viewer.md) | 实时观察与已有记录 |

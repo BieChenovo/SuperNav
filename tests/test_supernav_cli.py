@@ -43,6 +43,8 @@ def test_root_help_lists_primary_workflows(args, tmp_path):
         ("prompt", "--arm"),
         ("score-objectnav", "--criterion"),
         ("score-multi-objectnav", "--runs-root"),
+        ("export-habitatgs", "--visuals-root"),
+        ("score-habitatgs", "--reference"),
     ],
 )
 def test_subcommand_help_reaches_its_parser(command, option, tmp_path):

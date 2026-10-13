@@ -265,3 +265,8 @@ without simulator SDKs.
 
 Record the Python SDK revision and native extension build when validating a
 deployment. See [architecture](architecture.md) for module responsibilities.
+
+## HabitatGS-Benchmark
+
+For the public 150+150 GS release, use the [GS benchmark workflow](habitatgs-benchmark.md).
+It includes dataset conversion and a dedicated scorer; the public episode file is not a SuperNav instruction manifest.

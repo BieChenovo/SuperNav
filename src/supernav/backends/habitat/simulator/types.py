@@ -63,6 +63,9 @@ class _Session:
     trajectory: List[List[float]] = field(default_factory=list)
     # Full evaluator/audit path. Public trajectory is capped for response size.
     audit_trajectory: List[List[float]] = field(default_factory=list)
+    primitive_trace_path: Optional[str] = None
+    primitive_trace_last_step: int = 0
+    primitive_trace_terminal: bool = False
     collision_points: List[Dict[str, Any]] = field(default_factory=list)
     last_goal: Optional[List[float]] = None
     last_collision: Optional[Dict[str, Any]] = None

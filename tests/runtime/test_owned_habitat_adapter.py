@@ -85,6 +85,26 @@ def test_owned_motion_preserves_collision_path_and_audit_separation():
     assert audit["result"]["agent_state"]["position"] == [0.0, 0.0, -0.25]
 
 
+def test_completed_action_is_recorded_before_sensor_capture_failure(tmp_path, monkeypatch):
+    from supernav.backends.habitat.primitive_trace import start_trace
+    adapter, session = make_adapter()
+    monkeypatch.setenv("SUPERNAV_PRIMITIVE_TRACE_DIR", str(tmp_path))
+    start_trace(session, [0, 0, 0])
+    session.visual_robot_obj = object()
+    monkeypatch.setattr(adapter, "_env_bool", lambda *args: True)
+
+    def fail_capture(_):
+        raise RuntimeError("sensor capture failed")
+
+    monkeypatch.setattr(adapter, "_capture_sensor_observations", fail_capture)
+    with pytest.raises(RuntimeError, match="sensor capture failed"):
+        adapter._step_action("session", {"action": "move_forward"})
+    events = [json.loads(line) for line in (tmp_path / "session.primitive.jsonl").read_text().splitlines()]
+    assert session.step_count == 1
+    assert events[-1]["action"] == "move_forward"
+    assert events[-1]["position"] == [0, 0, -.25]
+
+
 def test_navigation_observation_probe_restores_pose_on_failure(monkeypatch):
     adapter, session = make_adapter()
     monkeypatch.setattr(navigation_access, "habitat_sim", SimpleNamespace(AgentState=SimpleNamespace))

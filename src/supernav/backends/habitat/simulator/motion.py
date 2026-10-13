@@ -8,6 +8,8 @@ from typing import Any, Dict, Mapping, Optional
 
 import numpy as np
 
+from supernav.backends.habitat.primitive_trace import invalidate_trace, record_step
+
 from supernav.backends.habitat.simulator import sdk as habitat_sim
 
 from supernav.backends.habitat.simulator.types import (
@@ -86,6 +88,7 @@ class HabitatAdapterNavigationMixin:
         new_position = self._current_position(session).tolist()
         session.trajectory = [new_position]
         session.audit_trajectory = [new_position]
+        invalidate_trace(session, "agent_pose_reset")
         session.last_sensor_obs = self._capture_sensor_observations(session)
 
         return {
@@ -146,6 +149,7 @@ class HabitatAdapterNavigationMixin:
         new_position = self._current_position(session).tolist()
         session.trajectory = [new_position]
         session.audit_trajectory = [new_position]
+        invalidate_trace(session, "agent_state_reset")
 
         session.last_sensor_obs = self._capture_sensor_observations(session)
         return {
@@ -308,6 +312,7 @@ class HabitatAdapterNavigationMixin:
 
     def _record_pose(self, session: _Session) -> None:
         position = self._current_position(session).tolist()
+        record_step(session, position)
         previous_positions = session.audit_trajectory or session.trajectory
         if previous_positions and np.allclose(previous_positions[-1], position):
             return
@@ -1352,6 +1357,11 @@ class HabitatAdapterNavigationMixin:
         observation: Any = session.last_sensor_obs
         for _ in range(n_steps):
             raw_observation = session.simulator.step(action, dt=dt)
+            # Preserve completed actions even when a later sensor capture fails.
+            session.step_count += 1
+            steps_taken += 1
+            session.last_action = str(action)
+            self._record_pose(session)
             # Same optimization as _navigate_step: skip redundant re-render when
             # visual robot is not in use.
             if (
@@ -1361,11 +1371,7 @@ class HabitatAdapterNavigationMixin:
                 observation = self._capture_sensor_observations(session)
             else:
                 observation = {k: v for k, v in raw_observation.items() if k != "collided"}
-            session.step_count += 1
-            steps_taken += 1
-            session.last_action = str(action)
             session.last_sensor_obs = observation
-            self._record_pose(session)
             if raw_observation.get("collided", False):
                 any_collided = True
                 self._record_collision(session, action=str(action))

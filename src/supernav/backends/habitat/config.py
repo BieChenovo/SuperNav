@@ -63,6 +63,9 @@ def scene_config_path(value: str | None, *, base: Path, config: Mapping[str, Any
 
 def process_environment(config: Mapping[str, Any]) -> dict[str, str]:
     environment: dict[str, str] = {"PYTHONDONTWRITEBYTECODE": "1"}
+    trace_dir = (config.get("environment") or {}).get("primitive_trace_dir")
+    if trace_dir:
+        environment["SUPERNAV_PRIMITIVE_TRACE_DIR"] = str(Path(trace_dir).expanduser().resolve())
     paths = python_paths()
     if os.environ.get("PYTHONPATH"):
         paths.append(os.environ["PYTHONPATH"])

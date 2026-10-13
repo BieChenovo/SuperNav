@@ -297,3 +297,6 @@ source episode paths recorded in the task snapshot; keep those files accessible.
 For missing trajectories or unreachable goals, check `visuals_root`, the matching
 `.basis.navmesh`, and source episode paths. See the [Web Viewer guide](web-viewer.md)
 to inspect saved observations and trajectories.
+
+HM3D ObjectNav and OVON episodes in this guide each have one goal; SR2–SR5 do not apply.
+For ordered InteriorGS multi-object navigation and stage SR, use the [GS guide](habitatgs-benchmark.md).

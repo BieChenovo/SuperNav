@@ -12,6 +12,8 @@ from typing import Any, Dict, Mapping, MutableMapping, Optional
 
 import numpy as np
 
+from supernav.backends.habitat.primitive_trace import start_trace, stop_trace
+
 from supernav.backends.habitat.simulator import sdk as habitat_sim
 from supernav.backends.habitat.simulator.configuration import default_settings, make_configuration, make_simulator
 
@@ -130,6 +132,7 @@ class HabitatAdapterSessionSceneMixin:
             initial_position = self._current_position(session).tolist()
             session.trajectory.append(initial_position)
             session.audit_trajectory.append(initial_position)
+            start_trace(session, initial_position)
 
             # Optionally load precomputed scene graph (room_object_scene_graph.json).
             # Reuses _resolve_dataset_navmesh_path to find the scene directory — this
@@ -487,8 +490,11 @@ class HabitatAdapterSessionSceneMixin:
     ) -> Dict[str, Any]:
         del payload
         session = self._require_session(session_id)
+        final_position = self._current_position(session).tolist() if getattr(session, "primitive_trace_path", None) else None
         self._sessions.pop(session.session_id, None)
         self._dispose_session(session, reason="close_session")
+        if final_position is not None:
+            stop_trace(session, final_position)
         return {
             "session_id": session.session_id,
             "closed": True,
