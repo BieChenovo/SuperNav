@@ -276,6 +276,78 @@ See the [configuration guide](docs/release/en/configuration.md) for composition 
 selection, and external dataset path mappings. Each recipe declares its prompt
 directory explicitly.
 
+<a id="run-hm3d-objectnav"></a>
+
+### Run an HM3D ObjectNav episode
+
+HM3D uses the same Habitat executor recipes. First complete the
+[HM3D v2 / OVON setup guide](docs/release/en/hm3d-and-ovon.md) to install the
+agent and simulator environments and obtain the **v0.2 scene assets and
+ObjectNav v2 episodes**. Scenes and episodes are separate downloads. Run the
+following commands from the repository root with your own absolute paths:
+
+```bash
+export SUPERNAV_HABITAT_PYTHON=/path/to/habitat-env/bin/python
+export SUPERNAV_HM3D_SCENES_ROOT=/path/to/scene_datasets/hm3d
+export SUPERNAV_SCENE_DATASET_CONFIG="$SUPERNAV_HM3D_SCENES_ROOT/hm3d_annotated_basis.scene_dataset_config.json"
+export SUPERNAV_EPISODES_ROOT=/path/to/objectnav_hm3d_v2
+export SUPERNAV_WORK_DIR=/path/to/storage/supernav-hm3d-quickstart
+
+supernav prepare objectnav \
+  --episodes-root "$SUPERNAV_EPISODES_ROOT" --split val \
+  --scene-dataset-config "$SUPERNAV_SCENE_DATASET_CONFIG" \
+  --sensor-height 1.25 --max-episodes 1 \
+  --template-config configs/experiments/habitat-geo-based-executor.json \
+  --instructions-dir "$SUPERNAV_WORK_DIR/tasks" \
+  --config-dir "$SUPERNAV_WORK_DIR/configs"
+
+python - <<'PY'
+import json
+import os
+from pathlib import Path
+
+work = Path(os.environ["SUPERNAV_WORK_DIR"])
+config = {
+    "extends": str(work / "configs/hm3d-val-localnav.json"),
+    "output_dir": str(work / "runs"),
+    "visuals_root": str(work / "visuals"),
+}
+(work / "configs/run.json").write_text(json.dumps(config, indent=2) + "\n")
+PY
+
+supernav run --config "$SUPERNAV_WORK_DIR/configs/run.json" \
+  --sweep-id quickstart-dry --dry-run \
+  --output-dir "$SUPERNAV_WORK_DIR/dry-run"
+supernav run --config "$SUPERNAV_WORK_DIR/configs/run.json" \
+  --sweep-id quickstart --arms default
+```
+
+This prepares and runs one episode. If only some scenes are installed, add
+`--scenes <scene-hash>` to preparation. To prepare the full split, remove
+`--max-episodes 1` and use a new work directory. Preparation retains the dataset
+NavMesh; keep the original episode files available for offline scoring.
+
+After the real run, calculate **SR and SPL** from its saved task snapshot and
+trajectory. This example requires STOP and a viewpoint geodesic distance strictly
+below **0.2 m**; set the threshold explicitly for the evaluation protocol you use:
+
+```bash
+"$SUPERNAV_HABITAT_PYTHON" -m supernav score-objectnav \
+  --runs-root "$SUPERNAV_WORK_DIR/runs" \
+  --instructions "$SUPERNAV_WORK_DIR/runs/_sweeps/quickstart/instructions.resolved.json" \
+  --scenes-root "$SUPERNAV_HM3D_SCENES_ROOT" \
+  --visuals-root "$SUPERNAV_WORK_DIR/visuals" \
+  --criterion viewpoint_geodesic --success-distance 0.2 \
+  --l-source viewpoint_geodesic \
+  --out-json "$SUPERNAV_WORK_DIR/score-geodesic.json" \
+  --out-md "$SUPERNAV_WORK_DIR/score-geodesic.md"
+```
+
+For **HM3D-OVON**, use `supernav prepare ovon` with the external selection
+manifest, then follow the same run and scoring workflow. The
+[full guide](docs/release/en/hm3d-and-ovon.md) includes OVON preparation commands,
+data download links, task selection, batch runs, and Learned Executor setup.
+
 ### Run an AI2-THOR episode
 
 After preparing the dataset and Unity build described in the

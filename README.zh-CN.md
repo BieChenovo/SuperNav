@@ -144,7 +144,8 @@ supernav web --demo
 - **指令**：包含任务指令及对应场景、初始位姿和目标信息的任务清单。
 
 SuperNav 提供代码、通用 prompts 和配置模板。执行评分或使用依赖 GT 的方法时，
-还需准备对应的 GT。论文任务清单和 GT 不包含在本次发行中。
+还需准备对应的 GT。任务清单和 GT 与源码单独分发；公开 GS 数据及其转换方式见
+[GS benchmark 指南](docs/release/zh/habitatgs-benchmark.md)。
 
 查看实验配置示例：
 
@@ -251,6 +252,74 @@ supernav run --config configs/local/habitat.json \
 
 组合规则、模型选择和外部数据路径映射见 [配置指南](docs/release/zh/configuration.md)。
 每份配方都显式声明提示目录。
+
+<a id="run-hm3d-objectnav"></a>
+
+### 运行一个 HM3D ObjectNav episode
+
+HM3D 使用相同的 Habitat 执行器配方。先按照
+[HM3D v2 / OVON 指南](docs/release/zh/hm3d-and-ovon.md)安装智能体和仿真器环境，
+并准备 **v0.2 场景资产与 ObjectNav v2 episodes**。场景和任务需要分别下载。
+将下方绝对路径替换为本机路径，在仓库根目录执行：
+
+```bash
+export SUPERNAV_HABITAT_PYTHON=/path/to/habitat-env/bin/python
+export SUPERNAV_HM3D_SCENES_ROOT=/path/to/scene_datasets/hm3d
+export SUPERNAV_SCENE_DATASET_CONFIG="$SUPERNAV_HM3D_SCENES_ROOT/hm3d_annotated_basis.scene_dataset_config.json"
+export SUPERNAV_EPISODES_ROOT=/path/to/objectnav_hm3d_v2
+export SUPERNAV_WORK_DIR=/path/to/storage/supernav-hm3d-quickstart
+
+supernav prepare objectnav \
+  --episodes-root "$SUPERNAV_EPISODES_ROOT" --split val \
+  --scene-dataset-config "$SUPERNAV_SCENE_DATASET_CONFIG" \
+  --sensor-height 1.25 --max-episodes 1 \
+  --template-config configs/experiments/habitat-geo-based-executor.json \
+  --instructions-dir "$SUPERNAV_WORK_DIR/tasks" \
+  --config-dir "$SUPERNAV_WORK_DIR/configs"
+
+python - <<'PY'
+import json
+import os
+from pathlib import Path
+
+work = Path(os.environ["SUPERNAV_WORK_DIR"])
+config = {
+    "extends": str(work / "configs/hm3d-val-localnav.json"),
+    "output_dir": str(work / "runs"),
+    "visuals_root": str(work / "visuals"),
+}
+(work / "configs/run.json").write_text(json.dumps(config, indent=2) + "\n")
+PY
+
+supernav run --config "$SUPERNAV_WORK_DIR/configs/run.json" \
+  --sweep-id quickstart-dry --dry-run \
+  --output-dir "$SUPERNAV_WORK_DIR/dry-run"
+supernav run --config "$SUPERNAV_WORK_DIR/configs/run.json" \
+  --sweep-id quickstart --arms default
+```
+
+这个例子转换并运行一条任务。若只安装了部分场景，转换时增加
+`--scenes <scene-hash>`。准备完整 split 时，去掉 `--max-episodes 1` 并使用新的工作目录。
+转换器保留数据集原始 NavMesh；离线评分还需读取原始 episode 文件，请保留这些文件。
+
+真实运行结束后，使用保存的任务快照和轨迹计算 **SR、SPL**。此示例要求 STOP，且到
+目标 viewpoint 的测地距离严格小于 **0.2 m**；请按采用的评测协议显式设置阈值：
+
+```bash
+"$SUPERNAV_HABITAT_PYTHON" -m supernav score-objectnav \
+  --runs-root "$SUPERNAV_WORK_DIR/runs" \
+  --instructions "$SUPERNAV_WORK_DIR/runs/_sweeps/quickstart/instructions.resolved.json" \
+  --scenes-root "$SUPERNAV_HM3D_SCENES_ROOT" \
+  --visuals-root "$SUPERNAV_WORK_DIR/visuals" \
+  --criterion viewpoint_geodesic --success-distance 0.2 \
+  --l-source viewpoint_geodesic \
+  --out-json "$SUPERNAV_WORK_DIR/score-geodesic.json" \
+  --out-md "$SUPERNAV_WORK_DIR/score-geodesic.md"
+```
+
+**HM3D-OVON** 使用 `supernav prepare ovon` 配合外部选择清单转换，之后采用相同的
+运行与评分流程。[完整指南](docs/release/zh/hm3d-and-ovon.md)提供 OVON 转换命令、
+数据下载入口、任务选择、批量运行以及 Learned Executor 配置。
 
 ### 运行一个 AI2-THOR episode
 
