@@ -270,3 +270,6 @@ SPL 为 `S × L / max(P, L)`，其中 `S` 是独立评分的成功标记，`P` �
 遇到轨迹缺失或目标不可达时，检查 `visuals_root`、匹配的 `.basis.navmesh`
 与 source episode 路径。可通过
 [Web Viewer 指南](web-viewer.md)查看保存的观测与轨迹。
+
+本指南的 HM3D ObjectNav 和 OVON 每条任务只有一个目标，不适用 SR2～SR5。
+InteriorGS 有序多目标导航及分阶段 SR 见 [GS 指南](habitatgs-benchmark.md)。

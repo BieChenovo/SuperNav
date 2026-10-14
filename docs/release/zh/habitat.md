@@ -234,3 +234,8 @@ python -m pytest -q tests/test_public_habitat_backend.py
 
 验证部署时，记录 Python SDK 的版本和原生扩展的构建信息。
 模块职责见[架构指南](architecture.md)。
+
+## HabitatGS-Benchmark
+
+公开 GS 150+150 条任务的转换、运行和独立评分见 [GS benchmark 指南](habitatgs-benchmark.md)。
+公开 episode 文件需要转换为 SuperNav 指令清单，并使用专用评分命令。

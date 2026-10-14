@@ -9,7 +9,9 @@
 
 任务指令、episode 选集、场景标注和 GT 由外部提供。运行配方前，在忽略提交的
 `configs/local/` 覆盖中设置 `instructions_file`，或传入
-`--instructions /path/to/tasks.json`。论文任务清单和 GT 不包含在公开发行内容中。
+`--instructions /path/to/tasks.json`。公开 HabitatGS-Benchmark 数据单独分发，
+其 `episodes.json` 必须先用 `supernav prepare habitatgs` 转换，详见
+[GS 数据转换、运行和评分指南](../../docs/release/zh/habitatgs-benchmark.md)。
 
 在仓库根目录列出配方并查看设置：
 

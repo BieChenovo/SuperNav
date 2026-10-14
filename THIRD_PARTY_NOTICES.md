@@ -57,3 +57,13 @@ also preserved under `.dist-info/licenses/` in Python distributions:
 External simulator backends, datasets, model weights, and separately installed
 dependencies retain their own licenses. Installing or using them does not change
 their licensing terms.
+
+## HabitatGS-Benchmark evaluation contract
+
+`src/supernav/evaluation/objectnav/_habitatgs_v1.py` preserves the scoring functions
+from [HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark),
+revision `4a8fe5cf654c1d19f0c3c992720d3c4f57844f12`, `evaluation/score.py`
+(SHA256 `37bb98a11141eae72fa68b464a8c1a9ea32773b83e74ac5745a4211992b6716e`).
+Copyright (c) 2026 ZJU3DV Group at Zhejiang University. The release LICENSE is
+Project Registration License (PRL) v1.0, reproduced in this repository’s LICENSE.
+No scene assets or benchmark episode annotations are bundled here.

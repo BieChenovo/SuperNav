@@ -91,6 +91,7 @@ def prepare() -> None:
         "multi-global-tasks": "multi_global_tasks",
         "objectnav": "objectnav_hm3d",
         "ovon": "ovon_mtu3d",
+        "habitatgs": "habitatgs",
     }
     parser = argparse.ArgumentParser(description="Prepare experiment task manifests and recipes.")
     actions = parser.add_subparsers(dest="dataset", required=True)
@@ -112,7 +113,9 @@ def main(argv: list[str] | None = None) -> int:
         "habitat-bridge": (bridge, "Start the external Habitat bridge."),
         "prompt": (build_prompt, "Build a Habitat navigation prompt."),
         "score-objectnav": (score_objectnav, "Score ObjectNav evidence offline."),
-        "score-multi-objectnav": (score_multi_objectnav, "Score multi-goal navigation evidence."),
+        "score-multi-objectnav": (score_multi_objectnav, "Score legacy goal-mark/bbox evidence (not public HabitatGS v1)."),
+        "export-habitatgs": (partial(_module_main, "supernav.evaluation.objectnav.export_habitatgs"), "Export trusted GS primitive-action traces."),
+        "score-habitatgs": (partial(_module_main, "supernav.evaluation.objectnav.score_habitatgs"), "Score public GS SR/SPL and ordered stage SR."),
         "prepare": (prepare, "Prepare task manifests and experiment recipes."),
     }
     for name, module, description in (

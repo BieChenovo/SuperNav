@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Score multi-object-nav harness runs from recorded goal_marked events.
+"""Score legacy multi-object-nav harness runs from recorded goal_marked events.
+
+This is not the public HabitatGS v1 viewpoint/STOP protocol. Use
+``supernav score-habitatgs`` for the published HabitatGS-Benchmark release.
 
 The online harness metrics for multi-goal episodes stay claim-based
 (session closed with outcome='achieved'). This script recomputes per-goal

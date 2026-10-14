@@ -1883,6 +1883,8 @@ def _is_private_sidecar_artifact(name: str) -> bool:
         name.endswith(".trajectory.json")
         or name.endswith(".trajectory.json.tmp")
         or name.endswith(".benchmark_audit.jsonl")
+        or name.endswith(".primitive.jsonl")
+        or name.endswith(".primitive.jsonl.tmp")
     )
 
 

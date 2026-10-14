@@ -10,6 +10,7 @@
 | [配置](configuration.md) | 配方、智能体、模型、本机部署、任务组合和覆盖 |
 | [资产与 Skills](assets-and-skills.md) | 仿真资源、数据集、策略服务与导航 Skills |
 | [Habitat-GS](habitat.md) | SDK 安装、场景资产、bridge 设置和导航 |
+| [HabitatGS-Benchmark](habitatgs-benchmark.md) | 公开 GS 任务转换、导航运行、逐动作证据、SR/SPL 与分阶段 SR |
 | [HM3D v2 与 OVON](hm3d-and-ovon.md) | 场景与任务数据、任务转换、导航运行和离线评分 |
 | [AI2-THOR](ai2thor.md) | 冻结数据集与 Unity 构建要求、观测、动作和证据 |
 | [Web 查看器](web-viewer.md) | 演示、实时观察、远程访问和已有记录 |

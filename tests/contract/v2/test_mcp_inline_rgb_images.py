@@ -80,6 +80,28 @@ def mcp_module(monkeypatch: pytest.MonkeyPatch, tmp_path: Path):
     return mod
 
 
+@pytest.mark.parametrize("operation", ["list", "read"])
+@pytest.mark.parametrize("suffix", [".primitive.jsonl", ".primitive.jsonl.tmp"])
+def test_primitive_trace_is_private_through_mcp_resources(mcp_module, tmp_path, monkeypatch, operation, suffix):
+    monkeypatch.setenv("HAB_MCP_GLOBAL_TASK", "1")
+    private = tmp_path / f"session{suffix}"
+    private.write_text('{"position": [123.45, 0.2, 678.9]}\n')
+    (tmp_path / "public-status.json").write_text('{"status": "ready"}')
+
+    def resource(uri):
+        contents = asyncio.run(mcp_module.mcp.read_resource(uri))
+        return json.loads("".join(row.content for row in contents))
+
+    if operation == "list":
+        listed = resource("habitat://artifacts/list")
+        assert private.name not in listed["files"]
+        assert "public-status.json" in listed["files"]
+    else:
+        denied = resource(f"habitat://artifacts/{private.name}")
+        assert "error" in denied and "position" not in denied
+        assert resource("habitat://artifacts/public-status.json") == {"status": "ready"}
+
+
 def _converted_tool_content(
     mcp_module: Any, name: str, args: dict[str, Any] | None = None
 ):
