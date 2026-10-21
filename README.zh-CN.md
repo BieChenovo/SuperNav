@@ -42,7 +42,9 @@
 
 ## 📢 News
 
-> **[2026-10]** 🎉 InteriorGS **ObjectNav 与 Multi-ObjectNav 测试回合**（各 150 个，含参考轨迹）已在 [HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark) 发布，数据与评测方式见 [benchmark 指南](https://github.com/zju3dv/habitat-gs/blob/main/docs/benchmark/README.md)。
+> **[2026-10-21]** 🤖 **Unitree Go2 真机部署**已发布，提供四路 RGB 与 LiDAR 支持的 map-backed PixelGoal 导航。Jetson 安装与使用方法见[部署教程](docs/release/zh/go2.md)。
+
+> **[2026-10-13]** 🎉 InteriorGS **ObjectNav 与 Multi-ObjectNav 测试回合**（各 150 个，含参考轨迹）已在 [HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark) 发布，数据与评测方式见 [benchmark 指南](https://github.com/zju3dv/habitat-gs/blob/main/docs/benchmark/README.md)。
 
 原始场景数据请从 [InteriorGS](https://huggingface.co/datasets/spatialverse/InteriorGS) 下载。
 
@@ -65,7 +67,8 @@
 - **检查并评测运行结果**：保留提示、工具结果、原生日志和独立任务指标。
 
 [项目主页](https://zju3dv.github.io/SuperNav/) 提供仿真视频、方法介绍和研究结果。
-真机演示见项目主页；当前仓库不包含真机驱动。
+[Unitree Go2 部署源码](docs/release/zh/go2.md) 通过固定版本的公开 DimOS submodule，
+提供四路 RGB 与 LiDAR 支持的 map-backed PixelGoal 导航。真机演示见项目主页。
 
 <a id="release-status"></a>
 
@@ -75,7 +78,7 @@
 - [x] Learned Executor 权重（[Hugging Face](https://huggingface.co/the0xka1/SuperNav-Learned-Executor)）
 - [x] InteriorGS 单目标/多目标导航 benchmark（[HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark)）
 - [ ] AI2-THOR 需求驱动导航 benchmark
-- [ ] 真机部署（Unitree Go2）：四路 RGB，基于 LiDAR 的几何执行
+- [x] [Unitree Go2 真机部署](docs/release/zh/go2.md)已发布：四路 RGB 与 LiDAR 支持的 map-backed PixelGoal
 
 ## 📖 目录
 
@@ -91,6 +94,9 @@
 <a id="installation"></a>
 
 ## 🛠️ 安装
+
+Unitree Go2 请按[部署指南](docs/release/zh/go2.md)初始化公开 DimOS submodule，
+在 `robots/go2/` 使用依赖锁安装独立环境。以下命令安装仿真运行时。
 
 需要 **Python 3.12**。首先为 SuperNav 创建独立环境：
 
@@ -380,7 +386,7 @@ supernav video --help
 
 ## 📚 文档与开发
 
-所有发布指南均提供 [English](docs/release/en/README.md) 和
+部署与仿真指南提供 [English](docs/release/en/README.md) 和
 [简体中文](docs/release/zh/README.md) 两个版本。
 
 | 指南 | 内容 |
@@ -391,6 +397,7 @@ supernav video --help
 | [HabitatGS-Benchmark](docs/release/zh/habitatgs-benchmark.md) | 公开 GS 数据转换、运行、SR/SPL 与分阶段 SR |
 | [HM3D v2 与 OVON](docs/release/zh/hm3d-and-ovon.md) | 场景与任务数据、任务转换、导航运行和离线评分 |
 | [AI2-THOR](docs/release/zh/ai2thor.md) | 数据集、Unity 构建、观测和执行 |
+| [Unitree Go2](docs/release/zh/go2.md) | Jetson 安装、PixelGoal 使用、源码维护与测试 |
 | [Web 查看器](docs/release/zh/web-viewer.md) | 实时观察与已有记录 |
 | [架构](docs/release/zh/architecture.md) | 运行时、方法、后端、实验与评测 |
 | [目录布局](docs/release/zh/layout.md) | 源码、配置、资产和输出位置 |

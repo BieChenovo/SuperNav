@@ -45,7 +45,9 @@
 
 ## 📢 News
 
-> **[2026-10]** 🎉 The InteriorGS **ObjectNav and Multi-ObjectNav test episodes** (150 each, with reference trajectories) are released in [HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark). See the [benchmark guide](https://github.com/zju3dv/habitat-gs/blob/main/docs/benchmark/README.md) for data and evaluation.
+> **[2026-10-21]** 🤖 The **Unitree Go2 deployment** is released, with four-view RGB and LiDAR-based map-backed PixelGoal navigation. See the [deployment guide](docs/release/en/go2.md) for Jetson installation and operation.
+
+> **[2026-10-13]** 🎉 The InteriorGS **ObjectNav and Multi-ObjectNav test episodes** (150 each, with reference trajectories) are released in [HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark). See the [benchmark guide](https://github.com/zju3dv/habitat-gs/blob/main/docs/benchmark/README.md) for data and evaluation.
 
 Download the original scene data from [InteriorGS](https://huggingface.co/datasets/spatialverse/InteriorGS).
 
@@ -73,8 +75,9 @@ With SuperNav, you can:
 
 See the [project page](https://zju3dv.github.io/SuperNav/) for simulation
 videos, the method overview, and research results.
-Real-world robot demonstrations are on the project page; this repository currently
-contains no real-robot drivers.
+The [Unitree Go2 deployment source](docs/release/en/go2.md) provides four-view RGB
+and LiDAR-based map-backed PixelGoal navigation through a pinned public DimOS
+submodule. Real-world demonstrations are on the project page.
 
 <a id="release-status"></a>
 
@@ -84,7 +87,7 @@ contains no real-robot drivers.
 - [x] Learned Executor weights ([Hugging Face](https://huggingface.co/the0xka1/SuperNav-Learned-Executor))
 - [x] InteriorGS single/multi-object navigation benchmark ([HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark))
 - [ ] AI2-THOR demand-driven navigation benchmark
-- [ ] Real-robot deployment (Unitree Go2): four-view RGB with LiDAR-based geometric execution
+- [x] [Unitree Go2 real-robot deployment](docs/release/en/go2.md) released: map-backed PixelGoal with four-view RGB and LiDAR
 
 ## 📖 Table of Contents
 
@@ -100,6 +103,10 @@ contains no real-robot drivers.
 <a id="installation"></a>
 
 ## 🛠️ Installation
+
+For Unitree Go2, follow the [deployment guide](docs/release/en/go2.md) to
+initialize the public DimOS submodule and install its locked dependencies in a
+dedicated environment under `robots/go2/`. The commands below install the simulation runtime.
 
 Use **Python 3.12**. Start with an independent environment for SuperNav:
 
@@ -412,8 +419,8 @@ claims, STOP events, and process status are recorded separately.
 
 ## 📚 Documentation and Development
 
-All release guides are available in [English](docs/release/en/README.md) and
-[简体中文](docs/release/zh/README.md).
+Deployment and simulation guides are available in [English](docs/release/en/README.md)
+and [简体中文](docs/release/zh/README.md).
 
 | Guide | Contents |
 | --- | --- |
@@ -423,6 +430,7 @@ All release guides are available in [English](docs/release/en/README.md) and
 | [HabitatGS-Benchmark](docs/release/en/habitatgs-benchmark.md) | Public GS dataset conversion, navigation, SR/SPL and stage SR |
 | [HM3D v2 and OVON](docs/release/en/hm3d-and-ovon.md) | Scene and episode data, task preparation, navigation, and offline scoring |
 | [AI2-THOR](docs/release/en/ai2thor.md) | Dataset, Unity build, observations, and execution |
+| [Unitree Go2](docs/release/en/go2.md) | Jetson installation, PixelGoal operation, source maintenance, and tests |
 | [Web viewer](docs/release/en/web-viewer.md) | Live observation and recorded runs |
 | [Architecture](docs/release/en/architecture.md) | Runtime, methods, backends, experiments, and evaluation |
 | [Directory layout](docs/release/en/layout.md) | Source, configuration, asset, and output locations |

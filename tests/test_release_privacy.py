@@ -28,6 +28,8 @@ PRIVATE_FILES = (
     "configs/tasks/private-index.json",
     "configs/benchmarks/example/targets.json",
     "configs/benchmarks/example/reference.png",
+    "robots/go2/runtime/operator-runs/run/output.json",
+    "robots/go2/deploy/config/robot.env",
 )
 
 
@@ -71,12 +73,17 @@ example = ["*.yaml", ".codex/**/*.yaml"]
 "share/private" = ["configs/providers/auth.json", "configs/local/linked.md"]
 "share/supernav/configs/benchmarks/example" = ["configs/benchmarks/example/tasks.json"]
 "share/supernav/configs/benchmarks/images" = ["configs/benchmarks/example/reference.png"]
+"share/supernav/robots/go2" = ["robots/go2/README.md"]
 ''')
     for name, content in {
         "src/example/__init__.py": "",
         "src/example/public.yaml": "public: true\n",
         "skills/example/SKILL.md": "Public skill\n",
         "configs/providers/safe.env.example": "# Empty deployment template\nAPI_KEY=\n",
+        "robots/go2/README.md": "Install Go2 from Git with its public submodule.\n",
+        "robots/go2/deploy/config/robot.env.example": "SUPERNAV_RERUN=0\n",
+        ".gitmodules": '[submodule "robots/go2/dimos"]\n\tpath = robots/go2/dimos\n'
+                       '\turl = https://github.com/dimensionalOS/dimos.git\n',
     }.items():
         target = source / name
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -89,7 +96,9 @@ example = ["*.yaml", ".codex/**/*.yaml"]
     (source / "configs/local/linked.md").symlink_to(source / "skills/example/auth.json")
     egg_info = source / "src/release_privacy_fixture.egg-info"
     egg_info.mkdir()
-    (egg_info / "SOURCES.txt").write_text("\n".join(PRIVATE_FILES) + "\n")
+    stale_sources = (*PRIVATE_FILES, ".gitmodules", "robots/go2/README.md",
+                     "robots/go2/deploy/config/robot.env.example")
+    (egg_info / "SOURCES.txt").write_text("\n".join(stale_sources) + "\n")
     return source
 
 
@@ -177,3 +186,32 @@ def test_direct_wheel_rejects_stale_private_build_output(source, name, is_link):
                             cwd=source, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=60)
     assert result.returncode != 0
     assert b"Private file or link remains in build output" in result.stdout
+
+
+def test_simulation_export_excludes_go2_submodule_and_public_defaults(tmp_path):
+    source = tmp_path / "source"
+    source.mkdir()
+    shutil.copyfile(ROOT / ".gitattributes", source / ".gitattributes")
+    (source / "README.md").write_text("Simulation source archive\n")
+    (source / ".gitmodules").write_text(
+        '[submodule "robots/go2/dimos"]\n'
+        '\tpath = robots/go2/dimos\n'
+        '\turl = https://github.com/dimensionalOS/dimos.git\n'
+    )
+    template = source / "robots/go2/deploy/config/robot.env.example"
+    template.parent.mkdir(parents=True)
+    template.write_text("SUPERNAV_RERUN=0\nDIMOS_GO2_MOVE_API=joystick\n")
+    run(source, "git", "init", "-q")
+    run(source, "git", "add", ".")
+    run(source, "git", "update-index", "--add", "--cacheinfo",
+        "160000,79c9ed163ec6b1abd278a9161f0c74f4562f1231,robots/go2/dimos")
+    run(source, "git", "-c", "user.name=Release test", "-c", "user.email=release@example.invalid",
+        "commit", "-qm", "public deployment fixture")
+    # An uninitialized submodule is sufficient; exporting simulation sources
+    # must not fetch it, reject its gitlink, or validate its machine defaults.
+    (source / "robots/go2/dimos").mkdir()
+    output = tmp_path / "simulation-source.tar.gz"
+    POLICY["export_source"](source, output)
+    with tarfile.open(output) as archive:
+        assert "README.md" in archive.getnames()
+        assert not any(POLICY["is_git_deployment_path"](name) for name in archive.getnames())

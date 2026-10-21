@@ -23,13 +23,20 @@ SuperNav/
 │   ├── providers/            Provider catalog and credential variable examples
 │   ├── viewers/              Viewer settings, including Rerun
 │   └── local/                Machine-specific overlays for local use
+├── robots/
+│   └── go2/                  Independent map-backed PixelGoal deployment
+│       ├── dimos/            Public DimOS submodule, pinned commit
+│       ├── supernav/         Assembly tools, manifest, overlay/, patches/
+│       ├── deploy/           Installers, launchers, config templates, dependency locks
+│       ├── tests/            Deployment and resource tests
+│       └── runtime/          Generated source and local run outputs (ignored)
 ├── skills/                   Navigation skill sources, snapshotted for runs
 ├── scripts/                  Development, validation, and audit helpers
 ├── tests/                    Automated tests and fixtures
 ├── docs/
 │   ├── release/
-│   │   ├── en/               English public documentation
-│   │   └── zh/               Simplified Chinese public documentation
+│   │   ├── en/               English guides, including go2*.md deployment tutorials
+│   │   └── zh/               Matching Simplified Chinese guides
 ├── data/
 │   ├── embodiments/          Small embodiment parameter snapshots
 │   ├── test_assets/          Small input assets
@@ -39,7 +46,13 @@ SuperNav/
 └── README.zh-CN.md            Simplified Chinese introduction
 ```
 
-Implementation lives in `src/` and public operations use the `supernav` command tree.
+The simulation runtime lives in `src/` and uses the `supernav` command tree.
+The [Go2 deployment](go2.md) has its own installation
+root at `robots/go2/`, including an independent `.venv` and dependency locks.
+Run its assembly commands from that directory; its `supernav/` directory contains
+assembly tools and DimOS changes, separate from the simulation Python package.
+The public submodule plus overlays and patches assemble into
+`robots/go2/runtime/dimos/`.
 
 Rerun is implemented in `src/supernav/web/rerun_viewer.py` and configured through
 `configs/viewers/rerun.yaml`.
@@ -48,6 +61,10 @@ Rerun is implemented in `src/supernav/web/rerun_viewer.py` and configured throug
 
 | Location | Purpose | Committed? |
 | --- | --- | --- |
+| `robots/go2/dimos/` | Public DimOS submodule | Pinned gitlink |
+| `robots/go2/supernav/`, `robots/go2/deploy/`, `robots/go2/tests/` | Go2 integration source, installers, locks, templates, and tests | Yes |
+| `docs/release/en/go2*.md`, `docs/release/zh/go2*.md` | Bilingual Go2 deployment tutorials | Yes |
+| `robots/go2/runtime/`, `robots/go2/.venv/`, `robots/go2/deploy/config/*.env` | Generated runtime, environment, logs, and real robot configuration | No |
 | `configs/benchmarks/` | General prompt templates | Yes |
 | `data/embodiments/` | Embodiment parameter snapshots | Yes |
 | `data/test_assets/` | Small warmup images and other inputs | Yes |
@@ -66,12 +83,13 @@ GT are excluded from public source exports and packages.
 
 ## Where to add files
 
+- Maintain Go2 changes in `robots/go2/supernav/overlay/` and `patches/`, update the manifest, and rebuild the runtime. Keep navigation rules in the deployment's Markdown skills.
 - Put implementation in the responsible `src/supernav/` module and keep CLI routing thin.
 - Add named experiments in `configs/experiments/` and shared settings in the corresponding fragments. Select external task manifests through local overlays.
 - Put general prompt templates in `configs/benchmarks/<suite>/`. Keep real tasks, annotations, and GT in private storage and exclude them from release artifacts.
 - Put development and validation scripts in `scripts/`; move reusable logic into the canonical package.
 - Use synthetic test inputs in `tests/fixtures/` or generate them in test temporary directories. Keep real task data private.
-- Maintain public guides as matching pages in `docs/release/en/` and `docs/release/zh/`. Store internal handoffs and validation records in a separate internal documentation repository.
+- Maintain public guides as matching pages in `docs/release/en/` and `docs/release/zh/`.
 - Store run evidence under `data/runs/` or the explicitly selected output directory, retaining each run's original contents and recorded paths.
 
 Keep the repository root for project-level files. `pyproject.toml` defines
@@ -87,10 +105,13 @@ python scripts/export_release_source.py \
   --output .cache/release/supernav-source.tar.gz
 ```
 
-The archive contains the public source and bilingual guides, with development-only
-`AGENTS.md` files, internal handoffs, real benchmark tasks and GT, local configuration, credentials, and run
-outputs excluded. The export contains no Git history. Extract it into a new directory and initialize the new
-public repository there; pushing an existing branch also transfers its history.
+This export and the root Python wheel/sdist cover the simulation runtime; they
+exclude `robots/go2/` and its submodule configuration. Get Go2 through a full Git
+clone, then initialize `robots/go2/dimos` as described in its
+[installation guide](go2.md).
+
+The archive contains the simulation source and bilingual guides. Extract it into a
+new directory to install the simulation runtime.
 
 Keep credentials in local client files or environment variables. The ignore and
 packaging rules cover environment files, authentication files, and client
