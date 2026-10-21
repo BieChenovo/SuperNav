@@ -3,6 +3,10 @@
 /docs/README.md export-ignore
 /docs/development export-ignore
 
+# Go2 is installed from a Git checkout with its public DimOS submodule.
+/robots/go2 export-ignore
+/.gitmodules export-ignore
+
 # Keep deployment state and credentials out of source archives, even if tracked.
 /.cache export-ignore
 /.venv export-ignore

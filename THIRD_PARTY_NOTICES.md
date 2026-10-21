@@ -52,6 +52,16 @@ also preserved under `.dist-info/licenses/` in Python distributions:
 - IBM Plex Mono: `src/supernav/web/static/fonts/IBMPlexMono-OFL.txt`.
 - The release documentation includes a [copy of the Space Grotesk license](docs/release/assets/SpaceGrotesk-OFL.txt).
 
+## Go2 deployment and DimOS — Apache-2.0
+
+The independent Go2 deployment under `robots/go2/` retains its
+[license](robots/go2/LICENSE) and [notice](robots/go2/NOTICE). Its public
+`dimensionalOS/dimos` submodule is pinned to
+`79c9ed163ec6b1abd278a9161f0c74f4562f1231`. The overlays and patches include
+modified and extracted DimOS code with original notices retained. The submodule
+is assembled with those changes into a local runtime; upstream source remains
+unmodified.
+
 ## External components
 
 External simulator backends, datasets, model weights, and separately installed

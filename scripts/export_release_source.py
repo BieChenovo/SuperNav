@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Export the committed HEAD as a checked source archive, without Git history.
+"""Export the committed simulation sources without Git history.
 
 Usage: python scripts/export_release_source.py --output .cache/release/supernav-source.tar.gz
 Only HEAD is exported; commit reviewed changes before producing a release.
+The Go2 deployment needs its public submodule and is distributed by Git clone.
 """
 
 from __future__ import annotations
@@ -24,6 +25,14 @@ PRIVATE_NAMES = {
 }
 PRIVATE_ROOTS = ("configs/local", "configs/auth", "data/runs", "data/nav_artifacts", "data/nav_artifacts_controller")
 INTERNAL_ROOTS = ("AGENTS.md", "docs/development", "docs/README.md", ".cache", ".venv", "build", "dist")
+GIT_DEPLOYMENT_ROOTS = ("robots/go2", ".gitmodules")
+
+
+def is_git_deployment_path(name: str) -> bool:
+    """Go2 is distributed through a checkout, separately from simulation archives."""
+    parts = PurePosixPath(name).parts
+    return any(tuple(root.split("/")) == parts[i:i + len(root.split("/"))]
+               for root in GIT_DEPLOYMENT_ROOTS for i in range(len(parts)))
 
 
 def is_env_example(name: str) -> bool:
@@ -57,7 +66,7 @@ def is_private_path(name: str, *, include_internal: bool = True, include_benchma
         return True
     if PRIVATE_DIRS.intersection(parts):
         return True
-    roots = PRIVATE_ROOTS + (INTERNAL_ROOTS if include_internal else ())
+    roots = PRIVATE_ROOTS + (INTERNAL_ROOTS + GIT_DEPLOYMENT_ROOTS if include_internal else ())
     if any(tuple(root.split("/")) == parts[i:i + len(root.split("/"))]
            for root in roots for i in range(len(parts))):
         return True
@@ -95,6 +104,10 @@ def export_source(repo: Path, output: Path) -> None:
         metadata, raw_name = entry.split(b"\t", 1)
         name = os.fsdecode(raw_name)
         mode = metadata.split(b" ", 1)[0]
+        # git archive excludes the entire deployment via .gitattributes. Do not
+        # interpret its gitlink or public machine defaults as simulation inputs.
+        if is_git_deployment_path(name):
+            continue
         if is_private_path(name, include_internal=False, include_benchmarks=False):
             raise ValueError(f"Sensitive path is tracked in HEAD: {name}")
         if mode != b"100644" and mode != b"100755":
