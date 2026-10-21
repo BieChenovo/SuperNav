@@ -135,6 +135,7 @@ def _worker() -> None:
         "README.md", "configuration.md", "assets-and-skills.md", "habitat.md", "ai2thor.md",
         "web-viewer.md", "architecture.md", "layout.md", "tool-authoring-guide.md", "hm3d-and-ovon.md",
         "habitatgs-benchmark.md",
+        "go2.md", "go2-usage.md", "go2-maintenance.md", "go2-testing.md",
     }
     for language in ("en", "zh"):
         installed_guides = {path.name for path in (documentation / language).glob("*.md")}
