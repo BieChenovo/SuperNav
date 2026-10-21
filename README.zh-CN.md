@@ -42,6 +42,8 @@
 
 ## 📢 News
 
+> **[2026-10-21]** 🤖 **Unitree Go2 真机部署**已发布，提供四路 RGB 与 LiDAR 支持的 map-backed PixelGoal 导航。Jetson 安装与使用方法见[部署教程](docs/release/zh/go2.md)。
+
 > **[2026-10]** 🎉 InteriorGS **ObjectNav 与 Multi-ObjectNav 测试回合**（各 150 个，含参考轨迹）已在 [HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark) 发布，数据与评测方式见 [benchmark 指南](https://github.com/zju3dv/habitat-gs/blob/main/docs/benchmark/README.md)。
 
 原始场景数据请从 [InteriorGS](https://huggingface.co/datasets/spatialverse/InteriorGS) 下载。
@@ -76,7 +78,7 @@
 - [x] Learned Executor 权重（[Hugging Face](https://huggingface.co/the0xka1/SuperNav-Learned-Executor)）
 - [x] InteriorGS 单目标/多目标导航 benchmark（[HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark)）
 - [ ] AI2-THOR 需求驱动导航 benchmark
-- [x] [Unitree Go2 部署源码](docs/release/zh/go2.md)：四路 RGB 与 LiDAR 支持的 map-backed PixelGoal
+- [x] [Unitree Go2 真机部署](docs/release/zh/go2.md)已发布：四路 RGB 与 LiDAR 支持的 map-backed PixelGoal
 
 ## 📖 目录
 

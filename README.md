@@ -45,6 +45,8 @@
 
 ## 📢 News
 
+> **[2026-10-21]** 🤖 The **Unitree Go2 deployment** is released, with four-view RGB and LiDAR-based map-backed PixelGoal navigation. See the [deployment guide](docs/release/en/go2.md) for Jetson installation and operation.
+
 > **[2026-10]** 🎉 The InteriorGS **ObjectNav and Multi-ObjectNav test episodes** (150 each, with reference trajectories) are released in [HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark). See the [benchmark guide](https://github.com/zju3dv/habitat-gs/blob/main/docs/benchmark/README.md) for data and evaluation.
 
 Download the original scene data from [InteriorGS](https://huggingface.co/datasets/spatialverse/InteriorGS).
@@ -85,7 +87,7 @@ submodule. Real-world demonstrations are on the project page.
 - [x] Learned Executor weights ([Hugging Face](https://huggingface.co/the0xka1/SuperNav-Learned-Executor))
 - [x] InteriorGS single/multi-object navigation benchmark ([HabitatGS-Benchmark](https://huggingface.co/datasets/yyh929/HabitatGS-Benchmark))
 - [ ] AI2-THOR demand-driven navigation benchmark
-- [x] [Unitree Go2 deployment source](docs/release/en/go2.md): map-backed PixelGoal with four-view RGB and LiDAR
+- [x] [Unitree Go2 real-robot deployment](docs/release/en/go2.md) released: map-backed PixelGoal with four-view RGB and LiDAR
 
 ## 📖 Table of Contents
 
