@@ -1,0 +1,123 @@
+{
+  "official_base_commit": "89f8f5d2ea8f5e5409540e16ac2d74faab40bcc8",
+  "source_runs": {
+    "geo": {
+      "archive": "data/runs/ovon_geo",
+      "completed": 120,
+      "finished_at": "2026-10-27T13:38:48.934693+00:00",
+      "source_commit": "89f8f5d2ea8f5e5409540e16ac2d74faab40bcc8",
+      "cli_version": "codex-cli 0.164.0-alpha.11.1",
+      "manifest_sha256": "8fb1bd398fdf57e90094b1033f9e8554a2e7537c3d4cb8ed8793108f5d2c407d",
+      "stress_restored": true
+    },
+    "learned": {
+      "archive": "data/runs/ovon",
+      "completed": 120,
+      "finished_at": "2026-10-26T23:35:29.729829+00:00",
+      "source_commit": "89f8f5d2ea8f5e5409540e16ac2d74faab40bcc8",
+      "cli_version": "codex-cli 0.164.0-alpha.11.1",
+      "manifest_sha256": "3c8ff5cbdb98babb1e7241e0f3b900ddc4d918a00106d08d9eb836487a4030c5",
+      "stress_restored": true
+    }
+  },
+  "source_score_sha256": [
+    {
+      "path": "data/runs/ovon_geo/results/ovon_geo/score_0.25m.json",
+      "sha256": "7de36ee06b8e266852b7a0ab9032af348fedd882c5b1ce23b5e8770623d84463"
+    },
+    {
+      "path": "data/runs/ovon_geo/results/ovon_geo/score_1m.json",
+      "sha256": "c531bf6db07ebf4b0a279f581f47a6c0b44a37c707cbe3ba36cb58c6c1a54096"
+    },
+    {
+      "path": "data/runs/ovon/results/ovon_learned/score_0.25m.json",
+      "sha256": "cc17d84c030318e29364f3dcdf2050175f149d9100f50b2dd9a2765227db76a6"
+    },
+    {
+      "path": "data/runs/ovon/results/ovon_learned/score_1m.json",
+      "sha256": "5d368fde90c2b94d5f702000ec7fd99b03e289dfddfa3e5cae034339b0afc4bb"
+    }
+  ],
+  "implementation_matches_each_evaluated_executor": true,
+  "changed_code_sha256": [
+    {
+      "path": "configs/benchmarks/global_task/prompts/common.md",
+      "sha256": "a9a0d7fc9dfdf2fbadb0443c0769ed9d0dd3dd69df6af32e486bc9326a294990"
+    },
+    {
+      "path": "configs/benchmarks/main/prompts/movement_visual_point.md",
+      "sha256": "5d24e4f66537132384621b4b08cb59f0686854780c922ddb244a62a9de198242"
+    },
+    {
+      "path": "configs/methods/learned-executor.json",
+      "sha256": "82117ccffa6e6d937857b5e454ba5b4872c1f0c40ab12af4c9715448ce754c10"
+    },
+    {
+      "path": "src/supernav/methods/localnav/navigation.py",
+      "sha256": "493659fa76d7487eae8b3d8e860c438e6d492c5bc3bf2ff33b2bfb6743b95d29"
+    },
+    {
+      "path": "src/supernav/methods/navigation/tools/navigation_localnav.py",
+      "sha256": "e4c240f2801ed53ee940a1aad042823e5b8d8ef2fbb91985163f86c1ac6fb01d"
+    },
+    {
+      "path": "tests/test_global_task_harness.py",
+      "sha256": "a834d296fcce743c321b798fa781922307445ef8eafff2980e510f0d259ef960"
+    },
+    {
+      "path": "tests/test_localnav_parameter_binding.py",
+      "sha256": "9f0927de459dc23b250a8958790bd54faafd3146c288a369901c4c507d4333cc"
+    }
+  ],
+  "unchanged_skill_sha256": [
+    {
+      "path": "skills/global-navigation-geo-based-executor/SKILL.md",
+      "sha256": "8d85362a66f796a77478b748c969b12312ad63dc3ec8af9a60c389402200bcd0"
+    },
+    {
+      "path": "skills/global-navigation-geo-based-executor/references/entrance-search.md",
+      "sha256": "646be6346034f14cdd9085c5ce0e150d7c02ec7462ee415982f5c2686c0c405f"
+    },
+    {
+      "path": "skills/global-navigation-geo-based-executor/references/exploration-and-return.md",
+      "sha256": "8d139be7215e133e37819998ca4b81889bf18a84b1a5e10984b1de39f9ca2aef"
+    },
+    {
+      "path": "skills/global-navigation-geo-based-executor/references/recovery-and-stop.md",
+      "sha256": "f698c67fd5fcd3d0184db0c26117b6121706dc0ce487169fae543eddb5188aae"
+    },
+    {
+      "path": "skills/localnav-pointnav-geo-based-executor/SKILL.md",
+      "sha256": "361f78cb69f54f807b65c1c68a9f1f1b85e788bfdb76f57598ab3c5cfa34d116"
+    },
+    {
+      "path": "skills/localnav-pointnav-geo-based-executor/references/failure-playbook.md",
+      "sha256": "e085eb2e1fc946931825c6347ff53aeba80c56273d6377a9d0dec2698c6e7fc8"
+    },
+    {
+      "path": "skills/global-navigation-learned-executor/SKILL.md",
+      "sha256": "79a2e1ee46eb237de1005617d045214db3faad04bcdbffc47912a8b7ea025512"
+    },
+    {
+      "path": "skills/global-navigation-learned-executor/references/entrance-search.md",
+      "sha256": "646be6346034f14cdd9085c5ce0e150d7c02ec7462ee415982f5c2686c0c405f"
+    },
+    {
+      "path": "skills/global-navigation-learned-executor/references/exploration-and-return.md",
+      "sha256": "0eb3a919a7577e92502e716390f8f34a0999a3c882e62cea6e7a0a2e5d35047a"
+    },
+    {
+      "path": "skills/global-navigation-learned-executor/references/recovery-and-stop.md",
+      "sha256": "f698c67fd5fcd3d0184db0c26117b6121706dc0ce487169fae543eddb5188aae"
+    },
+    {
+      "path": "skills/localnav-pointnav/SKILL.md",
+      "sha256": "90c09f8be51d013d842eabac013da8cf23e703458637223713d27c72c1f02679"
+    },
+    {
+      "path": "skills/localnav-pointnav/references/failure-playbook.md",
+      "sha256": "56f2deeff97c3e85d9b2eda875637522b8e87a98d1b69c42143d36b94688d3fd"
+    }
+  ],
+  "note": "Current Geo and the retained Learned were evaluated in separate runs. The published executor-specific code matches their respective frozen snapshots."
+}

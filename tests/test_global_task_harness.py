@@ -116,7 +116,7 @@ def test_global_task_prompt_is_an_instance_contract_without_hidden_gt() -> None:
     assert "start_rotation" not in prompt
     assert "/data/global.scene_dataset_config.json" not in prompt
     assert "[1, 0.2, 3]" not in prompt
-    assert "hab_register_spatial_junction" in prompt
+    assert "hab_register_spatial_junction" not in prompt
     assert 'outcome="achieved"' in prompt
     assert "NAVIGATION SKILL (follow this)" not in prompt
     assert "native skill `/global-navigation`" in prompt

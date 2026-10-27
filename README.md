@@ -1,14 +1,20 @@
-# SuperNav
+# SuperNav v2
 
-此仓库同步本地 SuperNav-v2 源码和可独立查看的评测结果。
+当前 v2：Geo 采用局部删除 junction 和不可用工具提示后的 120 条结果，Learned 采用参数传递修复、实际使用 0.1 / 3 的 120 条结果。两组来自分别完成的两次运行，全部 Skill 保持官方原版。
 
-Windows 克隆或拉取后，双击 `打开可视化.cmd`，或直接用 Edge / Chrome 打开 `review/index.html`。回放不需要 Python、GPU、服务器连接或 VLM 调用。必须完整拉取 `review/`，图像通过相对路径读取。
+| 方法 | 0.25 m SR | 0.25 m SPL | 1 m SR | 1 m SPL |
+| --- | ---: | ---: | ---: | ---: |
+| Geo | 53.33%（64/120） | 0.3065 | 64.17%（77/120） | 0.3860 |
+| Learned | 57.50%（69/120） | 0.1412 | 66.67%（80/120） | 0.1602 |
 
-- `review/v2/`：本轮 OVON，Geo / Learned 各 120 条，共 240 条。
+Windows 完整拉取 `results` 分支后，双击 `打开可视化.cmd`，或直接用 Edge / Chrome 打开 `review/index.html`。回放无需 Python、GPU、服务器连接或 VLM 调用；图像使用相对路径。
+
+- [完整结果、原版与论文对照](results/v2/README.md)
+- [逐任务 CSV](results/v2/episodes.csv)
+- `review/v2/`：当前 Geo / Learned 各 120 条，共 240 条。
 - `review/history/`：原版 OVON 各 120 条、HM3Dv2 各 200 条，共 640 条。
-- `results/`：评分汇总及同 episode 对照 CSV / JSON。提示词与 Skill 快照保存在每条回放中。
-- 根目录源码：当前 SuperNav-v2 工作副本。Learned 保留参数传递修复并采用 0.1 / 3；Geo prompt 已回退。回放使用评测时真实快照，不以当前源码覆盖。源码使用说明见 `README.upstream.md` 和 `README.local.md`。
+- 根目录：当前 v2 代码；[代码与原版对比](https://github.com/BieChenovo/SuperNav/compare/main...v2)。源码使用说明见 `README.upstream.md` 和 `README.local.md`。
 
-没有同步仿真场景资产、数据集标注全集、模型权重、环境、原始模型 session 或认证文件。图像是评测实际返回给 Agent 的 RGB；只展示公开模型说明。导航运行仍需在服务器配置资产与环境，Windows 的离线回放与运行导航是两种操作。
+上轮大幅精简 Geo prompt 的 44.17% / 60.83% 不再作为当前 v2，Git 旧提交和服务器原始记录保留用于追溯。当前版本未重跑 Learned，也没有新增 HM3Dv2 评测。原版与后续实验使用不同 Codex CLI，单轮对照不能当作稳定因果结论。
 
-本轮 v2 已完成；原版与本轮使用的 Codex CLI 不同，单轮对照不等于稳定因果结论。两条指定不可达 OVON 任务按相同规则赠分。
+回放仅包含实际返回给 Agent 的 RGB、公开说明及评测快照。仿真场景、模型权重、环境、原始模型 session 和认证文件不在此次同步范围。

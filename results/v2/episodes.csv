@@ -1,0 +1,481 @@
+﻿group,task_id,threshold_m,baseline_success,v2_success,baseline_spl,v2_spl,dtg_geodesic_m,path_length_m,l_star_m,stopped,claim_success,paper_credit,reason,scene,category
+ovon_geo,ovon_bedframe_p53sfw6mjze_6448,0.25,False,False,0.0,0.0,10.203,0.6,10.632,True,True,False,stopped_too_far,p53SfW6mjZe,bedframe
+ovon_geo,ovon_blinds_bxsvrursffk_2265,0.25,True,False,0.8835,0.0,3.946,3.847,1.628,True,True,False,stopped_too_far,bxsVRursffK,blinds
+ovon_geo,ovon_book_7mxmsvcqjpj_1297,0.25,True,True,0.6263,0.8002,0.141,1.8,1.44,True,True,False,,7MXmsvcQjpJ,book
+ovon_geo,ovon_book_bxsvrursffk_1605,0.25,False,False,0.0,0.0,7.146,124.811,5.725,True,False,False,stopped_too_far,bxsVRursffK,book
+ovon_geo,ovon_book_glaq4dnux5u_1090,0.25,True,True,0.0505,0.0717,0.099,55.567,3.983,True,True,False,,GLAQ4DNUx5U,book
+ovon_geo,ovon_book_p53sfw6mjze_4743,0.25,True,False,0.3141,0.0,25.721,91.475,18.82,True,False,False,stopped_too_far,p53SfW6mjZe,book
+ovon_geo,ovon_carpet_cvzr5tuy5c5_5400,0.25,False,True,0.0,0.6516,0.065,16.75,10.915,True,True,False,,cvZr5TUy5C5,carpet
+ovon_geo,ovon_carpet_ef36g7l6z9m_3891,0.25,False,False,0.0,0.0,15.625,2.052,17.607,True,True,False,stopped_too_far,eF36g7L6Z9M,carpet
+ovon_geo,ovon_carpet_p53sfw6mjze_360,0.25,False,False,0.0,0.0,3.794,24.621,4.254,True,True,False,stopped_too_far,p53SfW6mjZe,carpet
+ovon_geo,ovon_carpet_p53sfw6mjze_435,0.25,True,False,0.5138,0.0,4.725,53.5,3.729,True,True,False,stopped_too_far,p53SfW6mjZe,carpet
+ovon_geo,ovon_clothes_hanger_rod_teesavr23of_5022,0.25,False,False,0.0,0.0,0.273,5.837,5.96,True,True,False,stopped_too_far,TEEsavR23oF,clothes hanger rod
+ovon_geo,ovon_coffee_machine_teesavr23of_2056,0.25,False,True,0.0,0.4615,0.184,20.169,9.308,True,True,False,,TEEsavR23oF,coffee machine
+ovon_geo,ovon_coffee_machine_teesavr23of_2125,0.25,True,True,0.5847,0.7832,0.183,5.156,4.038,True,True,False,,TEEsavR23oF,coffee machine
+ovon_geo,ovon_dishwasher_4ok3usbneis_5583,0.25,True,True,0.6829,0.9116,0.046,6.009,5.478,True,True,False,,4ok3usBNeis,dishwasher
+ovon_geo,ovon_dishwasher_7mxmsvcqjpj_4754,0.25,False,False,0.0,0.0,2.866,27.723,3.066,True,True,False,stopped_too_far,7MXmsvcQjpJ,dishwasher
+ovon_geo,ovon_dishwasher_babdmeytvmz_3448,0.25,True,False,0.9569,0.0,0.455,4.731,1.355,True,True,False,stopped_too_far,BAbdmeyTvMZ,dishwasher
+ovon_geo,ovon_dishwasher_dd4bfstq8gi_4434,0.25,True,True,0.3315,0.3315,0.078,3.879,1.286,True,True,False,,Dd4bFSTQ8gi,dishwasher
+ovon_geo,ovon_dishwasher_lt9jq6dn3ea_5979,0.25,True,True,0.5329,0.3211,0.142,11.357,3.646,True,True,False,,LT9Jq6dN3Ea,dishwasher
+ovon_geo,ovon_dishwasher_mhpljhsug27_1237,0.25,True,True,0.9608,0.8478,0.103,8.5,7.206,True,True,False,,MHPLjHsuG27,dishwasher
+ovon_geo,ovon_dishwasher_nfvxx8j5nco_2512,0.25,False,False,0.0,0.0,10.096,79.567,12.517,True,False,False,stopped_too_far,Nfvxx8J5NCo,dishwasher
+ovon_geo,ovon_dishwasher_nfvxx8j5nco_2647,0.25,True,False,0.229,0.0,3.163,55.468,5.883,True,True,False,stopped_too_far,Nfvxx8J5NCo,dishwasher
+ovon_geo,ovon_dishwasher_qyaac8rv8zk_2665,0.25,True,True,0.6645,0.2568,0.014,29.801,7.653,True,True,False,,qyAac8rV8Zk,dishwasher
+ovon_geo,ovon_dishwasher_wcojb4tft35_4674,0.25,False,True,0.0,0.5852,0.168,14.728,8.618,True,True,False,,wcojb4TFT35,dishwasher
+ovon_geo,ovon_dresser_crmo8wxcyvb_2151,0.25,False,False,0.0,0.0,6.133,2.3,7.407,True,True,False,stopped_too_far,CrMo8WxCyVb,dresser
+ovon_geo,ovon_dresser_qyaac8rv8zk_1450,0.25,False,False,0.0,0.0,8.666,1.4,9.675,True,True,False,stopped_too_far,qyAac8rV8Zk,dresser
+ovon_geo,ovon_exercise_bike_q5qzseehe5g_6989,0.25,True,True,1.0,1.0,,18.544,2.996,True,False,True,goal_unreachable_from_start_gifted,q5QZSEeHe5g,exercise bike
+ovon_geo,ovon_flower_vase_5cdeh9f2hjl_3082,0.25,True,False,0.2709,0.0,2.574,13.055,4.889,True,True,False,stopped_too_far,5cdEh9F2hJL,flower vase
+ovon_geo,ovon_flower_vase_crmo8wxcyvb_2690,0.25,False,False,0.0,0.0,1.402,77.046,2.25,True,True,False,stopped_too_far,CrMo8WxCyVb,flower vase
+ovon_geo,ovon_flower_vase_dd4bfstq8gi_810,0.25,False,False,0.0,0.0,1.89,5.173,1.988,True,True,False,stopped_too_far,Dd4bFSTQ8gi,flower vase
+ovon_geo,ovon_flower_vase_mv2huxq3b53_4029,0.25,False,False,0.0,0.0,15.188,13.0,25.297,True,True,False,stopped_too_far,mv2HUxq3B53,flower vase
+ovon_geo,ovon_flower_vase_svbbv1pavdk_2096,0.25,False,False,0.0,0.0,2.377,11.526,2.063,True,True,False,stopped_too_far,svBbv1Pavdk,flower vase
+ovon_geo,ovon_flower_vase_svbbv1pavdk_2188,0.25,False,False,0.0,0.0,2.322,37.573,4.057,True,True,False,stopped_too_far,svBbv1Pavdk,flower vase
+ovon_geo,ovon_flowerpot_5cdeh9f2hjl_4375,0.25,False,False,0.0,0.0,8.992,1.006,8.69,True,True,False,stopped_too_far,5cdEh9F2hJL,flowerpot
+ovon_geo,ovon_flowerpot_dd4bfstq8gi_2644,0.25,False,False,0.0,0.0,1.561,0.543,1.959,True,True,False,stopped_too_far,Dd4bFSTQ8gi,flowerpot
+ovon_geo,ovon_flowerpot_glaq4dnux5u_865,0.25,False,False,0.0,0.0,12.668,67.648,2.61,True,True,False,stopped_too_far,GLAQ4DNUx5U,flowerpot
+ovon_geo,ovon_freezer_4ok3usbneis_465,0.25,True,True,0.619,0.8786,0.085,7.75,6.809,True,True,False,,4ok3usBNeis,freezer
+ovon_geo,ovon_freezer_4ok3usbneis_474,0.25,True,False,0.8526,0.0,0.387,2.0,2.132,True,True,False,stopped_too_far,4ok3usBNeis,freezer
+ovon_geo,ovon_freezer_y9htuuggdiq_4556,0.25,False,False,0.0,0.0,0.832,6.6,7.235,True,True,False,stopped_too_far,y9hTuugGdiq,freezer
+ovon_geo,ovon_glass_7mxmsvcqjpj_8047,0.25,False,False,0.0,0.0,5.639,0.0,5.639,True,False,False,stopped_too_far,7MXmsvcQjpJ,glass
+ovon_geo,ovon_glass_q3zu7yy5e5s_2085,0.25,False,False,0.0,0.0,1.866,43.065,2.351,True,True,False,stopped_too_far,q3zU7Yy5E5s,glass
+ovon_geo,ovon_guitar_7mxmsvcqjpj_3693,0.25,False,False,0.0,0.0,0.791,2.099,1.82,True,True,False,stopped_too_far,7MXmsvcQjpJ,guitar
+ovon_geo,ovon_guitar_7mxmsvcqjpj_3983,0.25,False,False,0.0,0.0,5.433,2.35,4.18,True,True,False,stopped_too_far,7MXmsvcQjpJ,guitar
+ovon_geo,ovon_handrail_yr17pdcnddw_2549,0.25,False,False,0.0,0.0,5.264,5.505,9.578,True,True,False,stopped_too_far,yr17PDCnDDW,handrail
+ovon_geo,ovon_hanger_qaldnwvtxbs_1239,0.25,False,True,0.0,0.9042,0.106,5.111,4.621,True,True,False,,QaLdnwvtxbs,hanger
+ovon_geo,ovon_hanging_clothes_babdmeytvmz_2294,0.25,False,True,0.0,0.1241,0.207,32.075,3.98,True,True,False,,BAbdmeyTvMZ,hanging clothes
+ovon_geo,ovon_hanging_clothes_bxsvrursffk_458,0.25,False,False,0.0,0.0,11.081,10.25,11.409,True,True,False,stopped_too_far,bxsVRursffK,hanging clothes
+ovon_geo,ovon_island_5cdeh9f2hjl_6512,0.25,False,False,0.0,0.0,7.324,30.295,13.501,True,True,False,stopped_too_far,5cdEh9F2hJL,island
+ovon_geo,ovon_island_5cdeh9f2hjl_6815,0.25,False,False,0.0,0.0,5.3,4.25,1.929,True,True,False,stopped_too_far,5cdEh9F2hJL,island
+ovon_geo,ovon_microwave_crmo8wxcyvb_3195,0.25,True,True,0.9268,0.9268,0.134,2.6,2.41,True,True,False,,CrMo8WxCyVb,microwave
+ovon_geo,ovon_microwave_mv2huxq3b53_1160,0.25,True,True,0.9024,0.4464,0.109,47.508,21.205,True,True,False,,mv2HUxq3B53,microwave
+ovon_geo,ovon_microwave_p53sfw6mjze_4328,0.25,False,False,0.0,0.0,0.66,232.329,11.146,True,True,False,stopped_too_far,p53SfW6mjZe,microwave
+ovon_geo,ovon_microwave_svbbv1pavdk_2688,0.25,True,True,0.942,0.7863,0.148,6.05,4.757,True,True,False,,svBbv1Pavdk,microwave
+ovon_geo,ovon_microwave_teesavr23of_2750,0.25,False,True,0.0,1.0,0.238,2.15,2.173,True,True,False,,TEEsavR23oF,microwave
+ovon_geo,ovon_microwave_wcojb4tft35_5457,0.25,True,False,0.3939,0.0,0.443,8.05,3.382,True,True,False,stopped_too_far,wcojb4TFT35,microwave
+ovon_geo,ovon_mirror_a8btkwhxdrv_291,0.25,False,False,0.0,0.0,1.982,7.253,4.113,True,True,False,stopped_too_far,a8BtkwhxdRV,mirror
+ovon_geo,ovon_mirror_dyehnkdt76v_568,0.25,True,False,0.6191,0.0,8.667,33.786,9.155,True,True,False,stopped_too_far,DYehNKdT76V,mirror
+ovon_geo,ovon_mirror_ef36g7l6z9m_1303,0.25,False,False,0.0,0.0,1.012,11.515,10.196,True,True,False,stopped_too_far,eF36g7L6Z9M,mirror
+ovon_geo,ovon_mirror_glaq4dnux5u_2119,0.25,True,False,0.5138,0.0,10.25,13.251,7.841,True,True,False,stopped_too_far,GLAQ4DNUx5U,mirror
+ovon_geo,ovon_mirror_vbzv5z6i1ws_311,0.25,False,True,0.0,0.9094,0.127,5.793,5.268,True,True,False,,VBzV5z6i1WS,mirror
+ovon_geo,ovon_mirror_ziup5kvtccr_126,0.25,False,True,0.0,0.3402,0.115,11.0,3.742,True,True,False,,ziup5kvtCCR,mirror
+ovon_geo,ovon_mirror_ziup5kvtccr_263,0.25,False,True,0.0,0.2617,0.161,8.25,2.159,True,True,False,,ziup5kvtCCR,mirror
+ovon_geo,ovon_nightstand_teesavr23of_119,0.25,True,True,0.4234,0.6425,0.181,8.813,5.663,True,True,False,,TEEsavR23oF,nightstand
+ovon_geo,ovon_ottoman_qaldnwvtxbs_122,0.25,True,True,0.8498,0.8476,0.15,4.582,3.884,True,True,False,,QaLdnwvtxbs,ottoman
+ovon_geo,ovon_photo_q5qzseehe5g_1954,0.25,False,True,0.0,0.7088,0.133,5.311,3.765,True,True,False,,q5QZSEeHe5g,photo
+ovon_geo,ovon_picture_5cdeh9f2hjl_384,0.25,True,True,0.9438,0.9438,0.077,1.5,1.416,True,True,False,,5cdEh9F2hJL,picture
+ovon_geo,ovon_picture_5cdeh9f2hjl_450,0.25,True,True,0.8285,1.0,0.037,1.0,1.036,True,True,False,,5cdEh9F2hJL,picture
+ovon_geo,ovon_picture_7mxmsvcqjpj_126,0.25,True,True,0.0529,0.2072,0.153,5.1,1.057,True,True,False,,7MXmsvcQjpJ,picture
+ovon_geo,ovon_picture_7mxmsvcqjpj_17,0.25,False,True,0.0,0.2399,0.188,5.81,1.394,True,True,False,,7MXmsvcQjpJ,picture
+ovon_geo,ovon_picture_dyehnkdt76v_321,0.25,True,True,0.9626,0.5923,0.128,2.6,1.54,True,True,False,,DYehNKdT76V,picture
+ovon_geo,ovon_picture_glaq4dnux5u_2804,0.25,False,False,0.0,0.0,5.755,3.75,4.781,True,True,False,stopped_too_far,GLAQ4DNUx5U,picture
+ovon_geo,ovon_picture_nfvxx8j5nco_209,0.25,True,True,0.8191,0.7666,0.16,3.902,2.991,True,True,False,,Nfvxx8J5NCo,picture
+ovon_geo,ovon_picture_nfvxx8j5nco_231,0.25,False,True,0.0,0.536,0.153,5.65,3.028,True,True,False,,Nfvxx8J5NCo,picture
+ovon_geo,ovon_picture_q3zu7yy5e5s_614,0.25,False,False,0.0,0.0,2.422,4.77,1.434,True,True,False,stopped_too_far,q3zU7Yy5E5s,picture
+ovon_geo,ovon_picture_qaldnwvtxbs_1842,0.25,True,True,0.578,0.8935,0.128,1.85,1.653,True,True,False,,QaLdnwvtxbs,picture
+ovon_geo,ovon_picture_svbbv1pavdk_132,0.25,True,True,0.8977,0.8964,0.142,7.822,7.011,True,True,False,,svBbv1Pavdk,picture
+ovon_geo,ovon_picture_wcojb4tft35_666,0.25,True,True,1.0,1.0,,0.0,1.946,True,False,True,goal_unreachable_from_start_gifted,wcojb4TFT35,picture
+ovon_geo,ovon_picture_zt1rvoi7pcg_1891,0.25,False,False,0.0,0.0,6.829,3.38,5.307,True,True,False,stopped_too_far,zt1RVoi7PcG,picture
+ovon_geo,ovon_pillow_bxsvrursffk_3078,0.25,False,False,0.0,0.0,11.261,7.453,11.394,True,True,False,stopped_too_far,bxsVRursffK,pillow
+ovon_geo,ovon_pillow_dd4bfstq8gi_1054,0.25,True,False,0.8112,0.0,6.515,9.314,1.46,True,True,False,stopped_too_far,Dd4bFSTQ8gi,pillow
+ovon_geo,ovon_pillow_dyehnkdt76v_2299,0.25,False,False,0.0,0.0,3.876,42.137,8.217,True,True,False,stopped_too_far,DYehNKdT76V,pillow
+ovon_geo,ovon_pillow_ef36g7l6z9m_1723,0.25,False,True,0.0,0.2632,0.119,69.265,18.233,True,True,False,,eF36g7L6Z9M,pillow
+ovon_geo,ovon_pillow_h1zeeawlh9z_1190,0.25,False,True,0.0,0.3131,0.127,20.059,6.281,True,True,False,,h1zeeAwLh9Z,pillow
+ovon_geo,ovon_pillow_q3zu7yy5e5s_1031,0.25,True,True,0.0551,0.1299,0.126,12.824,1.666,True,True,False,,q3zU7Yy5E5s,pillow
+ovon_geo,ovon_pillow_q5qzseehe5g_1266,0.25,False,True,0.0,0.1355,0.162,62.766,8.506,True,True,False,,q5QZSEeHe5g,pillow
+ovon_geo,ovon_pillow_teesavr23of_4175,0.25,True,False,0.1802,0.0,4.831,3.651,1.561,True,True,False,stopped_too_far,TEEsavR23oF,pillow
+ovon_geo,ovon_pillow_zt1rvoi7pcg_270,0.25,False,True,0.0,0.8167,0.218,1.65,1.347,True,True,False,,zt1RVoi7PcG,pillow
+ovon_geo,ovon_plant_5cdeh9f2hjl_6168,0.25,False,False,0.0,0.0,7.877,72.065,3.783,True,True,False,stopped_too_far,5cdEh9F2hJL,plant
+ovon_geo,ovon_plant_6s7qhgap2fw_934,0.25,True,True,0.7371,0.7209,0.126,11.848,8.542,True,True,False,,6s7QHgap2fW,plant
+ovon_geo,ovon_plant_a8btkwhxdrv_2772,0.25,True,True,0.92,0.8493,0.107,3.25,2.76,True,True,False,,a8BtkwhxdRV,plant
+ovon_geo,ovon_plant_vbzv5z6i1ws_2124,0.25,True,True,0.5279,0.5556,0.196,4.568,2.538,True,True,False,,VBzV5z6i1WS,plant
+ovon_geo,ovon_plant_yr17pdcnddw_225,0.25,False,True,0.0,0.6416,0.147,1.819,1.167,True,True,False,,yr17PDCnDDW,plant
+ovon_geo,ovon_printer_xb4gs9shbre_5977,0.25,True,False,0.7862,0.0,17.361,23.033,4.036,True,True,False,stopped_too_far,XB4GS9ShBRE,printer
+ovon_geo,ovon_refrigerator_bcpu9supuw9_2914,0.25,False,True,0.0,0.9093,0.149,6.3,5.728,True,True,False,,bCPU9suPUw9,refrigerator
+ovon_geo,ovon_refrigerator_bxsvrursffk_5535,0.25,True,True,0.9152,0.6691,0.101,2.841,1.901,True,True,False,,bxsVRursffK,refrigerator
+ovon_geo,ovon_refrigerator_bxsvrursffk_5908,0.25,True,False,0.8429,0.0,0.262,11.564,6.154,True,True,False,stopped_too_far,bxsVRursffK,refrigerator
+ovon_geo,ovon_refrigerator_cvzr5tuy5c5_2511,0.25,True,True,0.4545,0.6754,0.108,10.8,7.295,True,True,False,,cvZr5TUy5C5,refrigerator
+ovon_geo,ovon_refrigerator_dd4bfstq8gi_3644,0.25,True,True,1.0,0.9383,0.062,4.317,4.051,True,True,False,,Dd4bFSTQ8gi,refrigerator
+ovon_geo,ovon_refrigerator_ef36g7l6z9m_3292,0.25,False,True,0.0,0.0253,0.23,69.672,1.761,True,True,False,,eF36g7L6Z9M,refrigerator
+ovon_geo,ovon_refrigerator_lt9jq6dn3ea_4585,0.25,True,False,0.8133,0.0,0.258,5.8,5.341,True,True,False,stopped_too_far,LT9Jq6dN3Ea,refrigerator
+ovon_geo,ovon_refrigerator_ml8thkuavtm_3235,0.25,True,True,0.1572,0.3784,0.175,3.393,1.284,True,True,False,,mL8ThkuaVTM,refrigerator
+ovon_geo,ovon_refrigerator_mv2huxq3b53_1550,0.25,True,True,0.4956,0.1985,0.092,73.102,14.51,True,True,False,,mv2HUxq3B53,refrigerator
+ovon_geo,ovon_refrigerator_p53sfw6mjze_3745,0.25,True,True,0.4433,0.4449,0.097,9.512,4.232,True,True,False,,p53SfW6mjZe,refrigerator
+ovon_geo,ovon_refrigerator_q5qzseehe5g_4520,0.25,False,False,0.0,0.0,0.72,4.105,4.594,True,True,False,stopped_too_far,q5QZSEeHe5g,refrigerator
+ovon_geo,ovon_refrigerator_y9htuuggdiq_5409,0.25,True,False,0.4644,0.0,0.27,4.876,3.401,True,True,False,stopped_too_far,y9hTuugGdiq,refrigerator
+ovon_geo,ovon_rug_bcpu9supuw9_3300,0.25,True,True,0.8852,0.1592,0.171,10.06,1.602,True,True,False,,bCPU9suPUw9,rug
+ovon_geo,ovon_rug_dd4bfstq8gi_33,0.25,True,True,0.2988,0.0629,0.206,21.613,1.36,True,True,False,,Dd4bFSTQ8gi,rug
+ovon_geo,ovon_rug_q5qzseehe5g_3710,0.25,True,True,0.2136,0.5114,0.21,2.089,1.068,True,True,False,,q5QZSEeHe5g,rug
+ovon_geo,ovon_rug_y9htuuggdiq_6971,0.25,True,True,0.5797,0.6193,0.093,14.839,9.189,True,True,False,,y9hTuugGdiq,rug
+ovon_geo,ovon_shower_glass_mv2huxq3b53_4548,0.25,False,True,0.0,0.3851,0.136,32.793,12.628,True,True,False,,mv2HUxq3B53,shower glass
+ovon_geo,ovon_stair_4ok3usbneis_4553,0.25,True,False,0.7711,0.0,0.344,3.807,2.921,True,True,False,stopped_too_far,4ok3usBNeis,stair
+ovon_geo,ovon_stair_bcpu9supuw9_2150,0.25,False,False,0.0,0.0,1.167,10.154,5.294,True,True,False,stopped_too_far,bCPU9suPUw9,stair
+ovon_geo,ovon_stair_cvzr5tuy5c5_1966,0.25,True,True,0.8498,0.341,0.148,33.691,11.489,True,True,False,,cvZr5TUy5C5,stair
+ovon_geo,ovon_stair_dyehnkdt76v_1601,0.25,True,True,1.0,0.9411,0.115,2.85,2.682,True,True,False,,DYehNKdT76V,stair
+ovon_geo,ovon_stair_k1cupfywxj6_2096,0.25,True,True,0.6442,0.581,0.115,2.55,1.482,True,True,False,,k1cupFYWXJ6,stair
+ovon_geo,ovon_stair_lt9jq6dn3ea_3012,0.25,False,False,0.0,0.0,0.534,6.614,6.603,True,True,False,stopped_too_far,LT9Jq6dN3Ea,stair
+ovon_geo,ovon_stair_ml8thkuavtm_2371,0.25,True,True,0.5355,0.1427,0.171,7.515,1.073,True,True,False,,mL8ThkuaVTM,stair
+ovon_geo,ovon_stair_teesavr23of_788,0.25,True,False,0.6179,0.0,1.954,37.059,14.382,True,True,False,stopped_too_far,TEEsavR23oF,stair
+ovon_geo,ovon_stair_zt1rvoi7pcg_4089,0.25,True,True,0.8634,0.7532,0.208,7.91,5.957,True,True,False,,zt1RVoi7PcG,stair
+ovon_geo,ovon_statue_y9htuuggdiq_4467,0.25,True,True,0.4931,0.3686,0.081,53.617,19.765,True,True,False,,y9hTuugGdiq,statue
+ovon_geo,ovon_vase_yr17pdcnddw_1753,0.25,True,True,0.0466,0.3771,0.112,6.5,2.451,True,True,False,,yr17PDCnDDW,vase
+ovon_geo,ovon_bedframe_p53sfw6mjze_6448,1.0,False,False,0.0,0.0,10.203,0.6,10.632,True,True,False,stopped_too_far,p53SfW6mjZe,bedframe
+ovon_geo,ovon_blinds_bxsvrursffk_2265,1.0,True,False,0.8835,0.0,3.946,3.847,1.628,True,True,False,stopped_too_far,bxsVRursffK,blinds
+ovon_geo,ovon_book_7mxmsvcqjpj_1297,1.0,True,True,0.6263,0.8002,0.141,1.8,1.44,True,True,False,,7MXmsvcQjpJ,book
+ovon_geo,ovon_book_bxsvrursffk_1605,1.0,False,False,0.0,0.0,7.146,124.811,5.725,True,False,False,stopped_too_far,bxsVRursffK,book
+ovon_geo,ovon_book_glaq4dnux5u_1090,1.0,True,True,0.0505,0.0717,0.099,55.567,3.983,True,True,False,,GLAQ4DNUx5U,book
+ovon_geo,ovon_book_p53sfw6mjze_4743,1.0,True,False,0.3141,0.0,25.721,91.475,18.82,True,False,False,stopped_too_far,p53SfW6mjZe,book
+ovon_geo,ovon_carpet_cvzr5tuy5c5_5400,1.0,False,True,0.0,0.6516,0.065,16.75,10.915,True,True,False,,cvZr5TUy5C5,carpet
+ovon_geo,ovon_carpet_ef36g7l6z9m_3891,1.0,False,False,0.0,0.0,15.625,2.052,17.607,True,True,False,stopped_too_far,eF36g7L6Z9M,carpet
+ovon_geo,ovon_carpet_p53sfw6mjze_360,1.0,False,False,0.0,0.0,3.794,24.621,4.254,True,True,False,stopped_too_far,p53SfW6mjZe,carpet
+ovon_geo,ovon_carpet_p53sfw6mjze_435,1.0,True,False,0.5138,0.0,4.725,53.5,3.729,True,True,False,stopped_too_far,p53SfW6mjZe,carpet
+ovon_geo,ovon_clothes_hanger_rod_teesavr23of_5022,1.0,False,True,0.0,1.0,0.273,5.837,5.96,True,True,False,,TEEsavR23oF,clothes hanger rod
+ovon_geo,ovon_coffee_machine_teesavr23of_2056,1.0,True,True,0.4663,0.4615,0.184,20.169,9.308,True,True,False,,TEEsavR23oF,coffee machine
+ovon_geo,ovon_coffee_machine_teesavr23of_2125,1.0,True,True,0.5847,0.7832,0.183,5.156,4.038,True,True,False,,TEEsavR23oF,coffee machine
+ovon_geo,ovon_dishwasher_4ok3usbneis_5583,1.0,True,True,0.6829,0.9116,0.046,6.009,5.478,True,True,False,,4ok3usBNeis,dishwasher
+ovon_geo,ovon_dishwasher_7mxmsvcqjpj_4754,1.0,False,False,0.0,0.0,2.866,27.723,3.066,True,True,False,stopped_too_far,7MXmsvcQjpJ,dishwasher
+ovon_geo,ovon_dishwasher_babdmeytvmz_3448,1.0,True,True,0.9569,0.2864,0.455,4.731,1.355,True,True,False,,BAbdmeyTvMZ,dishwasher
+ovon_geo,ovon_dishwasher_dd4bfstq8gi_4434,1.0,True,True,0.3315,0.3315,0.078,3.879,1.286,True,True,False,,Dd4bFSTQ8gi,dishwasher
+ovon_geo,ovon_dishwasher_lt9jq6dn3ea_5979,1.0,True,True,0.5329,0.3211,0.142,11.357,3.646,True,True,False,,LT9Jq6dN3Ea,dishwasher
+ovon_geo,ovon_dishwasher_mhpljhsug27_1237,1.0,True,True,0.9608,0.8478,0.103,8.5,7.206,True,True,False,,MHPLjHsuG27,dishwasher
+ovon_geo,ovon_dishwasher_nfvxx8j5nco_2512,1.0,False,False,0.0,0.0,10.096,79.567,12.517,True,False,False,stopped_too_far,Nfvxx8J5NCo,dishwasher
+ovon_geo,ovon_dishwasher_nfvxx8j5nco_2647,1.0,True,False,0.229,0.0,3.163,55.468,5.883,True,True,False,stopped_too_far,Nfvxx8J5NCo,dishwasher
+ovon_geo,ovon_dishwasher_qyaac8rv8zk_2665,1.0,True,True,0.6645,0.2568,0.014,29.801,7.653,True,True,False,,qyAac8rV8Zk,dishwasher
+ovon_geo,ovon_dishwasher_wcojb4tft35_4674,1.0,True,True,0.8664,0.5852,0.168,14.728,8.618,True,True,False,,wcojb4TFT35,dishwasher
+ovon_geo,ovon_dresser_crmo8wxcyvb_2151,1.0,False,False,0.0,0.0,6.133,2.3,7.407,True,True,False,stopped_too_far,CrMo8WxCyVb,dresser
+ovon_geo,ovon_dresser_qyaac8rv8zk_1450,1.0,False,False,0.0,0.0,8.666,1.4,9.675,True,True,False,stopped_too_far,qyAac8rV8Zk,dresser
+ovon_geo,ovon_exercise_bike_q5qzseehe5g_6989,1.0,True,True,1.0,1.0,,18.544,2.996,True,False,True,goal_unreachable_from_start_gifted,q5QZSEeHe5g,exercise bike
+ovon_geo,ovon_flower_vase_5cdeh9f2hjl_3082,1.0,True,False,0.2709,0.0,2.574,13.055,4.889,True,True,False,stopped_too_far,5cdEh9F2hJL,flower vase
+ovon_geo,ovon_flower_vase_crmo8wxcyvb_2690,1.0,False,False,0.0,0.0,1.402,77.046,2.25,True,True,False,stopped_too_far,CrMo8WxCyVb,flower vase
+ovon_geo,ovon_flower_vase_dd4bfstq8gi_810,1.0,False,False,0.0,0.0,1.89,5.173,1.988,True,True,False,stopped_too_far,Dd4bFSTQ8gi,flower vase
+ovon_geo,ovon_flower_vase_mv2huxq3b53_4029,1.0,False,False,0.0,0.0,15.188,13.0,25.297,True,True,False,stopped_too_far,mv2HUxq3B53,flower vase
+ovon_geo,ovon_flower_vase_svbbv1pavdk_2096,1.0,False,False,0.0,0.0,2.377,11.526,2.063,True,True,False,stopped_too_far,svBbv1Pavdk,flower vase
+ovon_geo,ovon_flower_vase_svbbv1pavdk_2188,1.0,False,False,0.0,0.0,2.322,37.573,4.057,True,True,False,stopped_too_far,svBbv1Pavdk,flower vase
+ovon_geo,ovon_flowerpot_5cdeh9f2hjl_4375,1.0,False,False,0.0,0.0,8.992,1.006,8.69,True,True,False,stopped_too_far,5cdEh9F2hJL,flowerpot
+ovon_geo,ovon_flowerpot_dd4bfstq8gi_2644,1.0,False,False,0.0,0.0,1.561,0.543,1.959,True,True,False,stopped_too_far,Dd4bFSTQ8gi,flowerpot
+ovon_geo,ovon_flowerpot_glaq4dnux5u_865,1.0,False,False,0.0,0.0,12.668,67.648,2.61,True,True,False,stopped_too_far,GLAQ4DNUx5U,flowerpot
+ovon_geo,ovon_freezer_4ok3usbneis_465,1.0,True,True,0.619,0.8786,0.085,7.75,6.809,True,True,False,,4ok3usBNeis,freezer
+ovon_geo,ovon_freezer_4ok3usbneis_474,1.0,True,True,0.8526,1.0,0.387,2.0,2.132,True,True,False,,4ok3usBNeis,freezer
+ovon_geo,ovon_freezer_y9htuuggdiq_4556,1.0,True,True,1.0,1.0,0.832,6.6,7.235,True,True,False,,y9hTuugGdiq,freezer
+ovon_geo,ovon_glass_7mxmsvcqjpj_8047,1.0,False,False,0.0,0.0,5.639,0.0,5.639,True,False,False,stopped_too_far,7MXmsvcQjpJ,glass
+ovon_geo,ovon_glass_q3zu7yy5e5s_2085,1.0,True,False,1.0,0.0,1.866,43.065,2.351,True,True,False,stopped_too_far,q3zU7Yy5E5s,glass
+ovon_geo,ovon_guitar_7mxmsvcqjpj_3693,1.0,False,True,0.0,0.8668,0.791,2.099,1.82,True,True,False,,7MXmsvcQjpJ,guitar
+ovon_geo,ovon_guitar_7mxmsvcqjpj_3983,1.0,False,False,0.0,0.0,5.433,2.35,4.18,True,True,False,stopped_too_far,7MXmsvcQjpJ,guitar
+ovon_geo,ovon_handrail_yr17pdcnddw_2549,1.0,False,False,0.0,0.0,5.264,5.505,9.578,True,True,False,stopped_too_far,yr17PDCnDDW,handrail
+ovon_geo,ovon_hanger_qaldnwvtxbs_1239,1.0,False,True,0.0,0.9042,0.106,5.111,4.621,True,True,False,,QaLdnwvtxbs,hanger
+ovon_geo,ovon_hanging_clothes_babdmeytvmz_2294,1.0,False,True,0.0,0.1241,0.207,32.075,3.98,True,True,False,,BAbdmeyTvMZ,hanging clothes
+ovon_geo,ovon_hanging_clothes_bxsvrursffk_458,1.0,False,False,0.0,0.0,11.081,10.25,11.409,True,True,False,stopped_too_far,bxsVRursffK,hanging clothes
+ovon_geo,ovon_island_5cdeh9f2hjl_6512,1.0,False,False,0.0,0.0,7.324,30.295,13.501,True,True,False,stopped_too_far,5cdEh9F2hJL,island
+ovon_geo,ovon_island_5cdeh9f2hjl_6815,1.0,False,False,0.0,0.0,5.3,4.25,1.929,True,True,False,stopped_too_far,5cdEh9F2hJL,island
+ovon_geo,ovon_microwave_crmo8wxcyvb_3195,1.0,True,True,0.9268,0.9268,0.134,2.6,2.41,True,True,False,,CrMo8WxCyVb,microwave
+ovon_geo,ovon_microwave_mv2huxq3b53_1160,1.0,True,True,0.9024,0.4464,0.109,47.508,21.205,True,True,False,,mv2HUxq3B53,microwave
+ovon_geo,ovon_microwave_p53sfw6mjze_4328,1.0,True,True,0.8481,0.048,0.66,232.329,11.146,True,True,False,,p53SfW6mjZe,microwave
+ovon_geo,ovon_microwave_svbbv1pavdk_2688,1.0,True,True,0.942,0.7863,0.148,6.05,4.757,True,True,False,,svBbv1Pavdk,microwave
+ovon_geo,ovon_microwave_teesavr23of_2750,1.0,True,True,0.6899,1.0,0.238,2.15,2.173,True,True,False,,TEEsavR23oF,microwave
+ovon_geo,ovon_microwave_wcojb4tft35_5457,1.0,True,True,0.3939,0.4201,0.443,8.05,3.382,True,True,False,,wcojb4TFT35,microwave
+ovon_geo,ovon_mirror_a8btkwhxdrv_291,1.0,False,False,0.0,0.0,1.982,7.253,4.113,True,True,False,stopped_too_far,a8BtkwhxdRV,mirror
+ovon_geo,ovon_mirror_dyehnkdt76v_568,1.0,True,False,0.6191,0.0,8.667,33.786,9.155,True,True,False,stopped_too_far,DYehNKdT76V,mirror
+ovon_geo,ovon_mirror_ef36g7l6z9m_1303,1.0,False,False,0.0,0.0,1.012,11.515,10.196,True,True,False,stopped_too_far,eF36g7L6Z9M,mirror
+ovon_geo,ovon_mirror_glaq4dnux5u_2119,1.0,True,False,0.5138,0.0,10.25,13.251,7.841,True,True,False,stopped_too_far,GLAQ4DNUx5U,mirror
+ovon_geo,ovon_mirror_vbzv5z6i1ws_311,1.0,False,True,0.0,0.9094,0.127,5.793,5.268,True,True,False,,VBzV5z6i1WS,mirror
+ovon_geo,ovon_mirror_ziup5kvtccr_126,1.0,False,True,0.0,0.3402,0.115,11.0,3.742,True,True,False,,ziup5kvtCCR,mirror
+ovon_geo,ovon_mirror_ziup5kvtccr_263,1.0,True,True,1.0,0.2617,0.161,8.25,2.159,True,True,False,,ziup5kvtCCR,mirror
+ovon_geo,ovon_nightstand_teesavr23of_119,1.0,True,True,0.4234,0.6425,0.181,8.813,5.663,True,True,False,,TEEsavR23oF,nightstand
+ovon_geo,ovon_ottoman_qaldnwvtxbs_122,1.0,True,True,0.8498,0.8476,0.15,4.582,3.884,True,True,False,,QaLdnwvtxbs,ottoman
+ovon_geo,ovon_photo_q5qzseehe5g_1954,1.0,False,True,0.0,0.7088,0.133,5.311,3.765,True,True,False,,q5QZSEeHe5g,photo
+ovon_geo,ovon_picture_5cdeh9f2hjl_384,1.0,True,True,0.9438,0.9438,0.077,1.5,1.416,True,True,False,,5cdEh9F2hJL,picture
+ovon_geo,ovon_picture_5cdeh9f2hjl_450,1.0,True,True,0.8285,1.0,0.037,1.0,1.036,True,True,False,,5cdEh9F2hJL,picture
+ovon_geo,ovon_picture_7mxmsvcqjpj_126,1.0,True,True,0.0529,0.2072,0.153,5.1,1.057,True,True,False,,7MXmsvcQjpJ,picture
+ovon_geo,ovon_picture_7mxmsvcqjpj_17,1.0,False,True,0.0,0.2399,0.188,5.81,1.394,True,True,False,,7MXmsvcQjpJ,picture
+ovon_geo,ovon_picture_dyehnkdt76v_321,1.0,True,True,0.9626,0.5923,0.128,2.6,1.54,True,True,False,,DYehNKdT76V,picture
+ovon_geo,ovon_picture_glaq4dnux5u_2804,1.0,False,False,0.0,0.0,5.755,3.75,4.781,True,True,False,stopped_too_far,GLAQ4DNUx5U,picture
+ovon_geo,ovon_picture_nfvxx8j5nco_209,1.0,True,True,0.8191,0.7666,0.16,3.902,2.991,True,True,False,,Nfvxx8J5NCo,picture
+ovon_geo,ovon_picture_nfvxx8j5nco_231,1.0,False,True,0.0,0.536,0.153,5.65,3.028,True,True,False,,Nfvxx8J5NCo,picture
+ovon_geo,ovon_picture_q3zu7yy5e5s_614,1.0,False,False,0.0,0.0,2.422,4.77,1.434,True,True,False,stopped_too_far,q3zU7Yy5E5s,picture
+ovon_geo,ovon_picture_qaldnwvtxbs_1842,1.0,True,True,0.578,0.8935,0.128,1.85,1.653,True,True,False,,QaLdnwvtxbs,picture
+ovon_geo,ovon_picture_svbbv1pavdk_132,1.0,True,True,0.8977,0.8964,0.142,7.822,7.011,True,True,False,,svBbv1Pavdk,picture
+ovon_geo,ovon_picture_wcojb4tft35_666,1.0,True,True,1.0,1.0,,0.0,1.946,True,False,True,goal_unreachable_from_start_gifted,wcojb4TFT35,picture
+ovon_geo,ovon_picture_zt1rvoi7pcg_1891,1.0,True,False,0.6968,0.0,6.829,3.38,5.307,True,True,False,stopped_too_far,zt1RVoi7PcG,picture
+ovon_geo,ovon_pillow_bxsvrursffk_3078,1.0,False,False,0.0,0.0,11.261,7.453,11.394,True,True,False,stopped_too_far,bxsVRursffK,pillow
+ovon_geo,ovon_pillow_dd4bfstq8gi_1054,1.0,True,False,0.8112,0.0,6.515,9.314,1.46,True,True,False,stopped_too_far,Dd4bFSTQ8gi,pillow
+ovon_geo,ovon_pillow_dyehnkdt76v_2299,1.0,True,False,0.5819,0.0,3.876,42.137,8.217,True,True,False,stopped_too_far,DYehNKdT76V,pillow
+ovon_geo,ovon_pillow_ef36g7l6z9m_1723,1.0,False,True,0.0,0.2632,0.119,69.265,18.233,True,True,False,,eF36g7L6Z9M,pillow
+ovon_geo,ovon_pillow_h1zeeawlh9z_1190,1.0,False,True,0.0,0.3131,0.127,20.059,6.281,True,True,False,,h1zeeAwLh9Z,pillow
+ovon_geo,ovon_pillow_q3zu7yy5e5s_1031,1.0,True,True,0.0551,0.1299,0.126,12.824,1.666,True,True,False,,q3zU7Yy5E5s,pillow
+ovon_geo,ovon_pillow_q5qzseehe5g_1266,1.0,True,True,0.563,0.1355,0.162,62.766,8.506,True,True,False,,q5QZSEeHe5g,pillow
+ovon_geo,ovon_pillow_teesavr23of_4175,1.0,True,False,0.1802,0.0,4.831,3.651,1.561,True,True,False,stopped_too_far,TEEsavR23oF,pillow
+ovon_geo,ovon_pillow_zt1rvoi7pcg_270,1.0,True,True,0.9625,0.8167,0.218,1.65,1.347,True,True,False,,zt1RVoi7PcG,pillow
+ovon_geo,ovon_plant_5cdeh9f2hjl_6168,1.0,False,False,0.0,0.0,7.877,72.065,3.783,True,True,False,stopped_too_far,5cdEh9F2hJL,plant
+ovon_geo,ovon_plant_6s7qhgap2fw_934,1.0,True,True,0.7371,0.7209,0.126,11.848,8.542,True,True,False,,6s7QHgap2fW,plant
+ovon_geo,ovon_plant_a8btkwhxdrv_2772,1.0,True,True,0.92,0.8493,0.107,3.25,2.76,True,True,False,,a8BtkwhxdRV,plant
+ovon_geo,ovon_plant_vbzv5z6i1ws_2124,1.0,True,True,0.5279,0.5556,0.196,4.568,2.538,True,True,False,,VBzV5z6i1WS,plant
+ovon_geo,ovon_plant_yr17pdcnddw_225,1.0,True,True,0.1538,0.6416,0.147,1.819,1.167,True,True,False,,yr17PDCnDDW,plant
+ovon_geo,ovon_printer_xb4gs9shbre_5977,1.0,True,False,0.7862,0.0,17.361,23.033,4.036,True,True,False,stopped_too_far,XB4GS9ShBRE,printer
+ovon_geo,ovon_refrigerator_bcpu9supuw9_2914,1.0,True,True,0.9093,0.9093,0.149,6.3,5.728,True,True,False,,bCPU9suPUw9,refrigerator
+ovon_geo,ovon_refrigerator_bxsvrursffk_5535,1.0,True,True,0.9152,0.6691,0.101,2.841,1.901,True,True,False,,bxsVRursffK,refrigerator
+ovon_geo,ovon_refrigerator_bxsvrursffk_5908,1.0,True,True,0.8429,0.5322,0.262,11.564,6.154,True,True,False,,bxsVRursffK,refrigerator
+ovon_geo,ovon_refrigerator_cvzr5tuy5c5_2511,1.0,True,True,0.4545,0.6754,0.108,10.8,7.295,True,True,False,,cvZr5TUy5C5,refrigerator
+ovon_geo,ovon_refrigerator_dd4bfstq8gi_3644,1.0,True,True,1.0,0.9383,0.062,4.317,4.051,True,True,False,,Dd4bFSTQ8gi,refrigerator
+ovon_geo,ovon_refrigerator_ef36g7l6z9m_3292,1.0,True,True,0.0228,0.0253,0.23,69.672,1.761,True,True,False,,eF36g7L6Z9M,refrigerator
+ovon_geo,ovon_refrigerator_lt9jq6dn3ea_4585,1.0,True,True,0.8133,0.9208,0.258,5.8,5.341,True,True,False,,LT9Jq6dN3Ea,refrigerator
+ovon_geo,ovon_refrigerator_ml8thkuavtm_3235,1.0,True,True,0.1572,0.3784,0.175,3.393,1.284,True,True,False,,mL8ThkuaVTM,refrigerator
+ovon_geo,ovon_refrigerator_mv2huxq3b53_1550,1.0,True,True,0.4956,0.1985,0.092,73.102,14.51,True,True,False,,mv2HUxq3B53,refrigerator
+ovon_geo,ovon_refrigerator_p53sfw6mjze_3745,1.0,True,True,0.4433,0.4449,0.097,9.512,4.232,True,True,False,,p53SfW6mjZe,refrigerator
+ovon_geo,ovon_refrigerator_q5qzseehe5g_4520,1.0,True,True,0.6706,1.0,0.72,4.105,4.594,True,True,False,,q5QZSEeHe5g,refrigerator
+ovon_geo,ovon_refrigerator_y9htuuggdiq_5409,1.0,True,True,0.4644,0.6975,0.27,4.876,3.401,True,True,False,,y9hTuugGdiq,refrigerator
+ovon_geo,ovon_rug_bcpu9supuw9_3300,1.0,True,True,0.8852,0.1592,0.171,10.06,1.602,True,True,False,,bCPU9suPUw9,rug
+ovon_geo,ovon_rug_dd4bfstq8gi_33,1.0,True,True,0.2988,0.0629,0.206,21.613,1.36,True,True,False,,Dd4bFSTQ8gi,rug
+ovon_geo,ovon_rug_q5qzseehe5g_3710,1.0,True,True,0.2136,0.5114,0.21,2.089,1.068,True,True,False,,q5QZSEeHe5g,rug
+ovon_geo,ovon_rug_y9htuuggdiq_6971,1.0,True,True,0.5797,0.6193,0.093,14.839,9.189,True,True,False,,y9hTuugGdiq,rug
+ovon_geo,ovon_shower_glass_mv2huxq3b53_4548,1.0,False,True,0.0,0.3851,0.136,32.793,12.628,True,True,False,,mv2HUxq3B53,shower glass
+ovon_geo,ovon_stair_4ok3usbneis_4553,1.0,True,True,0.7711,0.7673,0.344,3.807,2.921,True,True,False,,4ok3usBNeis,stair
+ovon_geo,ovon_stair_bcpu9supuw9_2150,1.0,False,False,0.0,0.0,1.167,10.154,5.294,True,True,False,stopped_too_far,bCPU9suPUw9,stair
+ovon_geo,ovon_stair_cvzr5tuy5c5_1966,1.0,True,True,0.8498,0.341,0.148,33.691,11.489,True,True,False,,cvZr5TUy5C5,stair
+ovon_geo,ovon_stair_dyehnkdt76v_1601,1.0,True,True,1.0,0.9411,0.115,2.85,2.682,True,True,False,,DYehNKdT76V,stair
+ovon_geo,ovon_stair_k1cupfywxj6_2096,1.0,True,True,0.6442,0.581,0.115,2.55,1.482,True,True,False,,k1cupFYWXJ6,stair
+ovon_geo,ovon_stair_lt9jq6dn3ea_3012,1.0,True,True,0.8037,0.9984,0.534,6.614,6.603,True,True,False,,LT9Jq6dN3Ea,stair
+ovon_geo,ovon_stair_ml8thkuavtm_2371,1.0,True,True,0.5355,0.1427,0.171,7.515,1.073,True,True,False,,mL8ThkuaVTM,stair
+ovon_geo,ovon_stair_teesavr23of_788,1.0,True,False,0.6179,0.0,1.954,37.059,14.382,True,True,False,stopped_too_far,TEEsavR23oF,stair
+ovon_geo,ovon_stair_zt1rvoi7pcg_4089,1.0,True,True,0.8634,0.7532,0.208,7.91,5.957,True,True,False,,zt1RVoi7PcG,stair
+ovon_geo,ovon_statue_y9htuuggdiq_4467,1.0,True,True,0.4931,0.3686,0.081,53.617,19.765,True,True,False,,y9hTuugGdiq,statue
+ovon_geo,ovon_vase_yr17pdcnddw_1753,1.0,True,True,0.0466,0.3771,0.112,6.5,2.451,True,True,False,,yr17PDCnDDW,vase
+ovon_learned,ovon_bedframe_p53sfw6mjze_6448,0.25,False,False,0.0,0.0,11.037,5.789,10.632,True,True,False,stopped_too_far,p53SfW6mjZe,bedframe
+ovon_learned,ovon_blinds_bxsvrursffk_2265,0.25,True,True,0.1563,0.3158,0.127,5.156,1.628,True,True,False,,bxsVRursffK,blinds
+ovon_learned,ovon_book_7mxmsvcqjpj_1297,0.25,True,True,0.0158,0.0305,0.079,47.223,1.44,True,True,False,,7MXmsvcQjpJ,book
+ovon_learned,ovon_book_bxsvrursffk_1605,0.25,False,False,0.0,0.0,3.07,161.616,5.725,True,False,False,stopped_too_far,bxsVRursffK,book
+ovon_learned,ovon_book_glaq4dnux5u_1090,0.25,True,True,0.3928,0.2996,0.088,13.296,3.983,True,True,False,,GLAQ4DNUx5U,book
+ovon_learned,ovon_book_p53sfw6mjze_4743,0.25,True,True,0.5603,0.2156,0.084,87.309,18.82,True,True,False,,p53SfW6mjZe,book
+ovon_learned,ovon_carpet_cvzr5tuy5c5_5400,0.25,False,False,0.0,0.0,3.964,10.005,10.915,True,True,False,stopped_too_far,cvZr5TUy5C5,carpet
+ovon_learned,ovon_carpet_ef36g7l6z9m_3891,0.25,False,False,0.0,0.0,17.6,7.949,17.607,True,True,False,stopped_too_far,eF36g7L6Z9M,carpet
+ovon_learned,ovon_carpet_p53sfw6mjze_360,0.25,False,False,0.0,0.0,2.074,92.946,4.254,True,True,False,stopped_too_far,p53SfW6mjZe,carpet
+ovon_learned,ovon_carpet_p53sfw6mjze_435,0.25,False,False,0.0,0.0,0.497,6.709,3.729,True,True,False,stopped_too_far,p53SfW6mjZe,carpet
+ovon_learned,ovon_clothes_hanger_rod_teesavr23of_5022,0.25,False,True,0.0,0.5479,0.213,10.878,5.96,True,True,False,,TEEsavR23oF,clothes hanger rod
+ovon_learned,ovon_coffee_machine_teesavr23of_2056,0.25,True,True,0.1706,0.1676,0.157,55.534,9.308,True,True,False,,TEEsavR23oF,coffee machine
+ovon_learned,ovon_coffee_machine_teesavr23of_2125,0.25,True,True,0.1465,0.1367,0.158,29.529,4.038,True,True,False,,TEEsavR23oF,coffee machine
+ovon_learned,ovon_dishwasher_4ok3usbneis_5583,0.25,True,False,0.0564,0.0,0.42,46.424,5.478,True,True,False,stopped_too_far,4ok3usBNeis,dishwasher
+ovon_learned,ovon_dishwasher_7mxmsvcqjpj_4754,0.25,False,False,0.0,0.0,1.278,45.74,3.066,True,True,False,stopped_too_far,7MXmsvcQjpJ,dishwasher
+ovon_learned,ovon_dishwasher_babdmeytvmz_3448,0.25,True,False,0.0625,0.0,3.841,104.407,1.355,True,False,False,stopped_too_far,BAbdmeyTvMZ,dishwasher
+ovon_learned,ovon_dishwasher_dd4bfstq8gi_4434,0.25,False,True,0.0,0.0169,0.208,76.016,1.286,True,False,False,,Dd4bFSTQ8gi,dishwasher
+ovon_learned,ovon_dishwasher_lt9jq6dn3ea_5979,0.25,True,False,0.0556,0.0,3.287,247.636,3.646,True,False,False,stopped_too_far,LT9Jq6dN3Ea,dishwasher
+ovon_learned,ovon_dishwasher_mhpljhsug27_1237,0.25,True,False,0.0471,0.0,0.631,42.315,7.206,True,True,False,stopped_too_far,MHPLjHsuG27,dishwasher
+ovon_learned,ovon_dishwasher_nfvxx8j5nco_2512,0.25,False,True,0.0,0.0824,0.17,151.852,12.517,True,True,False,,Nfvxx8J5NCo,dishwasher
+ovon_learned,ovon_dishwasher_nfvxx8j5nco_2647,0.25,False,False,0.0,0.0,2.804,147.628,5.883,True,False,False,stopped_too_far,Nfvxx8J5NCo,dishwasher
+ovon_learned,ovon_dishwasher_qyaac8rv8zk_2665,0.25,True,True,0.0479,0.0715,0.077,107.073,7.653,True,True,False,,qyAac8rV8Zk,dishwasher
+ovon_learned,ovon_dishwasher_wcojb4tft35_4674,0.25,True,True,0.1705,0.2368,0.158,36.387,8.618,True,True,False,,wcojb4TFT35,dishwasher
+ovon_learned,ovon_dresser_crmo8wxcyvb_2151,0.25,False,False,0.0,0.0,6.115,21.619,7.407,True,True,False,stopped_too_far,CrMo8WxCyVb,dresser
+ovon_learned,ovon_dresser_qyaac8rv8zk_1450,0.25,False,True,0.0,0.1696,0.187,57.049,9.675,True,True,False,,qyAac8rV8Zk,dresser
+ovon_learned,ovon_exercise_bike_q5qzseehe5g_6989,0.25,True,True,1.0,1.0,,52.478,2.996,True,False,True,goal_unreachable_from_start_gifted,q5QZSEeHe5g,exercise bike
+ovon_learned,ovon_flower_vase_5cdeh9f2hjl_3082,0.25,False,False,0.0,0.0,6.587,99.186,4.889,True,True,False,stopped_too_far,5cdEh9F2hJL,flower vase
+ovon_learned,ovon_flower_vase_crmo8wxcyvb_2690,0.25,True,True,0.0646,0.0859,0.145,26.21,2.25,True,True,False,,CrMo8WxCyVb,flower vase
+ovon_learned,ovon_flower_vase_dd4bfstq8gi_810,0.25,True,True,0.205,0.0318,0.152,62.438,1.988,True,True,False,,Dd4bFSTQ8gi,flower vase
+ovon_learned,ovon_flower_vase_mv2huxq3b53_4029,0.25,False,False,0.0,0.0,12.806,97.386,25.297,True,True,False,stopped_too_far,mv2HUxq3B53,flower vase
+ovon_learned,ovon_flower_vase_svbbv1pavdk_2096,0.25,False,False,0.0,0.0,2.419,58.698,2.063,True,True,False,stopped_too_far,svBbv1Pavdk,flower vase
+ovon_learned,ovon_flower_vase_svbbv1pavdk_2188,0.25,True,True,0.0446,0.0369,0.228,109.965,4.057,True,True,False,,svBbv1Pavdk,flower vase
+ovon_learned,ovon_flowerpot_5cdeh9f2hjl_4375,0.25,False,False,0.0,0.0,5.343,60.211,8.69,True,True,False,stopped_too_far,5cdEh9F2hJL,flowerpot
+ovon_learned,ovon_flowerpot_dd4bfstq8gi_2644,0.25,False,False,0.0,0.0,1.922,18.728,1.959,True,True,False,stopped_too_far,Dd4bFSTQ8gi,flowerpot
+ovon_learned,ovon_flowerpot_glaq4dnux5u_865,0.25,False,True,0.0,0.0893,0.195,29.211,2.61,True,True,False,,GLAQ4DNUx5U,flowerpot
+ovon_learned,ovon_freezer_4ok3usbneis_465,0.25,True,True,0.4679,0.3315,0.125,20.54,6.809,True,True,False,,4ok3usBNeis,freezer
+ovon_learned,ovon_freezer_4ok3usbneis_474,0.25,True,True,0.1824,0.6529,0.082,3.265,2.132,True,True,False,,4ok3usBNeis,freezer
+ovon_learned,ovon_freezer_y9htuuggdiq_4556,0.25,True,True,0.1451,0.0961,0.176,75.309,7.235,True,True,False,,y9hTuugGdiq,freezer
+ovon_learned,ovon_glass_7mxmsvcqjpj_8047,0.25,False,False,0.0,0.0,9.985,165.921,5.639,True,False,False,stopped_too_far,7MXmsvcQjpJ,glass
+ovon_learned,ovon_glass_q3zu7yy5e5s_2085,0.25,False,True,0.0,0.0195,0.139,120.41,2.351,True,True,False,,q3zU7Yy5E5s,glass
+ovon_learned,ovon_guitar_7mxmsvcqjpj_3693,0.25,True,True,0.087,0.1054,0.15,17.266,1.82,True,True,False,,7MXmsvcQjpJ,guitar
+ovon_learned,ovon_guitar_7mxmsvcqjpj_3983,0.25,False,False,0.0,0.0,5.842,30.065,4.18,True,True,False,stopped_too_far,7MXmsvcQjpJ,guitar
+ovon_learned,ovon_handrail_yr17pdcnddw_2549,0.25,False,True,0.0,0.4582,0.133,20.903,9.578,True,True,False,,yr17PDCnDDW,handrail
+ovon_learned,ovon_hanger_qaldnwvtxbs_1239,0.25,True,False,0.3795,0.0,2.213,28.086,4.621,True,True,False,stopped_too_far,QaLdnwvtxbs,hanger
+ovon_learned,ovon_hanging_clothes_babdmeytvmz_2294,0.25,True,False,0.2796,0.0,3.451,33.386,3.98,True,True,False,stopped_too_far,BAbdmeyTvMZ,hanging clothes
+ovon_learned,ovon_hanging_clothes_bxsvrursffk_458,0.25,False,False,0.0,0.0,10.581,44.738,11.409,True,True,False,stopped_too_far,bxsVRursffK,hanging clothes
+ovon_learned,ovon_island_5cdeh9f2hjl_6512,0.25,False,False,0.0,0.0,7.252,56.749,13.501,True,True,False,stopped_too_far,5cdEh9F2hJL,island
+ovon_learned,ovon_island_5cdeh9f2hjl_6815,0.25,False,False,0.0,0.0,7.522,7.501,1.929,True,True,False,stopped_too_far,5cdEh9F2hJL,island
+ovon_learned,ovon_microwave_crmo8wxcyvb_3195,0.25,True,True,0.0678,0.3341,0.175,7.213,2.41,True,True,False,,CrMo8WxCyVb,microwave
+ovon_learned,ovon_microwave_mv2huxq3b53_1160,0.25,True,True,0.18,0.637,0.088,33.288,21.205,True,True,False,,mv2HUxq3B53,microwave
+ovon_learned,ovon_microwave_p53sfw6mjze_4328,0.25,False,False,0.0,0.0,16.497,126.618,11.146,True,False,False,stopped_too_far,p53SfW6mjZe,microwave
+ovon_learned,ovon_microwave_svbbv1pavdk_2688,0.25,True,True,0.181,0.209,0.128,22.764,4.757,True,True,False,,svBbv1Pavdk,microwave
+ovon_learned,ovon_microwave_teesavr23of_2750,0.25,True,True,0.1085,0.0627,0.187,34.654,2.173,True,True,False,,TEEsavR23oF,microwave
+ovon_learned,ovon_microwave_wcojb4tft35_5457,0.25,False,False,0.0,0.0,0.372,34.876,3.382,True,True,False,stopped_too_far,wcojb4TFT35,microwave
+ovon_learned,ovon_mirror_a8btkwhxdrv_291,0.25,False,False,0.0,0.0,0.283,171.519,4.113,True,True,False,stopped_too_far,a8BtkwhxdRV,mirror
+ovon_learned,ovon_mirror_dyehnkdt76v_568,0.25,False,True,0.0,0.1193,0.149,76.721,9.155,True,True,False,,DYehNKdT76V,mirror
+ovon_learned,ovon_mirror_ef36g7l6z9m_1303,0.25,False,False,0.0,0.0,0.338,21.839,10.196,True,True,False,stopped_too_far,eF36g7L6Z9M,mirror
+ovon_learned,ovon_mirror_glaq4dnux5u_2119,0.25,False,False,0.0,0.0,10.445,54.428,7.841,True,True,False,stopped_too_far,GLAQ4DNUx5U,mirror
+ovon_learned,ovon_mirror_vbzv5z6i1ws_311,0.25,False,False,0.0,0.0,0.875,48.954,5.268,True,True,False,stopped_too_far,VBzV5z6i1WS,mirror
+ovon_learned,ovon_mirror_ziup5kvtccr_126,0.25,True,False,0.1011,0.0,3.939,33.57,3.742,True,True,False,stopped_too_far,ziup5kvtCCR,mirror
+ovon_learned,ovon_mirror_ziup5kvtccr_263,0.25,True,True,0.2504,0.1724,0.022,12.522,2.159,True,True,False,,ziup5kvtCCR,mirror
+ovon_learned,ovon_nightstand_teesavr23of_119,0.25,False,True,0.0,0.1452,0.161,39.003,5.663,True,True,False,,TEEsavR23oF,nightstand
+ovon_learned,ovon_ottoman_qaldnwvtxbs_122,0.25,True,False,0.2085,0.0,7.297,25.301,3.884,True,True,False,stopped_too_far,QaLdnwvtxbs,ottoman
+ovon_learned,ovon_photo_q5qzseehe5g_1954,0.25,True,False,0.1062,0.0,0.932,66.238,3.765,True,True,False,stopped_too_far,q5QZSEeHe5g,photo
+ovon_learned,ovon_picture_5cdeh9f2hjl_384,0.25,False,True,0.0,0.1659,0.1,8.531,1.416,True,True,False,,5cdEh9F2hJL,picture
+ovon_learned,ovon_picture_5cdeh9f2hjl_450,0.25,True,True,0.0434,0.0135,0.097,76.619,1.036,True,True,False,,5cdEh9F2hJL,picture
+ovon_learned,ovon_picture_7mxmsvcqjpj_126,0.25,False,True,0.0,0.0423,0.149,24.978,1.057,True,True,False,,7MXmsvcQjpJ,picture
+ovon_learned,ovon_picture_7mxmsvcqjpj_17,0.25,False,False,0.0,0.0,2.99,15.851,1.394,True,True,False,stopped_too_far,7MXmsvcQjpJ,picture
+ovon_learned,ovon_picture_dyehnkdt76v_321,0.25,True,True,0.5923,0.1259,0.182,12.237,1.54,True,True,False,,DYehNKdT76V,picture
+ovon_learned,ovon_picture_glaq4dnux5u_2804,0.25,False,False,0.0,0.0,6.434,9.462,4.781,True,True,False,stopped_too_far,GLAQ4DNUx5U,picture
+ovon_learned,ovon_picture_nfvxx8j5nco_209,0.25,False,True,0.0,0.1603,0.198,18.656,2.991,True,True,False,,Nfvxx8J5NCo,picture
+ovon_learned,ovon_picture_nfvxx8j5nco_231,0.25,True,True,0.3196,0.1221,0.199,24.798,3.028,True,True,False,,Nfvxx8J5NCo,picture
+ovon_learned,ovon_picture_q3zu7yy5e5s_614,0.25,False,False,0.0,0.0,2.164,37.27,1.434,True,True,False,stopped_too_far,q3zU7Yy5E5s,picture
+ovon_learned,ovon_picture_qaldnwvtxbs_1842,0.25,True,True,0.3108,0.3009,0.128,5.493,1.653,True,True,False,,QaLdnwvtxbs,picture
+ovon_learned,ovon_picture_svbbv1pavdk_132,0.25,False,False,0.0,0.0,2.551,24.622,7.011,True,True,False,stopped_too_far,svBbv1Pavdk,picture
+ovon_learned,ovon_picture_wcojb4tft35_666,0.25,True,True,1.0,1.0,,98.341,1.946,True,False,True,goal_unreachable_from_start_gifted,wcojb4TFT35,picture
+ovon_learned,ovon_picture_zt1rvoi7pcg_1891,0.25,False,False,0.0,0.0,3.859,23.394,5.307,True,True,False,stopped_too_far,zt1RVoi7PcG,picture
+ovon_learned,ovon_pillow_bxsvrursffk_3078,0.25,False,False,0.0,0.0,11.072,20.303,11.394,True,True,False,stopped_too_far,bxsVRursffK,pillow
+ovon_learned,ovon_pillow_dd4bfstq8gi_1054,0.25,True,True,0.0627,0.0481,0.058,30.334,1.46,True,True,False,,Dd4bFSTQ8gi,pillow
+ovon_learned,ovon_pillow_dyehnkdt76v_2299,0.25,True,False,0.2301,0.0,2.064,99.468,8.217,True,False,False,stopped_too_far,DYehNKdT76V,pillow
+ovon_learned,ovon_pillow_ef36g7l6z9m_1723,0.25,False,False,0.0,0.0,0.317,103.006,18.233,True,True,False,stopped_too_far,eF36g7L6Z9M,pillow
+ovon_learned,ovon_pillow_h1zeeawlh9z_1190,0.25,True,False,0.1447,0.0,1.272,24.957,6.281,True,True,False,stopped_too_far,h1zeeAwLh9Z,pillow
+ovon_learned,ovon_pillow_q3zu7yy5e5s_1031,0.25,True,True,0.0132,0.0235,0.119,70.773,1.666,True,True,False,,q3zU7Yy5E5s,pillow
+ovon_learned,ovon_pillow_q5qzseehe5g_1266,0.25,False,True,0.0,0.1496,0.145,56.87,8.506,True,True,False,,q5QZSEeHe5g,pillow
+ovon_learned,ovon_pillow_teesavr23of_4175,0.25,False,False,0.0,0.0,5.009,33.84,1.561,True,True,False,stopped_too_far,TEEsavR23oF,pillow
+ovon_learned,ovon_pillow_zt1rvoi7pcg_270,0.25,False,True,0.0,0.0243,0.194,55.5,1.347,True,True,False,,zt1RVoi7PcG,pillow
+ovon_learned,ovon_plant_5cdeh9f2hjl_6168,0.25,True,True,0.0696,0.2496,0.173,15.155,3.783,True,True,False,,5cdEh9F2hJL,plant
+ovon_learned,ovon_plant_6s7qhgap2fw_934,0.25,True,True,0.0654,0.0944,0.203,90.476,8.542,True,True,False,,6s7QHgap2fW,plant
+ovon_learned,ovon_plant_a8btkwhxdrv_2772,0.25,True,True,0.2478,0.3435,0.101,8.035,2.76,True,True,False,,a8BtkwhxdRV,plant
+ovon_learned,ovon_plant_vbzv5z6i1ws_2124,0.25,True,True,0.1504,0.158,0.123,16.063,2.538,True,True,False,,VBzV5z6i1WS,plant
+ovon_learned,ovon_plant_yr17pdcnddw_225,0.25,False,False,0.0,0.0,0.393,15.098,1.167,True,True,False,stopped_too_far,yr17PDCnDDW,plant
+ovon_learned,ovon_printer_xb4gs9shbre_5977,0.25,False,False,0.0,0.0,17.161,143.259,4.036,True,True,False,stopped_too_far,XB4GS9ShBRE,printer
+ovon_learned,ovon_refrigerator_bcpu9supuw9_2914,0.25,True,True,0.4715,0.7048,0.167,8.128,5.728,True,True,False,,bCPU9suPUw9,refrigerator
+ovon_learned,ovon_refrigerator_bxsvrursffk_5535,0.25,True,True,0.1238,0.2461,0.101,7.724,1.901,True,True,False,,bxsVRursffK,refrigerator
+ovon_learned,ovon_refrigerator_bxsvrursffk_5908,0.25,True,True,0.3601,0.3526,0.079,17.452,6.154,True,True,False,,bxsVRursffK,refrigerator
+ovon_learned,ovon_refrigerator_cvzr5tuy5c5_2511,0.25,True,True,0.2035,0.2043,0.109,35.712,7.295,True,True,False,,cvZr5TUy5C5,refrigerator
+ovon_learned,ovon_refrigerator_dd4bfstq8gi_3644,0.25,False,True,0.0,0.612,0.13,6.619,4.051,True,True,False,,Dd4bFSTQ8gi,refrigerator
+ovon_learned,ovon_refrigerator_ef36g7l6z9m_3292,0.25,False,False,0.0,0.0,3.013,89.913,1.761,True,False,False,stopped_too_far,eF36g7L6Z9M,refrigerator
+ovon_learned,ovon_refrigerator_lt9jq6dn3ea_4585,0.25,True,True,0.1999,0.6082,0.227,8.782,5.341,True,True,False,,LT9Jq6dN3Ea,refrigerator
+ovon_learned,ovon_refrigerator_ml8thkuavtm_3235,0.25,True,True,0.1726,0.105,0.113,12.224,1.284,True,True,False,,mL8ThkuaVTM,refrigerator
+ovon_learned,ovon_refrigerator_mv2huxq3b53_1550,0.25,True,True,0.2619,0.3945,0.164,36.785,14.51,True,True,False,,mv2HUxq3B53,refrigerator
+ovon_learned,ovon_refrigerator_p53sfw6mjze_3745,0.25,False,True,0.0,0.0698,0.133,60.603,4.232,True,True,False,,p53SfW6mjZe,refrigerator
+ovon_learned,ovon_refrigerator_q5qzseehe5g_4520,0.25,True,False,0.2488,0.0,2.149,14.401,4.594,True,True,False,stopped_too_far,q5QZSEeHe5g,refrigerator
+ovon_learned,ovon_refrigerator_y9htuuggdiq_5409,0.25,True,True,0.3799,0.1357,0.148,25.066,3.401,True,True,False,,y9hTuugGdiq,refrigerator
+ovon_learned,ovon_rug_bcpu9supuw9_3300,0.25,True,True,0.0373,0.31,0.193,5.167,1.602,True,True,False,,bCPU9suPUw9,rug
+ovon_learned,ovon_rug_dd4bfstq8gi_33,0.25,True,True,0.0183,0.0651,0.105,20.894,1.36,True,True,False,,Dd4bFSTQ8gi,rug
+ovon_learned,ovon_rug_q5qzseehe5g_3710,0.25,True,True,0.1407,0.3199,0.172,3.339,1.068,True,True,False,,q5QZSEeHe5g,rug
+ovon_learned,ovon_rug_y9htuuggdiq_6971,0.25,True,True,0.4598,0.6808,0.097,13.497,9.189,True,True,False,,y9hTuugGdiq,rug
+ovon_learned,ovon_shower_glass_mv2huxq3b53_4548,0.25,False,False,0.0,0.0,13.148,144.55,12.628,True,False,False,stopped_too_far,mv2HUxq3B53,shower glass
+ovon_learned,ovon_stair_4ok3usbneis_4553,0.25,True,True,0.1759,0.1857,0.011,15.733,2.921,True,True,False,,4ok3usBNeis,stair
+ovon_learned,ovon_stair_bcpu9supuw9_2150,0.25,True,True,0.1534,0.2384,0.228,22.211,5.294,True,True,False,,bCPU9suPUw9,stair
+ovon_learned,ovon_stair_cvzr5tuy5c5_1966,0.25,False,False,0.0,0.0,0.304,26.656,11.489,True,True,False,stopped_too_far,cvZr5TUy5C5,stair
+ovon_learned,ovon_stair_dyehnkdt76v_1601,0.25,True,True,0.6151,0.2346,0.147,11.434,2.682,True,True,False,,DYehNKdT76V,stair
+ovon_learned,ovon_stair_k1cupfywxj6_2096,0.25,True,True,0.1646,0.4173,0.102,3.55,1.482,True,True,False,,k1cupFYWXJ6,stair
+ovon_learned,ovon_stair_lt9jq6dn3ea_3012,0.25,False,True,0.0,0.251,0.16,26.304,6.603,True,True,False,,LT9Jq6dN3Ea,stair
+ovon_learned,ovon_stair_ml8thkuavtm_2371,0.25,True,True,0.0454,0.0313,0.205,34.29,1.073,True,True,False,,mL8ThkuaVTM,stair
+ovon_learned,ovon_stair_teesavr23of_788,0.25,False,False,0.0,0.0,2.915,52.783,14.382,True,True,False,stopped_too_far,TEEsavR23oF,stair
+ovon_learned,ovon_stair_zt1rvoi7pcg_4089,0.25,False,True,0.0,0.503,0.183,11.845,5.957,True,True,False,,zt1RVoi7PcG,stair
+ovon_learned,ovon_statue_y9htuuggdiq_4467,0.25,True,True,0.3128,0.3599,0.152,54.925,19.765,True,True,False,,y9hTuugGdiq,statue
+ovon_learned,ovon_vase_yr17pdcnddw_1753,0.25,False,True,0.0,0.0146,0.09,167.687,2.451,True,True,False,,yr17PDCnDDW,vase
+ovon_learned,ovon_bedframe_p53sfw6mjze_6448,1.0,False,False,0.0,0.0,11.037,5.789,10.632,True,True,False,stopped_too_far,p53SfW6mjZe,bedframe
+ovon_learned,ovon_blinds_bxsvrursffk_2265,1.0,True,True,0.1563,0.3158,0.127,5.156,1.628,True,True,False,,bxsVRursffK,blinds
+ovon_learned,ovon_book_7mxmsvcqjpj_1297,1.0,True,True,0.0158,0.0305,0.079,47.223,1.44,True,True,False,,7MXmsvcQjpJ,book
+ovon_learned,ovon_book_bxsvrursffk_1605,1.0,True,False,0.0385,0.0,3.07,161.616,5.725,True,False,False,stopped_too_far,bxsVRursffK,book
+ovon_learned,ovon_book_glaq4dnux5u_1090,1.0,True,True,0.3928,0.2996,0.088,13.296,3.983,True,True,False,,GLAQ4DNUx5U,book
+ovon_learned,ovon_book_p53sfw6mjze_4743,1.0,True,True,0.5603,0.2156,0.084,87.309,18.82,True,True,False,,p53SfW6mjZe,book
+ovon_learned,ovon_carpet_cvzr5tuy5c5_5400,1.0,False,False,0.0,0.0,3.964,10.005,10.915,True,True,False,stopped_too_far,cvZr5TUy5C5,carpet
+ovon_learned,ovon_carpet_ef36g7l6z9m_3891,1.0,False,False,0.0,0.0,17.6,7.949,17.607,True,True,False,stopped_too_far,eF36g7L6Z9M,carpet
+ovon_learned,ovon_carpet_p53sfw6mjze_360,1.0,False,False,0.0,0.0,2.074,92.946,4.254,True,True,False,stopped_too_far,p53SfW6mjZe,carpet
+ovon_learned,ovon_carpet_p53sfw6mjze_435,1.0,False,True,0.0,0.5558,0.497,6.709,3.729,True,True,False,,p53SfW6mjZe,carpet
+ovon_learned,ovon_clothes_hanger_rod_teesavr23of_5022,1.0,True,True,0.4198,0.5479,0.213,10.878,5.96,True,True,False,,TEEsavR23oF,clothes hanger rod
+ovon_learned,ovon_coffee_machine_teesavr23of_2056,1.0,True,True,0.1706,0.1676,0.157,55.534,9.308,True,True,False,,TEEsavR23oF,coffee machine
+ovon_learned,ovon_coffee_machine_teesavr23of_2125,1.0,True,True,0.1465,0.1367,0.158,29.529,4.038,True,True,False,,TEEsavR23oF,coffee machine
+ovon_learned,ovon_dishwasher_4ok3usbneis_5583,1.0,True,True,0.0564,0.118,0.42,46.424,5.478,True,True,False,,4ok3usBNeis,dishwasher
+ovon_learned,ovon_dishwasher_7mxmsvcqjpj_4754,1.0,False,False,0.0,0.0,1.278,45.74,3.066,True,True,False,stopped_too_far,7MXmsvcQjpJ,dishwasher
+ovon_learned,ovon_dishwasher_babdmeytvmz_3448,1.0,True,False,0.0625,0.0,3.841,104.407,1.355,True,False,False,stopped_too_far,BAbdmeyTvMZ,dishwasher
+ovon_learned,ovon_dishwasher_dd4bfstq8gi_4434,1.0,False,True,0.0,0.0169,0.208,76.016,1.286,True,False,False,,Dd4bFSTQ8gi,dishwasher
+ovon_learned,ovon_dishwasher_lt9jq6dn3ea_5979,1.0,True,False,0.0556,0.0,3.287,247.636,3.646,True,False,False,stopped_too_far,LT9Jq6dN3Ea,dishwasher
+ovon_learned,ovon_dishwasher_mhpljhsug27_1237,1.0,True,True,0.0471,0.1703,0.631,42.315,7.206,True,True,False,,MHPLjHsuG27,dishwasher
+ovon_learned,ovon_dishwasher_nfvxx8j5nco_2512,1.0,False,True,0.0,0.0824,0.17,151.852,12.517,True,True,False,,Nfvxx8J5NCo,dishwasher
+ovon_learned,ovon_dishwasher_nfvxx8j5nco_2647,1.0,False,False,0.0,0.0,2.804,147.628,5.883,True,False,False,stopped_too_far,Nfvxx8J5NCo,dishwasher
+ovon_learned,ovon_dishwasher_qyaac8rv8zk_2665,1.0,True,True,0.0479,0.0715,0.077,107.073,7.653,True,True,False,,qyAac8rV8Zk,dishwasher
+ovon_learned,ovon_dishwasher_wcojb4tft35_4674,1.0,True,True,0.1705,0.2368,0.158,36.387,8.618,True,True,False,,wcojb4TFT35,dishwasher
+ovon_learned,ovon_dresser_crmo8wxcyvb_2151,1.0,False,False,0.0,0.0,6.115,21.619,7.407,True,True,False,stopped_too_far,CrMo8WxCyVb,dresser
+ovon_learned,ovon_dresser_qyaac8rv8zk_1450,1.0,False,True,0.0,0.1696,0.187,57.049,9.675,True,True,False,,qyAac8rV8Zk,dresser
+ovon_learned,ovon_exercise_bike_q5qzseehe5g_6989,1.0,True,True,1.0,1.0,,52.478,2.996,True,False,True,goal_unreachable_from_start_gifted,q5QZSEeHe5g,exercise bike
+ovon_learned,ovon_flower_vase_5cdeh9f2hjl_3082,1.0,False,False,0.0,0.0,6.587,99.186,4.889,True,True,False,stopped_too_far,5cdEh9F2hJL,flower vase
+ovon_learned,ovon_flower_vase_crmo8wxcyvb_2690,1.0,True,True,0.0646,0.0859,0.145,26.21,2.25,True,True,False,,CrMo8WxCyVb,flower vase
+ovon_learned,ovon_flower_vase_dd4bfstq8gi_810,1.0,True,True,0.205,0.0318,0.152,62.438,1.988,True,True,False,,Dd4bFSTQ8gi,flower vase
+ovon_learned,ovon_flower_vase_mv2huxq3b53_4029,1.0,False,False,0.0,0.0,12.806,97.386,25.297,True,True,False,stopped_too_far,mv2HUxq3B53,flower vase
+ovon_learned,ovon_flower_vase_svbbv1pavdk_2096,1.0,False,False,0.0,0.0,2.419,58.698,2.063,True,True,False,stopped_too_far,svBbv1Pavdk,flower vase
+ovon_learned,ovon_flower_vase_svbbv1pavdk_2188,1.0,True,True,0.0446,0.0369,0.228,109.965,4.057,True,True,False,,svBbv1Pavdk,flower vase
+ovon_learned,ovon_flowerpot_5cdeh9f2hjl_4375,1.0,False,False,0.0,0.0,5.343,60.211,8.69,True,True,False,stopped_too_far,5cdEh9F2hJL,flowerpot
+ovon_learned,ovon_flowerpot_dd4bfstq8gi_2644,1.0,False,False,0.0,0.0,1.922,18.728,1.959,True,True,False,stopped_too_far,Dd4bFSTQ8gi,flowerpot
+ovon_learned,ovon_flowerpot_glaq4dnux5u_865,1.0,False,True,0.0,0.0893,0.195,29.211,2.61,True,True,False,,GLAQ4DNUx5U,flowerpot
+ovon_learned,ovon_freezer_4ok3usbneis_465,1.0,True,True,0.4679,0.3315,0.125,20.54,6.809,True,True,False,,4ok3usBNeis,freezer
+ovon_learned,ovon_freezer_4ok3usbneis_474,1.0,True,True,0.1824,0.6529,0.082,3.265,2.132,True,True,False,,4ok3usBNeis,freezer
+ovon_learned,ovon_freezer_y9htuuggdiq_4556,1.0,True,True,0.1451,0.0961,0.176,75.309,7.235,True,True,False,,y9hTuugGdiq,freezer
+ovon_learned,ovon_glass_7mxmsvcqjpj_8047,1.0,False,False,0.0,0.0,9.985,165.921,5.639,True,False,False,stopped_too_far,7MXmsvcQjpJ,glass
+ovon_learned,ovon_glass_q3zu7yy5e5s_2085,1.0,False,True,0.0,0.0195,0.139,120.41,2.351,True,True,False,,q3zU7Yy5E5s,glass
+ovon_learned,ovon_guitar_7mxmsvcqjpj_3693,1.0,True,True,0.087,0.1054,0.15,17.266,1.82,True,True,False,,7MXmsvcQjpJ,guitar
+ovon_learned,ovon_guitar_7mxmsvcqjpj_3983,1.0,False,False,0.0,0.0,5.842,30.065,4.18,True,True,False,stopped_too_far,7MXmsvcQjpJ,guitar
+ovon_learned,ovon_handrail_yr17pdcnddw_2549,1.0,False,True,0.0,0.4582,0.133,20.903,9.578,True,True,False,,yr17PDCnDDW,handrail
+ovon_learned,ovon_hanger_qaldnwvtxbs_1239,1.0,True,False,0.3795,0.0,2.213,28.086,4.621,True,True,False,stopped_too_far,QaLdnwvtxbs,hanger
+ovon_learned,ovon_hanging_clothes_babdmeytvmz_2294,1.0,True,False,0.2796,0.0,3.451,33.386,3.98,True,True,False,stopped_too_far,BAbdmeyTvMZ,hanging clothes
+ovon_learned,ovon_hanging_clothes_bxsvrursffk_458,1.0,False,False,0.0,0.0,10.581,44.738,11.409,True,True,False,stopped_too_far,bxsVRursffK,hanging clothes
+ovon_learned,ovon_island_5cdeh9f2hjl_6512,1.0,False,False,0.0,0.0,7.252,56.749,13.501,True,True,False,stopped_too_far,5cdEh9F2hJL,island
+ovon_learned,ovon_island_5cdeh9f2hjl_6815,1.0,False,False,0.0,0.0,7.522,7.501,1.929,True,True,False,stopped_too_far,5cdEh9F2hJL,island
+ovon_learned,ovon_microwave_crmo8wxcyvb_3195,1.0,True,True,0.0678,0.3341,0.175,7.213,2.41,True,True,False,,CrMo8WxCyVb,microwave
+ovon_learned,ovon_microwave_mv2huxq3b53_1160,1.0,True,True,0.18,0.637,0.088,33.288,21.205,True,True,False,,mv2HUxq3B53,microwave
+ovon_learned,ovon_microwave_p53sfw6mjze_4328,1.0,True,False,0.088,0.0,16.497,126.618,11.146,True,False,False,stopped_too_far,p53SfW6mjZe,microwave
+ovon_learned,ovon_microwave_svbbv1pavdk_2688,1.0,True,True,0.181,0.209,0.128,22.764,4.757,True,True,False,,svBbv1Pavdk,microwave
+ovon_learned,ovon_microwave_teesavr23of_2750,1.0,True,True,0.1085,0.0627,0.187,34.654,2.173,True,True,False,,TEEsavR23oF,microwave
+ovon_learned,ovon_microwave_wcojb4tft35_5457,1.0,True,True,0.0556,0.097,0.372,34.876,3.382,True,True,False,,wcojb4TFT35,microwave
+ovon_learned,ovon_mirror_a8btkwhxdrv_291,1.0,False,True,0.0,0.024,0.283,171.519,4.113,True,True,False,,a8BtkwhxdRV,mirror
+ovon_learned,ovon_mirror_dyehnkdt76v_568,1.0,False,True,0.0,0.1193,0.149,76.721,9.155,True,True,False,,DYehNKdT76V,mirror
+ovon_learned,ovon_mirror_ef36g7l6z9m_1303,1.0,True,True,0.4503,0.4669,0.338,21.839,10.196,True,True,False,,eF36g7L6Z9M,mirror
+ovon_learned,ovon_mirror_glaq4dnux5u_2119,1.0,False,False,0.0,0.0,10.445,54.428,7.841,True,True,False,stopped_too_far,GLAQ4DNUx5U,mirror
+ovon_learned,ovon_mirror_vbzv5z6i1ws_311,1.0,False,True,0.0,0.1076,0.875,48.954,5.268,True,True,False,,VBzV5z6i1WS,mirror
+ovon_learned,ovon_mirror_ziup5kvtccr_126,1.0,True,False,0.1011,0.0,3.939,33.57,3.742,True,True,False,stopped_too_far,ziup5kvtCCR,mirror
+ovon_learned,ovon_mirror_ziup5kvtccr_263,1.0,True,True,0.2504,0.1724,0.022,12.522,2.159,True,True,False,,ziup5kvtCCR,mirror
+ovon_learned,ovon_nightstand_teesavr23of_119,1.0,True,True,0.0539,0.1452,0.161,39.003,5.663,True,True,False,,TEEsavR23oF,nightstand
+ovon_learned,ovon_ottoman_qaldnwvtxbs_122,1.0,True,False,0.2085,0.0,7.297,25.301,3.884,True,True,False,stopped_too_far,QaLdnwvtxbs,ottoman
+ovon_learned,ovon_photo_q5qzseehe5g_1954,1.0,True,True,0.1062,0.0568,0.932,66.238,3.765,True,True,False,,q5QZSEeHe5g,photo
+ovon_learned,ovon_picture_5cdeh9f2hjl_384,1.0,True,True,0.1893,0.1659,0.1,8.531,1.416,True,True,False,,5cdEh9F2hJL,picture
+ovon_learned,ovon_picture_5cdeh9f2hjl_450,1.0,True,True,0.0434,0.0135,0.097,76.619,1.036,True,True,False,,5cdEh9F2hJL,picture
+ovon_learned,ovon_picture_7mxmsvcqjpj_126,1.0,True,True,0.0329,0.0423,0.149,24.978,1.057,True,True,False,,7MXmsvcQjpJ,picture
+ovon_learned,ovon_picture_7mxmsvcqjpj_17,1.0,False,False,0.0,0.0,2.99,15.851,1.394,True,True,False,stopped_too_far,7MXmsvcQjpJ,picture
+ovon_learned,ovon_picture_dyehnkdt76v_321,1.0,True,True,0.5923,0.1259,0.182,12.237,1.54,True,True,False,,DYehNKdT76V,picture
+ovon_learned,ovon_picture_glaq4dnux5u_2804,1.0,False,False,0.0,0.0,6.434,9.462,4.781,True,True,False,stopped_too_far,GLAQ4DNUx5U,picture
+ovon_learned,ovon_picture_nfvxx8j5nco_209,1.0,True,True,0.0569,0.1603,0.198,18.656,2.991,True,True,False,,Nfvxx8J5NCo,picture
+ovon_learned,ovon_picture_nfvxx8j5nco_231,1.0,True,True,0.3196,0.1221,0.199,24.798,3.028,True,True,False,,Nfvxx8J5NCo,picture
+ovon_learned,ovon_picture_q3zu7yy5e5s_614,1.0,False,False,0.0,0.0,2.164,37.27,1.434,True,True,False,stopped_too_far,q3zU7Yy5E5s,picture
+ovon_learned,ovon_picture_qaldnwvtxbs_1842,1.0,True,True,0.3108,0.3009,0.128,5.493,1.653,True,True,False,,QaLdnwvtxbs,picture
+ovon_learned,ovon_picture_svbbv1pavdk_132,1.0,True,False,0.6095,0.0,2.551,24.622,7.011,True,True,False,stopped_too_far,svBbv1Pavdk,picture
+ovon_learned,ovon_picture_wcojb4tft35_666,1.0,True,True,1.0,1.0,,98.341,1.946,True,False,True,goal_unreachable_from_start_gifted,wcojb4TFT35,picture
+ovon_learned,ovon_picture_zt1rvoi7pcg_1891,1.0,False,False,0.0,0.0,3.859,23.394,5.307,True,True,False,stopped_too_far,zt1RVoi7PcG,picture
+ovon_learned,ovon_pillow_bxsvrursffk_3078,1.0,False,False,0.0,0.0,11.072,20.303,11.394,True,True,False,stopped_too_far,bxsVRursffK,pillow
+ovon_learned,ovon_pillow_dd4bfstq8gi_1054,1.0,True,True,0.0627,0.0481,0.058,30.334,1.46,True,True,False,,Dd4bFSTQ8gi,pillow
+ovon_learned,ovon_pillow_dyehnkdt76v_2299,1.0,True,False,0.2301,0.0,2.064,99.468,8.217,True,False,False,stopped_too_far,DYehNKdT76V,pillow
+ovon_learned,ovon_pillow_ef36g7l6z9m_1723,1.0,False,True,0.0,0.177,0.317,103.006,18.233,True,True,False,,eF36g7L6Z9M,pillow
+ovon_learned,ovon_pillow_h1zeeawlh9z_1190,1.0,True,False,0.1447,0.0,1.272,24.957,6.281,True,True,False,stopped_too_far,h1zeeAwLh9Z,pillow
+ovon_learned,ovon_pillow_q3zu7yy5e5s_1031,1.0,True,True,0.0132,0.0235,0.119,70.773,1.666,True,True,False,,q3zU7Yy5E5s,pillow
+ovon_learned,ovon_pillow_q5qzseehe5g_1266,1.0,False,True,0.0,0.1496,0.145,56.87,8.506,True,True,False,,q5QZSEeHe5g,pillow
+ovon_learned,ovon_pillow_teesavr23of_4175,1.0,False,False,0.0,0.0,5.009,33.84,1.561,True,True,False,stopped_too_far,TEEsavR23oF,pillow
+ovon_learned,ovon_pillow_zt1rvoi7pcg_270,1.0,True,True,0.0138,0.0243,0.194,55.5,1.347,True,True,False,,zt1RVoi7PcG,pillow
+ovon_learned,ovon_plant_5cdeh9f2hjl_6168,1.0,True,True,0.0696,0.2496,0.173,15.155,3.783,True,True,False,,5cdEh9F2hJL,plant
+ovon_learned,ovon_plant_6s7qhgap2fw_934,1.0,True,True,0.0654,0.0944,0.203,90.476,8.542,True,True,False,,6s7QHgap2fW,plant
+ovon_learned,ovon_plant_a8btkwhxdrv_2772,1.0,True,True,0.2478,0.3435,0.101,8.035,2.76,True,True,False,,a8BtkwhxdRV,plant
+ovon_learned,ovon_plant_vbzv5z6i1ws_2124,1.0,True,True,0.1504,0.158,0.123,16.063,2.538,True,True,False,,VBzV5z6i1WS,plant
+ovon_learned,ovon_plant_yr17pdcnddw_225,1.0,False,True,0.0,0.0773,0.393,15.098,1.167,True,True,False,,yr17PDCnDDW,plant
+ovon_learned,ovon_printer_xb4gs9shbre_5977,1.0,False,False,0.0,0.0,17.161,143.259,4.036,True,True,False,stopped_too_far,XB4GS9ShBRE,printer
+ovon_learned,ovon_refrigerator_bcpu9supuw9_2914,1.0,True,True,0.4715,0.7048,0.167,8.128,5.728,True,True,False,,bCPU9suPUw9,refrigerator
+ovon_learned,ovon_refrigerator_bxsvrursffk_5535,1.0,True,True,0.1238,0.2461,0.101,7.724,1.901,True,True,False,,bxsVRursffK,refrigerator
+ovon_learned,ovon_refrigerator_bxsvrursffk_5908,1.0,True,True,0.3601,0.3526,0.079,17.452,6.154,True,True,False,,bxsVRursffK,refrigerator
+ovon_learned,ovon_refrigerator_cvzr5tuy5c5_2511,1.0,True,True,0.2035,0.2043,0.109,35.712,7.295,True,True,False,,cvZr5TUy5C5,refrigerator
+ovon_learned,ovon_refrigerator_dd4bfstq8gi_3644,1.0,True,True,0.1043,0.612,0.13,6.619,4.051,True,True,False,,Dd4bFSTQ8gi,refrigerator
+ovon_learned,ovon_refrigerator_ef36g7l6z9m_3292,1.0,False,False,0.0,0.0,3.013,89.913,1.761,True,False,False,stopped_too_far,eF36g7L6Z9M,refrigerator
+ovon_learned,ovon_refrigerator_lt9jq6dn3ea_4585,1.0,True,True,0.1999,0.6082,0.227,8.782,5.341,True,True,False,,LT9Jq6dN3Ea,refrigerator
+ovon_learned,ovon_refrigerator_ml8thkuavtm_3235,1.0,True,True,0.1726,0.105,0.113,12.224,1.284,True,True,False,,mL8ThkuaVTM,refrigerator
+ovon_learned,ovon_refrigerator_mv2huxq3b53_1550,1.0,True,True,0.2619,0.3945,0.164,36.785,14.51,True,True,False,,mv2HUxq3B53,refrigerator
+ovon_learned,ovon_refrigerator_p53sfw6mjze_3745,1.0,False,True,0.0,0.0698,0.133,60.603,4.232,True,True,False,,p53SfW6mjZe,refrigerator
+ovon_learned,ovon_refrigerator_q5qzseehe5g_4520,1.0,True,False,0.2488,0.0,2.149,14.401,4.594,True,True,False,stopped_too_far,q5QZSEeHe5g,refrigerator
+ovon_learned,ovon_refrigerator_y9htuuggdiq_5409,1.0,True,True,0.3799,0.1357,0.148,25.066,3.401,True,True,False,,y9hTuugGdiq,refrigerator
+ovon_learned,ovon_rug_bcpu9supuw9_3300,1.0,True,True,0.0373,0.31,0.193,5.167,1.602,True,True,False,,bCPU9suPUw9,rug
+ovon_learned,ovon_rug_dd4bfstq8gi_33,1.0,True,True,0.0183,0.0651,0.105,20.894,1.36,True,True,False,,Dd4bFSTQ8gi,rug
+ovon_learned,ovon_rug_q5qzseehe5g_3710,1.0,True,True,0.1407,0.3199,0.172,3.339,1.068,True,True,False,,q5QZSEeHe5g,rug
+ovon_learned,ovon_rug_y9htuuggdiq_6971,1.0,True,True,0.4598,0.6808,0.097,13.497,9.189,True,True,False,,y9hTuugGdiq,rug
+ovon_learned,ovon_shower_glass_mv2huxq3b53_4548,1.0,True,False,0.106,0.0,13.148,144.55,12.628,True,False,False,stopped_too_far,mv2HUxq3B53,shower glass
+ovon_learned,ovon_stair_4ok3usbneis_4553,1.0,True,True,0.1759,0.1857,0.011,15.733,2.921,True,True,False,,4ok3usBNeis,stair
+ovon_learned,ovon_stair_bcpu9supuw9_2150,1.0,True,True,0.1534,0.2384,0.228,22.211,5.294,True,True,False,,bCPU9suPUw9,stair
+ovon_learned,ovon_stair_cvzr5tuy5c5_1966,1.0,True,True,0.4445,0.431,0.304,26.656,11.489,True,True,False,,cvZr5TUy5C5,stair
+ovon_learned,ovon_stair_dyehnkdt76v_1601,1.0,True,True,0.6151,0.2346,0.147,11.434,2.682,True,True,False,,DYehNKdT76V,stair
+ovon_learned,ovon_stair_k1cupfywxj6_2096,1.0,True,True,0.1646,0.4173,0.102,3.55,1.482,True,True,False,,k1cupFYWXJ6,stair
+ovon_learned,ovon_stair_lt9jq6dn3ea_3012,1.0,False,True,0.0,0.251,0.16,26.304,6.603,True,True,False,,LT9Jq6dN3Ea,stair
+ovon_learned,ovon_stair_ml8thkuavtm_2371,1.0,True,True,0.0454,0.0313,0.205,34.29,1.073,True,True,False,,mL8ThkuaVTM,stair
+ovon_learned,ovon_stair_teesavr23of_788,1.0,False,False,0.0,0.0,2.915,52.783,14.382,True,True,False,stopped_too_far,TEEsavR23oF,stair
+ovon_learned,ovon_stair_zt1rvoi7pcg_4089,1.0,False,True,0.0,0.503,0.183,11.845,5.957,True,True,False,,zt1RVoi7PcG,stair
+ovon_learned,ovon_statue_y9htuuggdiq_4467,1.0,True,True,0.3128,0.3599,0.152,54.925,19.765,True,True,False,,y9hTuugGdiq,statue
+ovon_learned,ovon_vase_yr17pdcnddw_1753,1.0,False,True,0.0,0.0146,0.09,167.687,2.451,True,True,False,,yr17PDCnDDW,vase

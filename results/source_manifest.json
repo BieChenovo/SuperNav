@@ -21,7 +21,7 @@
   },
   {
     "path": "README.local.md",
-    "sha256": "684dd8484fc0018ee000b2d89aaccb3bb668f0d3f3275132796f7ac56ac54b5f"
+    "sha256": "211e0b0b246ea2df7509900768546ad9e7308d5d6b4b7aeb4ae40858d11f2bfa"
   },
   {
     "path": "README.upstream.md",
@@ -77,7 +77,7 @@
   },
   {
     "path": "configs/benchmarks/global_task/prompts/common.md",
-    "sha256": "1c966459b7dc463e394042b9507a4e3c13310580be206dad26ecdf2ab5517d9d"
+    "sha256": "a9a0d7fc9dfdf2fbadb0443c0769ed9d0dd3dd69df6af32e486bc9326a294990"
   },
   {
     "path": "configs/benchmarks/global_task/prompts/common_localnav.md",
@@ -133,7 +133,7 @@
   },
   {
     "path": "configs/benchmarks/main/prompts/movement_visual_point.md",
-    "sha256": "c2d49766c3fc612a4ff09f7b941c3ead99f61f88b74944859269a56594f1b9d4"
+    "sha256": "5d24e4f66537132384621b4b08cb59f0686854780c922ddb244a62a9de198242"
   },
   {
     "path": "configs/benchmarks/main/prompts/safety_tools.md",
@@ -2149,7 +2149,7 @@
   },
   {
     "path": "tests/test_global_task_harness.py",
-    "sha256": "4a45a4bf113868ab28fdf993f9a498df7a3a2968a433f7da4b485e3fdfe4dbe8"
+    "sha256": "a834d296fcce743c321b798fa781922307445ef8eafff2980e510f0d259ef960"
   },
   {
     "path": "tests/test_habitatgs_benchmark.py",

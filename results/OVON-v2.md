@@ -1,25 +1,27 @@
-# OVON v2 results
+# OVON v2：当前 Geo 与 Learned 结果
 
-240/240 unique task/executor records independently scored. All eight original GPU stress workloads restored and verified.
+当前 v2 采用：Geo 仅删除 junction 和未开放工具的提示；Learned 修复参数传递并实际使用停止概率阈值 0.1、动作前缀 3。全局/局部 Skill 及 references 保持官方原版。
 
-| Method | Distance | Episodes | Baseline SR | v2 SR | Change (pp) | v2 SPL |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| ovon_geo | 0.25 m | 120 | 51.67% | 44.17% | -7.50 | 0.2750 |
-| ovon_geo | 1 m | 120 | 65.00% | 60.83% | -4.17 | 0.3639 |
-| ovon_learned | 0.25 m | 120 | 51.67% | 57.50% | +5.83 | 0.1412 |
-| ovon_learned | 1 m | 120 | 63.33% | 66.67% | +3.33 | 0.1602 |
+两种执行器各使用同一组 OVON val_unseen 120 条任务，共 240 条任务/执行器记录。Geo 来自 2026-10-27 晚间完成的运行，Learned 来自当日早间完成的运行；这不是重新同时运行的 240 条实验。两组均已完成，且各自 8 路原始 gpu_stress 已恢复并核验。
 
-Same 120 episodes per method, original Skills and stopping rules. Geo changes prompt/tool consistency only; Learned applies 0.1/3 through the repaired parameter binding. Request capacity remains 8 MiB. OVON MTU3D replica credits applied consistently. Baseline uses an older recorded Codex CLI; this remains a comparison limitation.
+| 方法 | 版本 | 0.25 m SR | 0.25 m SPL | 1 m SR | 1 m SPL |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Geo | 原版复现 | 51.67%（62/120） | 0.3261 | 65.00%（78/120） | 0.4197 |
+| Geo | **当前 v2** | **53.33%（64/120）** | **0.3065** | **64.17%（77/120）** | **0.3860** |
+| Geo | 论文表 2 | 68.33%（82/120） | 0.3837 | 73.33%（88/120） | 0.4105 |
+| Learned | 原版复现 | 51.67%（62/120） | 0.1145 | 63.33%（76/120） | 0.1367 |
+| Learned | **当前 v2** | **57.50%（69/120）** | **0.1412** | **66.67%（80/120）** | **0.1602** |
+| Learned | 论文表 2 | 65.00%（78/120） | 0.1355 | 70.83%（85/120） | 0.1443 |
 
-## Learned comparison with the paper
+论文来源：[SuperNav v1 表 2](https://arxiv.org/html/2610.12126v1#S4.T2)。评分采用终点到最近目标 viewpoint 的 NavMesh 最短距离，统一应用 MTU3D replica 的两条指定不可达任务赠分；赠分在逐任务数据中明确标记。模型自报 achieved 不等于独立评分成功。
 
-Verified against [SuperNav v1, Table 2 and Appendix C.3](https://arxiv.org/html/2610.12126v1#S4.T2) on 2026-10-27. The paper describes a local stop probability threshold of 0.1 and a prefix of three predicted displacement increments.
+## 逐任务比较
 
-| Distance | Previous local SR | v2 SR | Paper SR | v2 minus paper (pp) | v2 SPL | Paper SPL |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| 0.25 m | 51.67% (62/120) | 57.50% (69/120) | 65.00% (78/120) | -7.50 | 0.1412 | 0.1355 |
-| 1 m | 63.33% (76/120) | 66.67% (80/120) | 70.83% (85/120) | -4.17 | 0.1602 | 0.1443 |
+- [episodes.csv](episodes.csv)：480 行，包含两种执行器、两个评分阈值及对应原版结果；不是 480 个不同任务。
+- [summary.json](summary.json)：精确成功数、SR/SPL、配置和逐任务对照。
+- [Geo 评分](geo/) / [Learned 评分](learned/)：独立评分的逐任务记录。
+- [provenance.json](provenance.json)：来源和校验值。
 
-The repaired binding was observed in all 1,576 recorded controller entries across 120 Learned episodes, using 0.1/3. This confirms that the configured parameters reached the controller. The single paired evaluation supports retaining the change, but does not establish that the parameters are optimal or that all paper differences are resolved.
+本轮 Geo 相比原版严格判据多成功 2 条，1 m 判据少成功 1 条，尚未形成明确总体提升。Learned 相比原版两个判据分别多成功 7 条和 4 条。原版使用较早的 Codex CLI，单次对照不能当作稳定的因果结论。
 
-After this evaluation, the working directory's Geo prompt changes were reverted at the user's request. This report, its manifest, frozen source and scored trajectories continue to describe the evaluated version before that rollback. No new evaluation was started. Verification: `../checks/geo_rollback.json`.
+上轮大幅精简 Geo prompt 的 44.17% / 60.83% 属于历史结果，不再作为当前 v2。Git 历史和服务器原始运行记录保留用于追溯。

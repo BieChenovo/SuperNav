@@ -14,17 +14,11 @@ tool returns the new surround, so hab_init_scene is never an observation refresh
 
 {task_context}
 
-Available action categories are turning, short backward steps, bounded visual-point
-movement, LocateAnything preview/confirmation movement, and session close. Follow the
+Available action categories are turning, bounded visual-point movement, and session close. Follow the
 required native skill for the navigation policy and tool-selection details.
 
 Success requires current visual evidence in the final surround. Detector
 success, a reached status, or arrival at a proxy is not task success by itself.
-
-At any local junction with two or more plausible doorway/opening choices, call
-hab_register_spatial_junction to register the sibling candidates before selecting one.
-Reuse the returned branch_id when grounding that choice. Spatial-memory warnings are
-conservative audit facts, not room labels.
 
 If bounded recovery attempts produce no progress, report blocked rather than looping.
 An init timeout or failure must not be followed by a blind init retry. Whether successful

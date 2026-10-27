@@ -1,0 +1,89 @@
+{
+  "version": "v2",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "unique_episodes_per_executor": 120,
+  "task_executor_records": 240,
+  "scoring": {
+    "criterion": "viewpoint_geodesic",
+    "thresholds_m": [
+      0.25,
+      1.0
+    ],
+    "l_source": "viewpoint_geodesic",
+    "mtu3d_replica": true
+  },
+  "source_runs": {
+    "geo": {
+      "archive": "data/runs/ovon_geo",
+      "completed": 120,
+      "finished_at": "2026-10-27T13:38:48.934693+00:00",
+      "source_commit": "89f8f5d2ea8f5e5409540e16ac2d74faab40bcc8",
+      "cli_version": "codex-cli 0.164.0-alpha.11.1",
+      "manifest_sha256": "8fb1bd398fdf57e90094b1033f9e8554a2e7537c3d4cb8ed8793108f5d2c407d",
+      "stress_restored": true
+    },
+    "learned": {
+      "archive": "data/runs/ovon",
+      "completed": 120,
+      "finished_at": "2026-10-26T23:35:29.729829+00:00",
+      "source_commit": "89f8f5d2ea8f5e5409540e16ac2d74faab40bcc8",
+      "cli_version": "codex-cli 0.164.0-alpha.11.1",
+      "manifest_sha256": "3c8ff5cbdb98babb1e7241e0f3b900ddc4d918a00106d08d9eb836487a4030c5",
+      "stress_restored": true
+    }
+  },
+  "combined_from_two_runs": true,
+  "paper": "https://arxiv.org/html/2610.12126v1#S4.T2",
+  "summary": [
+    {
+      "group": "ovon_geo",
+      "threshold_m": 0.25,
+      "episodes": 120,
+      "baseline_successes": 62,
+      "v2_successes": 64,
+      "baseline_sr": 0.5166666666666667,
+      "v2_sr": 0.5333333333333333,
+      "delta_pp": 1.6666666666666667,
+      "v2_spl": 0.3065,
+      "baseline_spl": 0.32608916666666665
+    },
+    {
+      "group": "ovon_geo",
+      "threshold_m": 1.0,
+      "episodes": 120,
+      "baseline_successes": 78,
+      "v2_successes": 77,
+      "baseline_sr": 0.65,
+      "v2_sr": 0.6416666666666667,
+      "delta_pp": -0.8333333333333334,
+      "v2_spl": 0.386,
+      "baseline_spl": 0.419715
+    },
+    {
+      "group": "ovon_learned",
+      "threshold_m": 0.25,
+      "episodes": 120,
+      "baseline_successes": 62,
+      "v2_successes": 69,
+      "baseline_sr": 0.5166666666666667,
+      "v2_sr": 0.575,
+      "delta_pp": 5.833333333333333,
+      "v2_spl": 0.1412,
+      "baseline_spl": 0.11447333333333334
+    },
+    {
+      "group": "ovon_learned",
+      "threshold_m": 1.0,
+      "episodes": 120,
+      "baseline_successes": 76,
+      "v2_successes": 80,
+      "baseline_sr": 0.6333333333333333,
+      "v2_sr": 0.6666666666666666,
+      "delta_pp": 3.3333333333333335,
+      "v2_spl": 0.1602,
+      "baseline_spl": 0.1366675
+    }
+  ],
+  "episode_table": "episodes.csv"
+}
