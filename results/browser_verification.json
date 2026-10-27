@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "mode": "file://, no web server",
+  "checks": [
+    "v2 file:// replay: 240 cases, real 256px RGB and recomputed 0.574m endpoint",
+    "evaluated Geo prompt and run-local Skills are present",
+    "same episode switches across versions and executors",
+    "historical replay retains validated 0.124m first passing observation"
+  ],
+  "external_network_requests": [],
+  "browser_errors": []
+}

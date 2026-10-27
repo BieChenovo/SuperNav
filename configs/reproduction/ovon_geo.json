@@ -1,0 +1,83 @@
+{
+  "agent": "codex",
+  "model": {
+    "name": "gpt-5.6-terra"
+  },
+  "agents": {
+    "codex": {
+      "command": "/hpc2hdd/home/yichenwang/.vscode-server/extensions/openai.chatgpt-26.1021.22027-linux-x64/bin/linux-x86_64/codex",
+      "provider_mode": "user",
+      "timeout_s": 3600,
+      "sandbox": "workspace-write",
+      "approval": "never",
+      "mcp_tools_approval": "approve",
+      "mcp_startup_timeout_s": 180,
+      "mcp_tool_timeout_s": 300,
+      "skip_git_repo_check": true,
+      "extra_args": [
+        "-c",
+        "model_reasoning_effort=\"high\""
+      ]
+    }
+  },
+  "environment": {
+    "backend": "habitat",
+    "python": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/hm3d_ovon_qwen_20261014/envs/habitat-gs-py312/bin/python"
+  },
+  "bridge": {
+    "host": "127.0.0.1",
+    "per_episode": true,
+    "startup_timeout_s": 120,
+    "port": 18911
+  },
+  "mcp": {
+    "transport": "stdio",
+    "sensor_depth": true,
+    "name": "habitat-gs",
+    "environment": {
+      "HAB_ENABLE_ORACLE_LOCAL_NAV": "1",
+      "HAB_MCP_GATE_ENABLED": "0",
+      "HAB_SENSOR_WIDTH": "640",
+      "HAB_SENSOR_HEIGHT": "480",
+      "HAB_DEFAULT_AGENT_NAVMESH": "0",
+      "HAB_MCP_SPATIAL_MEMORY": "0",
+      "HAB_MCP_VISIBLE_TARGET_OVERLAYS": "0",
+      "HAB_MCP_MINIMAL_TASK": "0",
+      "HAB_VISUAL_POINT_POINT_ONLY": "1",
+      "HAB_VISUAL_POINT_GEO_BASED_EXECUTOR": "1"
+    }
+  },
+  "benchmark_profile": "global_task",
+  "skill_runtime": {
+    "root": "skills",
+    "skill_set_id": "habitat-gs-native-v1",
+    "visibility_gate": "required",
+    "visibility_timeout_s": 120
+  },
+  "arms": {
+    "default": {
+      "movement": "visual_point",
+      "skill_mode": "native",
+      "tool_whitelist": [
+        "hab_init_scene",
+        "hab_turn",
+        "hab_visual_point_navigate",
+        "hab_close_session"
+      ],
+      "environment": {
+        "HAB_MCP_OBSERVATION_MODE": "surround"
+      },
+      "skill_name": "global-navigation-geo-based-executor",
+      "skill_names": [
+        "global-navigation-geo-based-executor",
+        "localnav-pointnav-geo-based-executor"
+      ]
+    }
+  },
+  "workspace_root": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav-v2",
+  "output_dir": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/v2/ovon_geo/runs",
+  "scene_dataset_config_file": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/paper_simulation_20261021/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+  "instructions_file": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav-v2/configs/reproduction/ovon.instructions.json",
+  "prompts_dir": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav-v2/configs/benchmarks/global_task/prompts",
+  "visuals_root": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/v2/ovon_geo/visuals"
+}

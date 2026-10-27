@@ -15,6 +15,7 @@ from __future__ import annotations
 
 from supernav.paths import workspace_root
 
+import math
 import os
 from typing import Any, Dict
 
@@ -112,6 +113,24 @@ class LocalNavigateTool:
         payload: Dict[str, Any] = {}
         payload["image_ref"] = image_ref
         payload["point"] = point
+        # Arm configuration is in this MCP process, while the controller runs
+        # in a separate bridge. Forward only the two configured control values,
+        # following the Geo executor's existing per-request binding pattern.
+        try:
+            threshold = os.environ.get("NAV_LOCALNAV_DONE_THRESHOLD")
+            if threshold is not None:
+                value = float(threshold)
+                if not math.isfinite(value) or not 0.0 <= value <= 1.0:
+                    raise ValueError("done threshold must be a probability in [0, 1]")
+                payload["done_threshold"] = value
+            actions = os.environ.get("NAV_LOCALNAV_EXEC_ACTIONS")
+            if actions is not None:
+                count = int(actions)
+                if count < 1:
+                    raise ValueError("execute actions must be a positive integer")
+                payload["execute_actions"] = count
+        except (TypeError, ValueError) as exc:
+            return ToolResult(ok=False, body={}, error=f"invalid localnav configuration: {exc}")
         if args.get("max_steps") is not None:
             payload["max_steps"] = int(args["max_steps"])
         call_timeout = float(os.environ.get("NAV_LOCALNAV_CALL_TIMEOUT", "300"))

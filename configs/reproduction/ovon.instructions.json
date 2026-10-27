@@ -1,0 +1,4687 @@
+{
+  "source": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/paper_simulation_20261021/prepared/private/ovon.instructions.json",
+  "source_sha256": "5b6fafbd7a728d8bd23aff11f401d64cf8b964619d66c44bf5781d6b564b1485",
+  "selection": "Same exact unique task IDs as the completed historical cohort; retain original source row ordering.",
+  "instructions": [
+    {
+      "task_id": "ovon_dishwasher_4ok3usbneis_5583",
+      "slug": "dishwasher-4ok3usbneis-5583",
+      "text": "Find and approach a dishwasher.",
+      "scene": "4ok3usBNeis",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          7.38101,
+          2.06447,
+          -0.78032
+        ],
+        "start_rotation": [
+          0.0,
+          0.74569,
+          0.0,
+          0.6663
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "dishwasher",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/4ok3usBNeis.json.gz",
+      "source_episode_id": "5583",
+      "goal_key": "4ok3usBNeis.basis.glb_dishwasher",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/4ok3usBNeis.json.gz",
+        "source_episode_id": "5583",
+        "goal_key": "4ok3usBNeis.basis.glb_dishwasher",
+        "object_category": "dishwasher",
+        "initial_geodesic_distance_m": 5.627373218536377,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 26,
+        "hm3d_scene_id": "hm3d/val//00877-4ok3usBNeis/4ok3usBNeis.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 95
+      }
+    },
+    {
+      "task_id": "ovon_freezer_4ok3usbneis_465",
+      "slug": "freezer-4ok3usbneis-465",
+      "text": "Find and approach a freezer.",
+      "scene": "4ok3usBNeis",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          7.3788,
+          -0.53553,
+          1.52692
+        ],
+        "start_rotation": [
+          0.0,
+          0.97494,
+          0.0,
+          0.22249
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "freezer",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/4ok3usBNeis.json.gz",
+      "source_episode_id": "465",
+      "goal_key": "4ok3usBNeis.basis.glb_freezer",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/4ok3usBNeis.json.gz",
+        "source_episode_id": "465",
+        "goal_key": "4ok3usBNeis.basis.glb_freezer",
+        "object_category": "freezer",
+        "initial_geodesic_distance_m": 7.000588417053223,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 44,
+        "hm3d_scene_id": "hm3d/val//00877-4ok3usBNeis/4ok3usBNeis.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 2
+      }
+    },
+    {
+      "task_id": "ovon_freezer_4ok3usbneis_474",
+      "slug": "freezer-4ok3usbneis-474",
+      "text": "Find and approach a freezer.",
+      "scene": "4ok3usBNeis",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          0.28932,
+          -0.53553,
+          2.50425
+        ],
+        "start_rotation": [
+          0.0,
+          0.99379,
+          0.0,
+          -0.11127
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "freezer",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/4ok3usBNeis.json.gz",
+      "source_episode_id": "474",
+      "goal_key": "4ok3usBNeis.basis.glb_freezer",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/4ok3usBNeis.json.gz",
+        "source_episode_id": "474",
+        "goal_key": "4ok3usBNeis.basis.glb_freezer",
+        "object_category": "freezer",
+        "initial_geodesic_distance_m": 2.1315248012542725,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 44,
+        "hm3d_scene_id": "hm3d/val//00877-4ok3usBNeis/4ok3usBNeis.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 5
+      }
+    },
+    {
+      "task_id": "ovon_stair_4ok3usbneis_4553",
+      "slug": "stair-4ok3usbneis-4553",
+      "text": "Find and approach a stair.",
+      "scene": "4ok3usBNeis",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          0.92408,
+          -0.55164,
+          4.1184
+        ],
+        "start_rotation": [
+          0.0,
+          0.452,
+          0.0,
+          0.89202
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "stair",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/4ok3usBNeis.json.gz",
+      "source_episode_id": "4553",
+      "goal_key": "4ok3usBNeis.basis.glb_stair",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/4ok3usBNeis.json.gz",
+        "source_episode_id": "4553",
+        "goal_key": "4ok3usBNeis.basis.glb_stair",
+        "object_category": "stair",
+        "initial_geodesic_distance_m": 2.920902729034424,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 46,
+        "hm3d_scene_id": "hm3d/val//00877-4ok3usBNeis/4ok3usBNeis.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 83
+      }
+    },
+    {
+      "task_id": "ovon_flower_vase_5cdeh9f2hjl_3082",
+      "slug": "flower_vase-5cdeh9f2hjl-3082",
+      "text": "Find and approach a flower vase.",
+      "scene": "5cdEh9F2hJL",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          3.61124,
+          0.0184,
+          -2.57759
+        ],
+        "start_rotation": [
+          0.0,
+          0.75852,
+          0.0,
+          -0.65165
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "flower vase",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+      "source_episode_id": "3082",
+      "goal_key": "5cdEh9F2hJL.basis.glb_flower vase",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+        "source_episode_id": "3082",
+        "goal_key": "5cdEh9F2hJL.basis.glb_flower vase",
+        "object_category": "flower vase",
+        "initial_geodesic_distance_m": 5.149548530578613,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 22,
+        "hm3d_scene_id": "hm3d/val//00853-5cdEh9F2hJL/5cdEh9F2hJL.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 48
+      }
+    },
+    {
+      "task_id": "ovon_flowerpot_5cdeh9f2hjl_4375",
+      "slug": "flowerpot-5cdeh9f2hjl-4375",
+      "text": "Find and approach a flowerpot.",
+      "scene": "5cdEh9F2hJL",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -1.56975,
+          0.0184,
+          1.71867
+        ],
+        "start_rotation": [
+          0.0,
+          0.98819,
+          0.0,
+          -0.15322
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "flowerpot",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+      "source_episode_id": "4375",
+      "goal_key": "5cdEh9F2hJL.basis.glb_flowerpot",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+        "source_episode_id": "4375",
+        "goal_key": "5cdEh9F2hJL.basis.glb_flowerpot",
+        "object_category": "flowerpot",
+        "initial_geodesic_distance_m": 8.777799606323242,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 13,
+        "hm3d_scene_id": "hm3d/val//00853-5cdEh9F2hJL/5cdEh9F2hJL.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 66
+      }
+    },
+    {
+      "task_id": "ovon_island_5cdeh9f2hjl_6512",
+      "slug": "island-5cdeh9f2hjl-6512",
+      "text": "Find and approach a island.",
+      "scene": "5cdEh9F2hJL",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -1.63849,
+          0.0184,
+          4.53494
+        ],
+        "start_rotation": [
+          0.0,
+          0.48947,
+          0.0,
+          -0.87202
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "island",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+      "source_episode_id": "6512",
+      "goal_key": "5cdEh9F2hJL.basis.glb_island",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+        "source_episode_id": "6512",
+        "goal_key": "5cdEh9F2hJL.basis.glb_island",
+        "object_category": "island",
+        "initial_geodesic_distance_m": 13.789122581481934,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 87,
+        "hm3d_scene_id": "hm3d/val//00853-5cdEh9F2hJL/5cdEh9F2hJL.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 108
+      }
+    },
+    {
+      "task_id": "ovon_island_5cdeh9f2hjl_6815",
+      "slug": "island-5cdeh9f2hjl-6815",
+      "text": "Find and approach a island.",
+      "scene": "5cdEh9F2hJL",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          3.4803,
+          0.0184,
+          -2.28617
+        ],
+        "start_rotation": [
+          0.0,
+          0.99831,
+          0.0,
+          0.05812
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "island",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+      "source_episode_id": "6815",
+      "goal_key": "5cdEh9F2hJL.basis.glb_island",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+        "source_episode_id": "6815",
+        "goal_key": "5cdEh9F2hJL.basis.glb_island",
+        "object_category": "island",
+        "initial_geodesic_distance_m": 2.0290939807891846,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 87,
+        "hm3d_scene_id": "hm3d/val//00853-5cdEh9F2hJL/5cdEh9F2hJL.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 109
+      }
+    },
+    {
+      "task_id": "ovon_picture_5cdeh9f2hjl_384",
+      "slug": "picture-5cdeh9f2hjl-384",
+      "text": "Find and approach a picture.",
+      "scene": "5cdEh9F2hJL",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          2.6525,
+          0.0184,
+          1.4757
+        ],
+        "start_rotation": [
+          0.0,
+          0.99927,
+          0.0,
+          -0.03829
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "picture",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+      "source_episode_id": "384",
+      "goal_key": "5cdEh9F2hJL.basis.glb_picture",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+        "source_episode_id": "384",
+        "goal_key": "5cdEh9F2hJL.basis.glb_picture",
+        "object_category": "picture",
+        "initial_geodesic_distance_m": 1.4157074689865112,
+        "goal_instance_count": 13,
+        "goal_viewpoint_count": 182,
+        "hm3d_scene_id": "hm3d/val//00853-5cdEh9F2hJL/5cdEh9F2hJL.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 2
+      }
+    },
+    {
+      "task_id": "ovon_picture_5cdeh9f2hjl_450",
+      "slug": "picture-5cdeh9f2hjl-450",
+      "text": "Find and approach a picture.",
+      "scene": "5cdEh9F2hJL",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          3.4497,
+          0.0184,
+          0.49955
+        ],
+        "start_rotation": [
+          0.0,
+          0.81533,
+          0.0,
+          0.579
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "picture",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+      "source_episode_id": "450",
+      "goal_key": "5cdEh9F2hJL.basis.glb_picture",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+        "source_episode_id": "450",
+        "goal_key": "5cdEh9F2hJL.basis.glb_picture",
+        "object_category": "picture",
+        "initial_geodesic_distance_m": 1.0356173515319824,
+        "goal_instance_count": 13,
+        "goal_viewpoint_count": 182,
+        "hm3d_scene_id": "hm3d/val//00853-5cdEh9F2hJL/5cdEh9F2hJL.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 5
+      }
+    },
+    {
+      "task_id": "ovon_plant_5cdeh9f2hjl_6168",
+      "slug": "plant-5cdeh9f2hjl-6168",
+      "text": "Find and approach a plant.",
+      "scene": "5cdEh9F2hJL",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          3.27378,
+          0.0184,
+          -4.75062
+        ],
+        "start_rotation": [
+          0.0,
+          0.71686,
+          0.0,
+          0.69722
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "plant",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+      "source_episode_id": "6168",
+      "goal_key": "5cdEh9F2hJL.basis.glb_plant",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/5cdEh9F2hJL.json.gz",
+        "source_episode_id": "6168",
+        "goal_key": "5cdEh9F2hJL.basis.glb_plant",
+        "object_category": "plant",
+        "initial_geodesic_distance_m": 3.93123197555542,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 2,
+        "hm3d_scene_id": "hm3d/val//00853-5cdEh9F2hJL/5cdEh9F2hJL.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 103
+      }
+    },
+    {
+      "task_id": "ovon_plant_6s7qhgap2fw_934",
+      "slug": "plant-6s7qhgap2fw-934",
+      "text": "Find and approach a plant.",
+      "scene": "6s7QHgap2fW",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          1.23281,
+          0.04944,
+          -3.44624
+        ],
+        "start_rotation": [
+          0.0,
+          0.07766,
+          0.0,
+          -0.99698
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "plant",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/6s7QHgap2fW.json.gz",
+      "source_episode_id": "934",
+      "goal_key": "6s7QHgap2fW.basis.glb_plant",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/6s7QHgap2fW.json.gz",
+        "source_episode_id": "934",
+        "goal_key": "6s7QHgap2fW.basis.glb_plant",
+        "object_category": "plant",
+        "initial_geodesic_distance_m": 8.599201202392578,
+        "goal_instance_count": 3,
+        "goal_viewpoint_count": 23,
+        "hm3d_scene_id": "hm3d/val//00890-6s7QHgap2fW/6s7QHgap2fW.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 14
+      }
+    },
+    {
+      "task_id": "ovon_book_7mxmsvcqjpj_1297",
+      "slug": "book-7mxmsvcqjpj-1297",
+      "text": "Find and approach a book.",
+      "scene": "7MXmsvcQjpJ",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          3.59878,
+          4.57964,
+          -2.97581
+        ],
+        "start_rotation": [
+          0.0,
+          0.2938,
+          0.0,
+          0.95587
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "book",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+      "source_episode_id": "1297",
+      "goal_key": "7MXmsvcQjpJ.basis.glb_book",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+        "source_episode_id": "1297",
+        "goal_key": "7MXmsvcQjpJ.basis.glb_book",
+        "object_category": "book",
+        "initial_geodesic_distance_m": 1.4404425621032715,
+        "goal_instance_count": 14,
+        "goal_viewpoint_count": 88,
+        "hm3d_scene_id": "hm3d/val//00823-7MXmsvcQjpJ/7MXmsvcQjpJ.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 23
+      }
+    },
+    {
+      "task_id": "ovon_dishwasher_7mxmsvcqjpj_4754",
+      "slug": "dishwasher-7mxmsvcqjpj-4754",
+      "text": "Find and approach a dishwasher.",
+      "scene": "7MXmsvcQjpJ",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -4.89189,
+          -2.12577,
+          -1.72187
+        ],
+        "start_rotation": [
+          0.0,
+          0.97799,
+          0.0,
+          0.20866
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "dishwasher",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+      "source_episode_id": "4754",
+      "goal_key": "7MXmsvcQjpJ.basis.glb_dishwasher",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+        "source_episode_id": "4754",
+        "goal_key": "7MXmsvcQjpJ.basis.glb_dishwasher",
+        "object_category": "dishwasher",
+        "initial_geodesic_distance_m": 3.3227109909057617,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 8,
+        "hm3d_scene_id": "hm3d/val//00823-7MXmsvcQjpJ/7MXmsvcQjpJ.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 79
+      }
+    },
+    {
+      "task_id": "ovon_glass_7mxmsvcqjpj_8047",
+      "slug": "glass-7mxmsvcqjpj-8047",
+      "text": "Find and approach a glass.",
+      "scene": "7MXmsvcQjpJ",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -2.22632,
+          -4.29865,
+          -1.38818
+        ],
+        "start_rotation": [
+          0.0,
+          0.98869,
+          0.0,
+          0.14998
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "glass",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+      "source_episode_id": "8047",
+      "goal_key": "7MXmsvcQjpJ.basis.glb_glass",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+        "source_episode_id": "8047",
+        "goal_key": "7MXmsvcQjpJ.basis.glb_glass",
+        "object_category": "glass",
+        "initial_geodesic_distance_m": 3.8326268196105957,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 31,
+        "hm3d_scene_id": "hm3d/val//00823-7MXmsvcQjpJ/7MXmsvcQjpJ.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 135
+      }
+    },
+    {
+      "task_id": "ovon_guitar_7mxmsvcqjpj_3693",
+      "slug": "guitar-7mxmsvcqjpj-3693",
+      "text": "Find and approach a guitar.",
+      "scene": "7MXmsvcQjpJ",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          3.6425,
+          1.33705,
+          -0.05819
+        ],
+        "start_rotation": [
+          0.0,
+          0.40078,
+          0.0,
+          -0.91618
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "guitar",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+      "source_episode_id": "3693",
+      "goal_key": "7MXmsvcQjpJ.basis.glb_guitar",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+        "source_episode_id": "3693",
+        "goal_key": "7MXmsvcQjpJ.basis.glb_guitar",
+        "object_category": "guitar",
+        "initial_geodesic_distance_m": 1.8475009202957153,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 9,
+        "hm3d_scene_id": "hm3d/val//00823-7MXmsvcQjpJ/7MXmsvcQjpJ.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 58
+      }
+    },
+    {
+      "task_id": "ovon_guitar_7mxmsvcqjpj_3983",
+      "slug": "guitar-7mxmsvcqjpj-3983",
+      "text": "Find and approach a guitar.",
+      "scene": "7MXmsvcQjpJ",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          3.01253,
+          1.32964,
+          -4.12389
+        ],
+        "start_rotation": [
+          0.0,
+          0.96603,
+          0.0,
+          0.25842
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "guitar",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+      "source_episode_id": "3983",
+      "goal_key": "7MXmsvcQjpJ.basis.glb_guitar",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+        "source_episode_id": "3983",
+        "goal_key": "7MXmsvcQjpJ.basis.glb_guitar",
+        "object_category": "guitar",
+        "initial_geodesic_distance_m": 4.377423286437988,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 9,
+        "hm3d_scene_id": "hm3d/val//00823-7MXmsvcQjpJ/7MXmsvcQjpJ.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 60
+      }
+    },
+    {
+      "task_id": "ovon_picture_7mxmsvcqjpj_126",
+      "slug": "picture-7mxmsvcqjpj-126",
+      "text": "Find and approach a picture.",
+      "scene": "7MXmsvcQjpJ",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          3.71471,
+          1.32964,
+          -0.71787
+        ],
+        "start_rotation": [
+          0.0,
+          0.71316,
+          0.0,
+          0.701
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "picture",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+      "source_episode_id": "126",
+      "goal_key": "7MXmsvcQjpJ.basis.glb_picture",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+        "source_episode_id": "126",
+        "goal_key": "7MXmsvcQjpJ.basis.glb_picture",
+        "object_category": "picture",
+        "initial_geodesic_distance_m": 1.0566366910934448,
+        "goal_instance_count": 29,
+        "goal_viewpoint_count": 194,
+        "hm3d_scene_id": "hm3d/val//00823-7MXmsvcQjpJ/7MXmsvcQjpJ.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 7
+      }
+    },
+    {
+      "task_id": "ovon_picture_7mxmsvcqjpj_17",
+      "slug": "picture-7mxmsvcqjpj-17",
+      "text": "Find and approach a picture.",
+      "scene": "7MXmsvcQjpJ",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          0.37774,
+          -2.17036,
+          -1.41531
+        ],
+        "start_rotation": [
+          0.0,
+          0.40321,
+          0.0,
+          0.91511
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "picture",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+      "source_episode_id": "17",
+      "goal_key": "7MXmsvcQjpJ.basis.glb_picture",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/7MXmsvcQjpJ.json.gz",
+        "source_episode_id": "17",
+        "goal_key": "7MXmsvcQjpJ.basis.glb_picture",
+        "object_category": "picture",
+        "initial_geodesic_distance_m": 1.4374933242797852,
+        "goal_instance_count": 29,
+        "goal_viewpoint_count": 194,
+        "hm3d_scene_id": "hm3d/val//00823-7MXmsvcQjpJ/7MXmsvcQjpJ.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 2
+      }
+    },
+    {
+      "task_id": "ovon_dishwasher_babdmeytvmz_3448",
+      "slug": "dishwasher-babdmeytvmz-3448",
+      "text": "Find and approach a dishwasher.",
+      "scene": "BAbdmeyTvMZ",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.5109,
+          0.04138,
+          4.90589
+        ],
+        "start_rotation": [
+          0.0,
+          0.96329,
+          0.0,
+          -0.26848
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "dishwasher",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/BAbdmeyTvMZ.json.gz",
+      "source_episode_id": "3448",
+      "goal_key": "BAbdmeyTvMZ.basis.glb_dishwasher",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/BAbdmeyTvMZ.json.gz",
+        "source_episode_id": "3448",
+        "goal_key": "BAbdmeyTvMZ.basis.glb_dishwasher",
+        "object_category": "dishwasher",
+        "initial_geodesic_distance_m": 1.36747145652771,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 17,
+        "hm3d_scene_id": "hm3d/val//00827-BAbdmeyTvMZ/BAbdmeyTvMZ.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 53
+      }
+    },
+    {
+      "task_id": "ovon_hanging_clothes_babdmeytvmz_2294",
+      "slug": "hanging_clothes-babdmeytvmz-2294",
+      "text": "Find and approach a hanging clothes.",
+      "scene": "BAbdmeyTvMZ",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          4.62325,
+          0.04521,
+          0.30373
+        ],
+        "start_rotation": [
+          0.0,
+          0.83908,
+          0.0,
+          -0.544
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "hanging clothes",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/BAbdmeyTvMZ.json.gz",
+      "source_episode_id": "2294",
+      "goal_key": "BAbdmeyTvMZ.basis.glb_hanging clothes",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/BAbdmeyTvMZ.json.gz",
+        "source_episode_id": "2294",
+        "goal_key": "BAbdmeyTvMZ.basis.glb_hanging clothes",
+        "object_category": "hanging clothes",
+        "initial_geodesic_distance_m": 4.092892169952393,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 21,
+        "hm3d_scene_id": "hm3d/val//00827-BAbdmeyTvMZ/BAbdmeyTvMZ.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 36
+      }
+    },
+    {
+      "task_id": "ovon_dresser_crmo8wxcyvb_2151",
+      "slug": "dresser-crmo8wxcyvb-2151",
+      "text": "Find and approach a dresser.",
+      "scene": "CrMo8WxCyVb",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -6.67981,
+          0.05006,
+          4.0986
+        ],
+        "start_rotation": [
+          0.0,
+          0.65214,
+          0.0,
+          0.7581
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "dresser",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/CrMo8WxCyVb.json.gz",
+      "source_episode_id": "2151",
+      "goal_key": "CrMo8WxCyVb.basis.glb_dresser",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/CrMo8WxCyVb.json.gz",
+        "source_episode_id": "2151",
+        "goal_key": "CrMo8WxCyVb.basis.glb_dresser",
+        "object_category": "dresser",
+        "initial_geodesic_distance_m": 7.574029922485352,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 42,
+        "hm3d_scene_id": "hm3d/val//00810-CrMo8WxCyVb/CrMo8WxCyVb.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 39
+      }
+    },
+    {
+      "task_id": "ovon_flower_vase_crmo8wxcyvb_2690",
+      "slug": "flower_vase-crmo8wxcyvb-2690",
+      "text": "Find and approach a flower vase.",
+      "scene": "CrMo8WxCyVb",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -3.05829,
+          -2.99994,
+          3.0969
+        ],
+        "start_rotation": [
+          0.0,
+          0.99086,
+          0.0,
+          0.13491
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "flower vase",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/CrMo8WxCyVb.json.gz",
+      "source_episode_id": "2690",
+      "goal_key": "CrMo8WxCyVb.basis.glb_flower vase",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/CrMo8WxCyVb.json.gz",
+        "source_episode_id": "2690",
+        "goal_key": "CrMo8WxCyVb.basis.glb_flower vase",
+        "object_category": "flower vase",
+        "initial_geodesic_distance_m": 2.3983664512634277,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 53,
+        "hm3d_scene_id": "hm3d/val//00810-CrMo8WxCyVb/CrMo8WxCyVb.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 46
+      }
+    },
+    {
+      "task_id": "ovon_microwave_crmo8wxcyvb_3195",
+      "slug": "microwave-crmo8wxcyvb-3195",
+      "text": "Find and approach a microwave.",
+      "scene": "CrMo8WxCyVb",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          1.13137,
+          -2.99994,
+          6.87572
+        ],
+        "start_rotation": [
+          0.0,
+          0.42284,
+          0.0,
+          0.90621
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "microwave",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/CrMo8WxCyVb.json.gz",
+      "source_episode_id": "3195",
+      "goal_key": "CrMo8WxCyVb.basis.glb_microwave",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/CrMo8WxCyVb.json.gz",
+        "source_episode_id": "3195",
+        "goal_key": "CrMo8WxCyVb.basis.glb_microwave",
+        "object_category": "microwave",
+        "initial_geodesic_distance_m": 2.409566879272461,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 14,
+        "hm3d_scene_id": "hm3d/val//00810-CrMo8WxCyVb/CrMo8WxCyVb.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 54
+      }
+    },
+    {
+      "task_id": "ovon_mirror_dyehnkdt76v_568",
+      "slug": "mirror-dyehnkdt76v-568",
+      "text": "Find and approach a mirror.",
+      "scene": "DYehNKdT76V",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          0.73955,
+          3.33651,
+          -5.29259
+        ],
+        "start_rotation": [
+          0.0,
+          0.32432,
+          0.0,
+          -0.94595
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "mirror",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/DYehNKdT76V.json.gz",
+      "source_episode_id": "568",
+      "goal_key": "DYehNKdT76V.basis.glb_mirror",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/DYehNKdT76V.json.gz",
+        "source_episode_id": "568",
+        "goal_key": "DYehNKdT76V.basis.glb_mirror",
+        "object_category": "mirror",
+        "initial_geodesic_distance_m": 9.168782234191895,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 7,
+        "hm3d_scene_id": "hm3d/val//00843-DYehNKdT76V/DYehNKdT76V.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 9
+      }
+    },
+    {
+      "task_id": "ovon_picture_dyehnkdt76v_321",
+      "slug": "picture-dyehnkdt76v-321",
+      "text": "Find and approach a picture.",
+      "scene": "DYehNKdT76V",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.53557,
+          0.03651,
+          -0.85952
+        ],
+        "start_rotation": [
+          0.0,
+          0.06379,
+          0.0,
+          0.99796
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "picture",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/DYehNKdT76V.json.gz",
+      "source_episode_id": "321",
+      "goal_key": "DYehNKdT76V.basis.glb_picture",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/DYehNKdT76V.json.gz",
+        "source_episode_id": "321",
+        "goal_key": "DYehNKdT76V.basis.glb_picture",
+        "object_category": "picture",
+        "initial_geodesic_distance_m": 1.5401045083999634,
+        "goal_instance_count": 4,
+        "goal_viewpoint_count": 47,
+        "hm3d_scene_id": "hm3d/val//00843-DYehNKdT76V/DYehNKdT76V.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 6
+      }
+    },
+    {
+      "task_id": "ovon_pillow_dyehnkdt76v_2299",
+      "slug": "pillow-dyehnkdt76v-2299",
+      "text": "Find and approach a pillow.",
+      "scene": "DYehNKdT76V",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          4.21428,
+          0.03651,
+          -2.24648
+        ],
+        "start_rotation": [
+          0.0,
+          0.26276,
+          0.0,
+          -0.96486
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "pillow",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/DYehNKdT76V.json.gz",
+      "source_episode_id": "2299",
+      "goal_key": "DYehNKdT76V.basis.glb_pillow",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/DYehNKdT76V.json.gz",
+        "source_episode_id": "2299",
+        "goal_key": "DYehNKdT76V.basis.glb_pillow",
+        "object_category": "pillow",
+        "initial_geodesic_distance_m": 8.380748748779297,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 17,
+        "hm3d_scene_id": "hm3d/val//00843-DYehNKdT76V/DYehNKdT76V.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 42
+      }
+    },
+    {
+      "task_id": "ovon_stair_dyehnkdt76v_1601",
+      "slug": "stair-dyehnkdt76v-1601",
+      "text": "Find and approach a stair.",
+      "scene": "DYehNKdT76V",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -1.35511,
+          0.03651,
+          -0.44462
+        ],
+        "start_rotation": [
+          0.0,
+          0.98578,
+          0.0,
+          -0.16806
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "stair",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/DYehNKdT76V.json.gz",
+      "source_episode_id": "1601",
+      "goal_key": "DYehNKdT76V.basis.glb_stair",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/DYehNKdT76V.json.gz",
+        "source_episode_id": "1601",
+        "goal_key": "DYehNKdT76V.basis.glb_stair",
+        "object_category": "stair",
+        "initial_geodesic_distance_m": 2.6822688579559326,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 104,
+        "hm3d_scene_id": "hm3d/val//00843-DYehNKdT76V/DYehNKdT76V.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 26
+      }
+    },
+    {
+      "task_id": "ovon_dishwasher_dd4bfstq8gi_4434",
+      "slug": "dishwasher-dd4bfstq8gi-4434",
+      "text": "Find and approach a dishwasher.",
+      "scene": "Dd4bFSTQ8gi",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          5.94613,
+          -0.06717,
+          -3.14004
+        ],
+        "start_rotation": [
+          0.0,
+          0.97537,
+          0.0,
+          -0.22057
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "dishwasher",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Dd4bFSTQ8gi.json.gz",
+      "source_episode_id": "4434",
+      "goal_key": "Dd4bFSTQ8gi.basis.glb_dishwasher",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Dd4bFSTQ8gi.json.gz",
+        "source_episode_id": "4434",
+        "goal_key": "Dd4bFSTQ8gi.basis.glb_dishwasher",
+        "object_category": "dishwasher",
+        "initial_geodesic_distance_m": 1.2859362363815308,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 23,
+        "hm3d_scene_id": "hm3d/val//00824-Dd4bFSTQ8gi/Dd4bFSTQ8gi.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 66
+      }
+    },
+    {
+      "task_id": "ovon_flower_vase_dd4bfstq8gi_810",
+      "slug": "flower_vase-dd4bfstq8gi-810",
+      "text": "Find and approach a flower vase.",
+      "scene": "Dd4bFSTQ8gi",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          6.48643,
+          -0.08118,
+          -5.54013
+        ],
+        "start_rotation": [
+          0.0,
+          0.43444,
+          0.0,
+          0.9007
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "flower vase",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Dd4bFSTQ8gi.json.gz",
+      "source_episode_id": "810",
+      "goal_key": "Dd4bFSTQ8gi.basis.glb_flower vase",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Dd4bFSTQ8gi.json.gz",
+        "source_episode_id": "810",
+        "goal_key": "Dd4bFSTQ8gi.basis.glb_flower vase",
+        "object_category": "flower vase",
+        "initial_geodesic_distance_m": 1.9877930879592896,
+        "goal_instance_count": 5,
+        "goal_viewpoint_count": 92,
+        "hm3d_scene_id": "hm3d/val//00824-Dd4bFSTQ8gi/Dd4bFSTQ8gi.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 12
+      }
+    },
+    {
+      "task_id": "ovon_flowerpot_dd4bfstq8gi_2644",
+      "slug": "flowerpot-dd4bfstq8gi-2644",
+      "text": "Find and approach a flowerpot.",
+      "scene": "Dd4bFSTQ8gi",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          4.20918,
+          0.02558,
+          1.59256
+        ],
+        "start_rotation": [
+          0.0,
+          0.02454,
+          0.0,
+          0.9997
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "flowerpot",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Dd4bFSTQ8gi.json.gz",
+      "source_episode_id": "2644",
+      "goal_key": "Dd4bFSTQ8gi.basis.glb_flowerpot",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Dd4bFSTQ8gi.json.gz",
+        "source_episode_id": "2644",
+        "goal_key": "Dd4bFSTQ8gi.basis.glb_flowerpot",
+        "object_category": "flowerpot",
+        "initial_geodesic_distance_m": 2.0017290115356445,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 60,
+        "hm3d_scene_id": "hm3d/val//00824-Dd4bFSTQ8gi/Dd4bFSTQ8gi.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 41
+      }
+    },
+    {
+      "task_id": "ovon_pillow_dd4bfstq8gi_1054",
+      "slug": "pillow-dd4bfstq8gi-1054",
+      "text": "Find and approach a pillow.",
+      "scene": "Dd4bFSTQ8gi",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          0.64599,
+          0.01882,
+          1.2275
+        ],
+        "start_rotation": [
+          0.0,
+          0.81811,
+          0.0,
+          -0.57506
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "pillow",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Dd4bFSTQ8gi.json.gz",
+      "source_episode_id": "1054",
+      "goal_key": "Dd4bFSTQ8gi.basis.glb_pillow",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Dd4bFSTQ8gi.json.gz",
+        "source_episode_id": "1054",
+        "goal_key": "Dd4bFSTQ8gi.basis.glb_pillow",
+        "object_category": "pillow",
+        "initial_geodesic_distance_m": 1.4602323770523071,
+        "goal_instance_count": 11,
+        "goal_viewpoint_count": 97,
+        "hm3d_scene_id": "hm3d/val//00824-Dd4bFSTQ8gi/Dd4bFSTQ8gi.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 22
+      }
+    },
+    {
+      "task_id": "ovon_refrigerator_dd4bfstq8gi_3644",
+      "slug": "refrigerator-dd4bfstq8gi-3644",
+      "text": "Find and approach a refrigerator.",
+      "scene": "Dd4bFSTQ8gi",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          0.91129,
+          0.01882,
+          2.59836
+        ],
+        "start_rotation": [
+          0.0,
+          0.99725,
+          0.0,
+          -0.07415
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "refrigerator",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Dd4bFSTQ8gi.json.gz",
+      "source_episode_id": "3644",
+      "goal_key": "Dd4bFSTQ8gi.basis.glb_refrigerator",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Dd4bFSTQ8gi.json.gz",
+        "source_episode_id": "3644",
+        "goal_key": "Dd4bFSTQ8gi.basis.glb_refrigerator",
+        "object_category": "refrigerator",
+        "initial_geodesic_distance_m": 4.060548782348633,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 27,
+        "hm3d_scene_id": "hm3d/val//00824-Dd4bFSTQ8gi/Dd4bFSTQ8gi.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 61
+      }
+    },
+    {
+      "task_id": "ovon_rug_dd4bfstq8gi_33",
+      "slug": "rug-dd4bfstq8gi-33",
+      "text": "Find and approach a rug.",
+      "scene": "Dd4bFSTQ8gi",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          5.91514,
+          0.01882,
+          -0.13907
+        ],
+        "start_rotation": [
+          0.0,
+          0.95277,
+          0.0,
+          -0.30368
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "rug",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Dd4bFSTQ8gi.json.gz",
+      "source_episode_id": "33",
+      "goal_key": "Dd4bFSTQ8gi.basis.glb_rug",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Dd4bFSTQ8gi.json.gz",
+        "source_episode_id": "33",
+        "goal_key": "Dd4bFSTQ8gi.basis.glb_rug",
+        "object_category": "rug",
+        "initial_geodesic_distance_m": 1.4004303216934204,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 296,
+        "hm3d_scene_id": "hm3d/val//00824-Dd4bFSTQ8gi/Dd4bFSTQ8gi.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 1
+      }
+    },
+    {
+      "task_id": "ovon_book_glaq4dnux5u_1090",
+      "slug": "book-glaq4dnux5u-1090",
+      "text": "Find and approach a book.",
+      "scene": "GLAQ4DNUx5U",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          0.4579,
+          1.20711,
+          5.13787
+        ],
+        "start_rotation": [
+          0.0,
+          0.99939,
+          0.0,
+          -0.03499
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "book",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/GLAQ4DNUx5U.json.gz",
+      "source_episode_id": "1090",
+      "goal_key": "GLAQ4DNUx5U.basis.glb_book",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/GLAQ4DNUx5U.json.gz",
+        "source_episode_id": "1090",
+        "goal_key": "GLAQ4DNUx5U.basis.glb_book",
+        "object_category": "book",
+        "initial_geodesic_distance_m": 4.062824726104736,
+        "goal_instance_count": 8,
+        "goal_viewpoint_count": 79,
+        "hm3d_scene_id": "hm3d/val//00861-GLAQ4DNUx5U/GLAQ4DNUx5U.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 23
+      }
+    },
+    {
+      "task_id": "ovon_flowerpot_glaq4dnux5u_865",
+      "slug": "flowerpot-glaq4dnux5u-865",
+      "text": "Find and approach a flowerpot.",
+      "scene": "GLAQ4DNUx5U",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -1.62873,
+          -1.59289,
+          2.01956
+        ],
+        "start_rotation": [
+          0.0,
+          0.98943,
+          0.0,
+          -0.14504
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "flowerpot",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/GLAQ4DNUx5U.json.gz",
+      "source_episode_id": "865",
+      "goal_key": "GLAQ4DNUx5U.basis.glb_flowerpot",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/GLAQ4DNUx5U.json.gz",
+        "source_episode_id": "865",
+        "goal_key": "GLAQ4DNUx5U.basis.glb_flowerpot",
+        "object_category": "flowerpot",
+        "initial_geodesic_distance_m": 2.6882882118225098,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 15,
+        "hm3d_scene_id": "hm3d/val//00861-GLAQ4DNUx5U/GLAQ4DNUx5U.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 15
+      }
+    },
+    {
+      "task_id": "ovon_mirror_glaq4dnux5u_2119",
+      "slug": "mirror-glaq4dnux5u-2119",
+      "text": "Find and approach a mirror.",
+      "scene": "GLAQ4DNUx5U",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.94883,
+          -1.59289,
+          0.1798
+        ],
+        "start_rotation": [
+          0.0,
+          0.98059,
+          0.0,
+          -0.19606
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "mirror",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/GLAQ4DNUx5U.json.gz",
+      "source_episode_id": "2119",
+      "goal_key": "GLAQ4DNUx5U.basis.glb_mirror",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/GLAQ4DNUx5U.json.gz",
+        "source_episode_id": "2119",
+        "goal_key": "GLAQ4DNUx5U.basis.glb_mirror",
+        "object_category": "mirror",
+        "initial_geodesic_distance_m": 7.997052192687988,
+        "goal_instance_count": 6,
+        "goal_viewpoint_count": 52,
+        "hm3d_scene_id": "hm3d/val//00861-GLAQ4DNUx5U/GLAQ4DNUx5U.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 38
+      }
+    },
+    {
+      "task_id": "ovon_picture_glaq4dnux5u_2804",
+      "slug": "picture-glaq4dnux5u-2804",
+      "text": "Find and approach a picture.",
+      "scene": "GLAQ4DNUx5U",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -1.5921,
+          -1.59289,
+          2.14594
+        ],
+        "start_rotation": [
+          0.0,
+          0.1706,
+          0.0,
+          -0.98534
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "picture",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/GLAQ4DNUx5U.json.gz",
+      "source_episode_id": "2804",
+      "goal_key": "GLAQ4DNUx5U.basis.glb_picture",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/GLAQ4DNUx5U.json.gz",
+        "source_episode_id": "2804",
+        "goal_key": "GLAQ4DNUx5U.basis.glb_picture",
+        "object_category": "picture",
+        "initial_geodesic_distance_m": 4.858430862426758,
+        "goal_instance_count": 6,
+        "goal_viewpoint_count": 76,
+        "hm3d_scene_id": "hm3d/val//00861-GLAQ4DNUx5U/GLAQ4DNUx5U.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 44
+      }
+    },
+    {
+      "task_id": "ovon_dishwasher_lt9jq6dn3ea_5979",
+      "slug": "dishwasher-lt9jq6dn3ea-5979",
+      "text": "Find and approach a dishwasher.",
+      "scene": "LT9Jq6dN3Ea",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -3.82272,
+          0.01302,
+          8.13184
+        ],
+        "start_rotation": [
+          0.0,
+          0.96542,
+          0.0,
+          -0.26071
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "dishwasher",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/LT9Jq6dN3Ea.json.gz",
+      "source_episode_id": "5979",
+      "goal_key": "LT9Jq6dN3Ea.basis.glb_dishwasher",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/LT9Jq6dN3Ea.json.gz",
+        "source_episode_id": "5979",
+        "goal_key": "LT9Jq6dN3Ea.basis.glb_dishwasher",
+        "object_category": "dishwasher",
+        "initial_geodesic_distance_m": 3.72524094581604,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 24,
+        "hm3d_scene_id": "hm3d/val//00862-LT9Jq6dN3Ea/LT9Jq6dN3Ea.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 90
+      }
+    },
+    {
+      "task_id": "ovon_refrigerator_lt9jq6dn3ea_4585",
+      "slug": "refrigerator-lt9jq6dn3ea-4585",
+      "text": "Find and approach a refrigerator.",
+      "scene": "LT9Jq6dN3Ea",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          2.27772,
+          0.05603,
+          -3.61206
+        ],
+        "start_rotation": [
+          0.0,
+          0.62426,
+          0.0,
+          0.78122
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "refrigerator",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/LT9Jq6dN3Ea.json.gz",
+      "source_episode_id": "4585",
+      "goal_key": "LT9Jq6dN3Ea.basis.glb_refrigerator",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/LT9Jq6dN3Ea.json.gz",
+        "source_episode_id": "4585",
+        "goal_key": "LT9Jq6dN3Ea.basis.glb_refrigerator",
+        "object_category": "refrigerator",
+        "initial_geodesic_distance_m": 5.357394695281982,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 54,
+        "hm3d_scene_id": "hm3d/val//00862-LT9Jq6dN3Ea/LT9Jq6dN3Ea.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 79
+      }
+    },
+    {
+      "task_id": "ovon_stair_lt9jq6dn3ea_3012",
+      "slug": "stair-lt9jq6dn3ea-3012",
+      "text": "Find and approach a stair.",
+      "scene": "LT9Jq6dN3Ea",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -2.98971,
+          -3.19397,
+          6.43825
+        ],
+        "start_rotation": [
+          0.0,
+          0.97598,
+          0.0,
+          0.21788
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "stair",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/LT9Jq6dN3Ea.json.gz",
+      "source_episode_id": "3012",
+      "goal_key": "LT9Jq6dN3Ea.basis.glb_stair",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/LT9Jq6dN3Ea.json.gz",
+        "source_episode_id": "3012",
+        "goal_key": "LT9Jq6dN3Ea.basis.glb_stair",
+        "object_category": "stair",
+        "initial_geodesic_distance_m": 6.676797866821289,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 99,
+        "hm3d_scene_id": "hm3d/val//00862-LT9Jq6dN3Ea/LT9Jq6dN3Ea.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 55
+      }
+    },
+    {
+      "task_id": "ovon_dishwasher_mhpljhsug27_1237",
+      "slug": "dishwasher-mhpljhsug27-1237",
+      "text": "Find and approach a dishwasher.",
+      "scene": "MHPLjHsuG27",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          0.21704,
+          -1.41394,
+          7.03929
+        ],
+        "start_rotation": [
+          0.0,
+          0.92371,
+          0.0,
+          -0.38309
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "dishwasher",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/MHPLjHsuG27.json.gz",
+      "source_episode_id": "1237",
+      "goal_key": "MHPLjHsuG27.basis.glb_dishwasher",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/MHPLjHsuG27.json.gz",
+        "source_episode_id": "1237",
+        "goal_key": "MHPLjHsuG27.basis.glb_dishwasher",
+        "object_category": "dishwasher",
+        "initial_geodesic_distance_m": 7.266820430755615,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 11,
+        "hm3d_scene_id": "hm3d/val//00869-MHPLjHsuG27/MHPLjHsuG27.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 18
+      }
+    },
+    {
+      "task_id": "ovon_dishwasher_nfvxx8j5nco_2512",
+      "slug": "dishwasher-nfvxx8j5nco-2512",
+      "text": "Find and approach a dishwasher.",
+      "scene": "Nfvxx8J5NCo",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -5.40723,
+          0.03086,
+          -3.10495
+        ],
+        "start_rotation": [
+          0.0,
+          0.86045,
+          0.0,
+          -0.50953
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "dishwasher",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Nfvxx8J5NCo.json.gz",
+      "source_episode_id": "2512",
+      "goal_key": "Nfvxx8J5NCo.basis.glb_dishwasher",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Nfvxx8J5NCo.json.gz",
+        "source_episode_id": "2512",
+        "goal_key": "Nfvxx8J5NCo.basis.glb_dishwasher",
+        "object_category": "dishwasher",
+        "initial_geodesic_distance_m": 12.910855293273926,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 19,
+        "hm3d_scene_id": "hm3d/val//00880-Nfvxx8J5NCo/Nfvxx8J5NCo.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 48
+      }
+    },
+    {
+      "task_id": "ovon_dishwasher_nfvxx8j5nco_2647",
+      "slug": "dishwasher-nfvxx8j5nco-2647",
+      "text": "Find and approach a dishwasher.",
+      "scene": "Nfvxx8J5NCo",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -4.37664,
+          0.03086,
+          -0.29811
+        ],
+        "start_rotation": [
+          0.0,
+          0.95546,
+          0.0,
+          -0.29513
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "dishwasher",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Nfvxx8J5NCo.json.gz",
+      "source_episode_id": "2647",
+      "goal_key": "Nfvxx8J5NCo.basis.glb_dishwasher",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Nfvxx8J5NCo.json.gz",
+        "source_episode_id": "2647",
+        "goal_key": "Nfvxx8J5NCo.basis.glb_dishwasher",
+        "object_category": "dishwasher",
+        "initial_geodesic_distance_m": 6.021215438842773,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 19,
+        "hm3d_scene_id": "hm3d/val//00880-Nfvxx8J5NCo/Nfvxx8J5NCo.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 43
+      }
+    },
+    {
+      "task_id": "ovon_picture_nfvxx8j5nco_209",
+      "slug": "picture-nfvxx8j5nco-209",
+      "text": "Find and approach a picture.",
+      "scene": "Nfvxx8J5NCo",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -10.36965,
+          0.03086,
+          -0.46299
+        ],
+        "start_rotation": [
+          0.0,
+          0.15234,
+          0.0,
+          0.98833
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "picture",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Nfvxx8J5NCo.json.gz",
+      "source_episode_id": "209",
+      "goal_key": "Nfvxx8J5NCo.basis.glb_picture",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Nfvxx8J5NCo.json.gz",
+        "source_episode_id": "209",
+        "goal_key": "Nfvxx8J5NCo.basis.glb_picture",
+        "object_category": "picture",
+        "initial_geodesic_distance_m": 2.990992307662964,
+        "goal_instance_count": 7,
+        "goal_viewpoint_count": 149,
+        "hm3d_scene_id": "hm3d/val//00880-Nfvxx8J5NCo/Nfvxx8J5NCo.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 1
+      }
+    },
+    {
+      "task_id": "ovon_picture_nfvxx8j5nco_231",
+      "slug": "picture-nfvxx8j5nco-231",
+      "text": "Find and approach a picture.",
+      "scene": "Nfvxx8J5NCo",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -7.65239,
+          0.03086,
+          1.79135
+        ],
+        "start_rotation": [
+          0.0,
+          0.66232,
+          0.0,
+          -0.74922
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "picture",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Nfvxx8J5NCo.json.gz",
+      "source_episode_id": "231",
+      "goal_key": "Nfvxx8J5NCo.basis.glb_picture",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/Nfvxx8J5NCo.json.gz",
+        "source_episode_id": "231",
+        "goal_key": "Nfvxx8J5NCo.basis.glb_picture",
+        "object_category": "picture",
+        "initial_geodesic_distance_m": 3.0931379795074463,
+        "goal_instance_count": 7,
+        "goal_viewpoint_count": 149,
+        "hm3d_scene_id": "hm3d/val//00880-Nfvxx8J5NCo/Nfvxx8J5NCo.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 5
+      }
+    },
+    {
+      "task_id": "ovon_hanger_qaldnwvtxbs_1239",
+      "slug": "hanger-qaldnwvtxbs-1239",
+      "text": "Find and approach a hanger.",
+      "scene": "QaLdnwvtxbs",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          3.6845,
+          0.03574,
+          0.41615
+        ],
+        "start_rotation": [
+          0.0,
+          0.99535,
+          0.0,
+          0.09636
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "hanger",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/QaLdnwvtxbs.json.gz",
+      "source_episode_id": "1239",
+      "goal_key": "QaLdnwvtxbs.basis.glb_hanger",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/QaLdnwvtxbs.json.gz",
+        "source_episode_id": "1239",
+        "goal_key": "QaLdnwvtxbs.basis.glb_hanger",
+        "object_category": "hanger",
+        "initial_geodesic_distance_m": 4.685211181640625,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 10,
+        "hm3d_scene_id": "hm3d/val//00829-QaLdnwvtxbs/QaLdnwvtxbs.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 22
+      }
+    },
+    {
+      "task_id": "ovon_ottoman_qaldnwvtxbs_122",
+      "slug": "ottoman-qaldnwvtxbs-122",
+      "text": "Find and approach a ottoman.",
+      "scene": "QaLdnwvtxbs",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.12143,
+          0.06515,
+          -2.78142
+        ],
+        "start_rotation": [
+          0.0,
+          0.81378,
+          0.0,
+          -0.58118
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "ottoman",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/QaLdnwvtxbs.json.gz",
+      "source_episode_id": "122",
+      "goal_key": "QaLdnwvtxbs.basis.glb_ottoman",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/QaLdnwvtxbs.json.gz",
+        "source_episode_id": "122",
+        "goal_key": "QaLdnwvtxbs.basis.glb_ottoman",
+        "object_category": "ottoman",
+        "initial_geodesic_distance_m": 3.990297317504883,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 101,
+        "hm3d_scene_id": "hm3d/val//00829-QaLdnwvtxbs/QaLdnwvtxbs.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 2
+      }
+    },
+    {
+      "task_id": "ovon_picture_qaldnwvtxbs_1842",
+      "slug": "picture-qaldnwvtxbs-1842",
+      "text": "Find and approach a picture.",
+      "scene": "QaLdnwvtxbs",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.32906,
+          0.03574,
+          2.56343
+        ],
+        "start_rotation": [
+          0.0,
+          0.96474,
+          0.0,
+          0.26319
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "picture",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/QaLdnwvtxbs.json.gz",
+      "source_episode_id": "1842",
+      "goal_key": "QaLdnwvtxbs.basis.glb_picture",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/QaLdnwvtxbs.json.gz",
+        "source_episode_id": "1842",
+        "goal_key": "QaLdnwvtxbs.basis.glb_picture",
+        "object_category": "picture",
+        "initial_geodesic_distance_m": 1.6530416011810303,
+        "goal_instance_count": 11,
+        "goal_viewpoint_count": 197,
+        "hm3d_scene_id": "hm3d/val//00829-QaLdnwvtxbs/QaLdnwvtxbs.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 30
+      }
+    },
+    {
+      "task_id": "ovon_clothes_hanger_rod_teesavr23of_5022",
+      "slug": "clothes_hanger_rod-teesavr23of-5022",
+      "text": "Find and approach a clothes hanger rod.",
+      "scene": "TEEsavR23oF",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.08058,
+          0.01338,
+          -5.7701
+        ],
+        "start_rotation": [
+          0.0,
+          0.13293,
+          0.0,
+          0.99113
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "clothes hanger rod",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+      "source_episode_id": "5022",
+      "goal_key": "TEEsavR23oF.basis.glb_clothes hanger rod",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+        "source_episode_id": "5022",
+        "goal_key": "TEEsavR23oF.basis.glb_clothes hanger rod",
+        "object_category": "clothes hanger rod",
+        "initial_geodesic_distance_m": 6.081048488616943,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 3,
+        "hm3d_scene_id": "hm3d/val//00800-TEEsavR23oF/TEEsavR23oF.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 87
+      }
+    },
+    {
+      "task_id": "ovon_coffee_machine_teesavr23of_2056",
+      "slug": "coffee_machine-teesavr23of-2056",
+      "text": "Find and approach a coffee machine.",
+      "scene": "TEEsavR23oF",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          2.82406,
+          0.01338,
+          -5.50337
+        ],
+        "start_rotation": [
+          0.0,
+          0.03744,
+          0.0,
+          -0.9993
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "coffee machine",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+      "source_episode_id": "2056",
+      "goal_key": "TEEsavR23oF.basis.glb_coffee machine",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+        "source_episode_id": "2056",
+        "goal_key": "TEEsavR23oF.basis.glb_coffee machine",
+        "object_category": "coffee machine",
+        "initial_geodesic_distance_m": 9.56982421875,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 10,
+        "hm3d_scene_id": "hm3d/val//00800-TEEsavR23oF/TEEsavR23oF.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 38
+      }
+    },
+    {
+      "task_id": "ovon_coffee_machine_teesavr23of_2125",
+      "slug": "coffee_machine-teesavr23of-2125",
+      "text": "Find and approach a coffee machine.",
+      "scene": "TEEsavR23oF",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -1.5025,
+          0.01338,
+          -1.6709
+        ],
+        "start_rotation": [
+          0.0,
+          0.72297,
+          0.0,
+          0.69087
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "coffee machine",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+      "source_episode_id": "2125",
+      "goal_key": "TEEsavR23oF.basis.glb_coffee machine",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+        "source_episode_id": "2125",
+        "goal_key": "TEEsavR23oF.basis.glb_coffee machine",
+        "object_category": "coffee machine",
+        "initial_geodesic_distance_m": 4.223283767700195,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 10,
+        "hm3d_scene_id": "hm3d/val//00800-TEEsavR23oF/TEEsavR23oF.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 39
+      }
+    },
+    {
+      "task_id": "ovon_microwave_teesavr23of_2750",
+      "slug": "microwave-teesavr23of-2750",
+      "text": "Find and approach a microwave.",
+      "scene": "TEEsavR23oF",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -7.83662,
+          0.01338,
+          -2.46295
+        ],
+        "start_rotation": [
+          0.0,
+          0.91779,
+          0.0,
+          -0.39707
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "microwave",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+      "source_episode_id": "2750",
+      "goal_key": "TEEsavR23oF.basis.glb_microwave",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+        "source_episode_id": "2750",
+        "goal_key": "TEEsavR23oF.basis.glb_microwave",
+        "object_category": "microwave",
+        "initial_geodesic_distance_m": 2.173299789428711,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 15,
+        "hm3d_scene_id": "hm3d/val//00800-TEEsavR23oF/TEEsavR23oF.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 46
+      }
+    },
+    {
+      "task_id": "ovon_nightstand_teesavr23of_119",
+      "slug": "nightstand-teesavr23of-119",
+      "text": "Find and approach a nightstand.",
+      "scene": "TEEsavR23oF",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -5.1911,
+          3.11338,
+          -7.39295
+        ],
+        "start_rotation": [
+          0.0,
+          0.35716,
+          0.0,
+          0.93404
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "nightstand",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+      "source_episode_id": "119",
+      "goal_key": "TEEsavR23oF.basis.glb_nightstand",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+        "source_episode_id": "119",
+        "goal_key": "TEEsavR23oF.basis.glb_nightstand",
+        "object_category": "nightstand",
+        "initial_geodesic_distance_m": 6.014609336853027,
+        "goal_instance_count": 3,
+        "goal_viewpoint_count": 36,
+        "hm3d_scene_id": "hm3d/val//00800-TEEsavR23oF/TEEsavR23oF.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 7
+      }
+    },
+    {
+      "task_id": "ovon_pillow_teesavr23of_4175",
+      "slug": "pillow-teesavr23of-4175",
+      "text": "Find and approach a pillow.",
+      "scene": "TEEsavR23oF",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          2.5671,
+          0.01338,
+          -5.97182
+        ],
+        "start_rotation": [
+          0.0,
+          0.88824,
+          0.0,
+          0.45939
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "pillow",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+      "source_episode_id": "4175",
+      "goal_key": "TEEsavR23oF.basis.glb_pillow",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+        "source_episode_id": "4175",
+        "goal_key": "TEEsavR23oF.basis.glb_pillow",
+        "object_category": "pillow",
+        "initial_geodesic_distance_m": 1.6108310222625732,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 28,
+        "hm3d_scene_id": "hm3d/val//00800-TEEsavR23oF/TEEsavR23oF.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 68
+      }
+    },
+    {
+      "task_id": "ovon_stair_teesavr23of_788",
+      "slug": "stair-teesavr23of-788",
+      "text": "Find and approach a stair.",
+      "scene": "TEEsavR23oF",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -1.52403,
+          0.01338,
+          -6.7713
+        ],
+        "start_rotation": [
+          0.0,
+          0.54591,
+          0.0,
+          -0.83784
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "stair",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+      "source_episode_id": "788",
+      "goal_key": "TEEsavR23oF.basis.glb_stair",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/TEEsavR23oF.json.gz",
+        "source_episode_id": "788",
+        "goal_key": "TEEsavR23oF.basis.glb_stair",
+        "object_category": "stair",
+        "initial_geodesic_distance_m": 14.817760467529297,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 7,
+        "hm3d_scene_id": "hm3d/val//00800-TEEsavR23oF/TEEsavR23oF.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 11
+      }
+    },
+    {
+      "task_id": "ovon_mirror_vbzv5z6i1ws_311",
+      "slug": "mirror-vbzv5z6i1ws-311",
+      "text": "Find and approach a mirror.",
+      "scene": "VBzV5z6i1WS",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          2.41361,
+          0.00388,
+          -1.5482
+        ],
+        "start_rotation": [
+          0.0,
+          0.9457,
+          0.0,
+          0.32504
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "mirror",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/VBzV5z6i1WS.json.gz",
+      "source_episode_id": "311",
+      "goal_key": "VBzV5z6i1WS.basis.glb_mirror",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/VBzV5z6i1WS.json.gz",
+        "source_episode_id": "311",
+        "goal_key": "VBzV5z6i1WS.basis.glb_mirror",
+        "object_category": "mirror",
+        "initial_geodesic_distance_m": 5.299205780029297,
+        "goal_instance_count": 7,
+        "goal_viewpoint_count": 108,
+        "hm3d_scene_id": "hm3d/val//00871-VBzV5z6i1WS/VBzV5z6i1WS.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 1
+      }
+    },
+    {
+      "task_id": "ovon_plant_vbzv5z6i1ws_2124",
+      "slug": "plant-vbzv5z6i1ws-2124",
+      "text": "Find and approach a plant.",
+      "scene": "VBzV5z6i1WS",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          3.11436,
+          -0.00346,
+          -3.01293
+        ],
+        "start_rotation": [
+          0.0,
+          0.96625,
+          0.0,
+          0.25762
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "plant",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/VBzV5z6i1WS.json.gz",
+      "source_episode_id": "2124",
+      "goal_key": "VBzV5z6i1WS.basis.glb_plant",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/VBzV5z6i1WS.json.gz",
+        "source_episode_id": "2124",
+        "goal_key": "VBzV5z6i1WS.basis.glb_plant",
+        "object_category": "plant",
+        "initial_geodesic_distance_m": 2.5491085052490234,
+        "goal_instance_count": 4,
+        "goal_viewpoint_count": 85,
+        "hm3d_scene_id": "hm3d/val//00871-VBzV5z6i1WS/VBzV5z6i1WS.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 40
+      }
+    },
+    {
+      "task_id": "ovon_printer_xb4gs9shbre_5977",
+      "slug": "printer-xb4gs9shbre-5977",
+      "text": "Find and approach a printer.",
+      "scene": "XB4GS9ShBRE",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -2.0856,
+          -2.90387,
+          1.85351
+        ],
+        "start_rotation": [
+          0.0,
+          0.88899,
+          0.0,
+          0.45792
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "printer",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/XB4GS9ShBRE.json.gz",
+      "source_episode_id": "5977",
+      "goal_key": "XB4GS9ShBRE.basis.glb_printer",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/XB4GS9ShBRE.json.gz",
+        "source_episode_id": "5977",
+        "goal_key": "XB4GS9ShBRE.basis.glb_printer",
+        "object_category": "printer",
+        "initial_geodesic_distance_m": 4.0387282371521,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 13,
+        "hm3d_scene_id": "hm3d/val//00878-XB4GS9ShBRE/XB4GS9ShBRE.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 92
+      }
+    },
+    {
+      "task_id": "ovon_mirror_a8btkwhxdrv_291",
+      "slug": "mirror-a8btkwhxdrv-291",
+      "text": "Find and approach a mirror.",
+      "scene": "a8BtkwhxdRV",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -1.49828,
+          -1.80919,
+          4.0074
+        ],
+        "start_rotation": [
+          0.0,
+          0.99715,
+          0.0,
+          -0.0754
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "mirror",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/a8BtkwhxdRV.json.gz",
+      "source_episode_id": "291",
+      "goal_key": "a8BtkwhxdRV.basis.glb_mirror",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/a8BtkwhxdRV.json.gz",
+        "source_episode_id": "291",
+        "goal_key": "a8BtkwhxdRV.basis.glb_mirror",
+        "object_category": "mirror",
+        "initial_geodesic_distance_m": 4.133697509765625,
+        "goal_instance_count": 6,
+        "goal_viewpoint_count": 67,
+        "hm3d_scene_id": "hm3d/val//00849-a8BtkwhxdRV/a8BtkwhxdRV.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 3
+      }
+    },
+    {
+      "task_id": "ovon_plant_a8btkwhxdrv_2772",
+      "slug": "plant-a8btkwhxdrv-2772",
+      "text": "Find and approach a plant.",
+      "scene": "a8BtkwhxdRV",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.37418,
+          -1.80919,
+          0.00621
+        ],
+        "start_rotation": [
+          0.0,
+          0.08675,
+          0.0,
+          0.99623
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "plant",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/a8BtkwhxdRV.json.gz",
+      "source_episode_id": "2772",
+      "goal_key": "a8BtkwhxdRV.basis.glb_plant",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/a8BtkwhxdRV.json.gz",
+        "source_episode_id": "2772",
+        "goal_key": "a8BtkwhxdRV.basis.glb_plant",
+        "object_category": "plant",
+        "initial_geodesic_distance_m": 2.8002023696899414,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 15,
+        "hm3d_scene_id": "hm3d/val//00849-a8BtkwhxdRV/a8BtkwhxdRV.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 45
+      }
+    },
+    {
+      "task_id": "ovon_refrigerator_bcpu9supuw9_2914",
+      "slug": "refrigerator-bcpu9supuw9-2914",
+      "text": "Find and approach a refrigerator.",
+      "scene": "bCPU9suPUw9",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          4.82352,
+          0.03022,
+          1.00997
+        ],
+        "start_rotation": [
+          0.0,
+          0.99868,
+          0.0,
+          0.05127
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "refrigerator",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bCPU9suPUw9.json.gz",
+      "source_episode_id": "2914",
+      "goal_key": "bCPU9suPUw9.basis.glb_refrigerator",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bCPU9suPUw9.json.gz",
+        "source_episode_id": "2914",
+        "goal_key": "bCPU9suPUw9.basis.glb_refrigerator",
+        "object_category": "refrigerator",
+        "initial_geodesic_distance_m": 5.839210510253906,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 77,
+        "hm3d_scene_id": "hm3d/val//00847-bCPU9suPUw9/bCPU9suPUw9.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 47
+      }
+    },
+    {
+      "task_id": "ovon_rug_bcpu9supuw9_3300",
+      "slug": "rug-bcpu9supuw9-3300",
+      "text": "Find and approach a rug.",
+      "scene": "bCPU9suPUw9",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          5.91572,
+          -2.66978,
+          -0.50958
+        ],
+        "start_rotation": [
+          0.0,
+          0.77143,
+          0.0,
+          0.63632
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "rug",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bCPU9suPUw9.json.gz",
+      "source_episode_id": "3300",
+      "goal_key": "bCPU9suPUw9.basis.glb_rug",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bCPU9suPUw9.json.gz",
+        "source_episode_id": "3300",
+        "goal_key": "bCPU9suPUw9.basis.glb_rug",
+        "object_category": "rug",
+        "initial_geodesic_distance_m": 1.7030298709869385,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 126,
+        "hm3d_scene_id": "hm3d/val//00847-bCPU9suPUw9/bCPU9suPUw9.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 52
+      }
+    },
+    {
+      "task_id": "ovon_stair_bcpu9supuw9_2150",
+      "slug": "stair-bcpu9supuw9-2150",
+      "text": "Find and approach a stair.",
+      "scene": "bCPU9suPUw9",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.09026,
+          -2.66978,
+          0.47634
+        ],
+        "start_rotation": [
+          0.0,
+          0.91732,
+          0.0,
+          -0.39814
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "stair",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bCPU9suPUw9.json.gz",
+      "source_episode_id": "2150",
+      "goal_key": "bCPU9suPUw9.basis.glb_stair",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bCPU9suPUw9.json.gz",
+        "source_episode_id": "2150",
+        "goal_key": "bCPU9suPUw9.basis.glb_stair",
+        "object_category": "stair",
+        "initial_geodesic_distance_m": 5.5961079597473145,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 59,
+        "hm3d_scene_id": "hm3d/val//00847-bCPU9suPUw9/bCPU9suPUw9.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 32
+      }
+    },
+    {
+      "task_id": "ovon_blinds_bxsvrursffk_2265",
+      "slug": "blinds-bxsvrursffk-2265",
+      "text": "Find and approach a blinds.",
+      "scene": "bxsVRursffK",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.52952,
+          0.02468,
+          -3.1889
+        ],
+        "start_rotation": [
+          0.0,
+          0.75001,
+          0.0,
+          0.66143
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "blinds",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bxsVRursffK.json.gz",
+      "source_episode_id": "2265",
+      "goal_key": "bxsVRursffK.basis.glb_blinds",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bxsVRursffK.json.gz",
+        "source_episode_id": "2265",
+        "goal_key": "bxsVRursffK.basis.glb_blinds",
+        "object_category": "blinds",
+        "initial_geodesic_distance_m": 1.6519653797149658,
+        "goal_instance_count": 6,
+        "goal_viewpoint_count": 51,
+        "hm3d_scene_id": "hm3d/val//00873-bxsVRursffK/bxsVRursffK.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 35
+      }
+    },
+    {
+      "task_id": "ovon_book_bxsvrursffk_1605",
+      "slug": "book-bxsvrursffk-1605",
+      "text": "Find and approach a book.",
+      "scene": "bxsVRursffK",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -6.67301,
+          -2.97532,
+          0.08662
+        ],
+        "start_rotation": [
+          0.0,
+          0.97796,
+          0.0,
+          0.2088
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "book",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bxsVRursffK.json.gz",
+      "source_episode_id": "1605",
+      "goal_key": "bxsVRursffK.basis.glb_book",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bxsVRursffK.json.gz",
+        "source_episode_id": "1605",
+        "goal_key": "bxsVRursffK.basis.glb_book",
+        "object_category": "book",
+        "initial_geodesic_distance_m": 5.7067718505859375,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 7,
+        "hm3d_scene_id": "hm3d/val//00873-bxsVRursffK/bxsVRursffK.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 30
+      }
+    },
+    {
+      "task_id": "ovon_hanging_clothes_bxsvrursffk_458",
+      "slug": "hanging_clothes-bxsvrursffk-458",
+      "text": "Find and approach a hanging clothes.",
+      "scene": "bxsVRursffK",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -7.7751,
+          0.02468,
+          -0.43576
+        ],
+        "start_rotation": [
+          0.0,
+          0.41476,
+          0.0,
+          -0.90993
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "hanging clothes",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bxsVRursffK.json.gz",
+      "source_episode_id": "458",
+      "goal_key": "bxsVRursffK.basis.glb_hanging clothes",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bxsVRursffK.json.gz",
+        "source_episode_id": "458",
+        "goal_key": "bxsVRursffK.basis.glb_hanging clothes",
+        "object_category": "hanging clothes",
+        "initial_geodesic_distance_m": 11.705146789550781,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 18,
+        "hm3d_scene_id": "hm3d/val//00873-bxsVRursffK/bxsVRursffK.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 6
+      }
+    },
+    {
+      "task_id": "ovon_pillow_bxsvrursffk_3078",
+      "slug": "pillow-bxsvrursffk-3078",
+      "text": "Find and approach a pillow.",
+      "scene": "bxsVRursffK",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.26563,
+          0.04487,
+          -5.77257
+        ],
+        "start_rotation": [
+          0.0,
+          0.28172,
+          0.0,
+          -0.9595
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "pillow",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bxsVRursffK.json.gz",
+      "source_episode_id": "3078",
+      "goal_key": "bxsVRursffK.basis.glb_pillow",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bxsVRursffK.json.gz",
+        "source_episode_id": "3078",
+        "goal_key": "bxsVRursffK.basis.glb_pillow",
+        "object_category": "pillow",
+        "initial_geodesic_distance_m": 11.74550724029541,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 6,
+        "hm3d_scene_id": "hm3d/val//00873-bxsVRursffK/bxsVRursffK.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 53
+      }
+    },
+    {
+      "task_id": "ovon_refrigerator_bxsvrursffk_5535",
+      "slug": "refrigerator-bxsvrursffk-5535",
+      "text": "Find and approach a refrigerator.",
+      "scene": "bxsVRursffK",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -5.42315,
+          -3.0523,
+          -3.39421
+        ],
+        "start_rotation": [
+          0.0,
+          0.77737,
+          0.0,
+          0.62904
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "refrigerator",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bxsVRursffK.json.gz",
+      "source_episode_id": "5535",
+      "goal_key": "bxsVRursffK.basis.glb_refrigerator",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bxsVRursffK.json.gz",
+        "source_episode_id": "5535",
+        "goal_key": "bxsVRursffK.basis.glb_refrigerator",
+        "object_category": "refrigerator",
+        "initial_geodesic_distance_m": 1.9748334884643555,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 23,
+        "hm3d_scene_id": "hm3d/val//00873-bxsVRursffK/bxsVRursffK.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 93
+      }
+    },
+    {
+      "task_id": "ovon_refrigerator_bxsvrursffk_5908",
+      "slug": "refrigerator-bxsvrursffk-5908",
+      "text": "Find and approach a refrigerator.",
+      "scene": "bxsVRursffK",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -2.34344,
+          -3.02532,
+          -0.44854
+        ],
+        "start_rotation": [
+          0.0,
+          0.99506,
+          0.0,
+          -0.09926
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "refrigerator",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bxsVRursffK.json.gz",
+      "source_episode_id": "5908",
+      "goal_key": "bxsVRursffK.basis.glb_refrigerator",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/bxsVRursffK.json.gz",
+        "source_episode_id": "5908",
+        "goal_key": "bxsVRursffK.basis.glb_refrigerator",
+        "object_category": "refrigerator",
+        "initial_geodesic_distance_m": 6.218165397644043,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 23,
+        "hm3d_scene_id": "hm3d/val//00873-bxsVRursffK/bxsVRursffK.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 94
+      }
+    },
+    {
+      "task_id": "ovon_carpet_cvzr5tuy5c5_5400",
+      "slug": "carpet-cvzr5tuy5c5-5400",
+      "text": "Find and approach a carpet.",
+      "scene": "cvZr5TUy5C5",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          3.69011,
+          3.07216,
+          5.67546
+        ],
+        "start_rotation": [
+          0.0,
+          0.95447,
+          0.0,
+          -0.29832
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "carpet",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/cvZr5TUy5C5.json.gz",
+      "source_episode_id": "5400",
+      "goal_key": "cvZr5TUy5C5.basis.glb_carpet",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/cvZr5TUy5C5.json.gz",
+        "source_episode_id": "5400",
+        "goal_key": "cvZr5TUy5C5.basis.glb_carpet",
+        "object_category": "carpet",
+        "initial_geodesic_distance_m": 10.98470401763916,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 133,
+        "hm3d_scene_id": "hm3d/val//00891-cvZr5TUy5C5/cvZr5TUy5C5.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 93
+      }
+    },
+    {
+      "task_id": "ovon_refrigerator_cvzr5tuy5c5_2511",
+      "slug": "refrigerator-cvzr5tuy5c5-2511",
+      "text": "Find and approach a refrigerator.",
+      "scene": "cvZr5TUy5C5",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -7.47989,
+          0.02216,
+          7.79253
+        ],
+        "start_rotation": [
+          0.0,
+          0.43679,
+          0.0,
+          0.89956
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "refrigerator",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/cvZr5TUy5C5.json.gz",
+      "source_episode_id": "2511",
+      "goal_key": "cvZr5TUy5C5.basis.glb_refrigerator",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/cvZr5TUy5C5.json.gz",
+        "source_episode_id": "2511",
+        "goal_key": "cvZr5TUy5C5.basis.glb_refrigerator",
+        "object_category": "refrigerator",
+        "initial_geodesic_distance_m": 7.4462971687316895,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 23,
+        "hm3d_scene_id": "hm3d/val//00891-cvZr5TUy5C5/cvZr5TUy5C5.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 49
+      }
+    },
+    {
+      "task_id": "ovon_stair_cvzr5tuy5c5_1966",
+      "slug": "stair-cvzr5tuy5c5-1966",
+      "text": "Find and approach a stair.",
+      "scene": "cvZr5TUy5C5",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -10.35853,
+          0.02216,
+          5.69767
+        ],
+        "start_rotation": [
+          0.0,
+          0.96168,
+          0.0,
+          -0.27418
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "stair",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/cvZr5TUy5C5.json.gz",
+      "source_episode_id": "1966",
+      "goal_key": "cvZr5TUy5C5.basis.glb_stair",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/cvZr5TUy5C5.json.gz",
+        "source_episode_id": "1966",
+        "goal_key": "cvZr5TUy5C5.basis.glb_stair",
+        "object_category": "stair",
+        "initial_geodesic_distance_m": 11.730002403259277,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 193,
+        "hm3d_scene_id": "hm3d/val//00891-cvZr5TUy5C5/cvZr5TUy5C5.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 32
+      }
+    },
+    {
+      "task_id": "ovon_carpet_ef36g7l6z9m_3891",
+      "slug": "carpet-ef36g7l6z9m-3891",
+      "text": "Find and approach a carpet.",
+      "scene": "eF36g7L6Z9M",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          8.85376,
+          -3.52025,
+          5.65481
+        ],
+        "start_rotation": [
+          0.0,
+          0.9779,
+          0.0,
+          -0.2091
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "carpet",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/eF36g7L6Z9M.json.gz",
+      "source_episode_id": "3891",
+      "goal_key": "eF36g7L6Z9M.basis.glb_carpet",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/eF36g7L6Z9M.json.gz",
+        "source_episode_id": "3891",
+        "goal_key": "eF36g7L6Z9M.basis.glb_carpet",
+        "object_category": "carpet",
+        "initial_geodesic_distance_m": 17.92413330078125,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 19,
+        "hm3d_scene_id": "hm3d/val//00821-eF36g7L6Z9M/eF36g7L6Z9M.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 68
+      }
+    },
+    {
+      "task_id": "ovon_mirror_ef36g7l6z9m_1303",
+      "slug": "mirror-ef36g7l6z9m-1303",
+      "text": "Find and approach a mirror.",
+      "scene": "eF36g7L6Z9M",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          2.53062,
+          -3.47025,
+          14.11991
+        ],
+        "start_rotation": [
+          0.0,
+          0.95732,
+          0.0,
+          0.28904
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "mirror",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/eF36g7L6Z9M.json.gz",
+      "source_episode_id": "1303",
+      "goal_key": "eF36g7L6Z9M.basis.glb_mirror",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/eF36g7L6Z9M.json.gz",
+        "source_episode_id": "1303",
+        "goal_key": "eF36g7L6Z9M.basis.glb_mirror",
+        "object_category": "mirror",
+        "initial_geodesic_distance_m": 10.591012001037598,
+        "goal_instance_count": 8,
+        "goal_viewpoint_count": 106,
+        "hm3d_scene_id": "hm3d/val//00821-eF36g7L6Z9M/eF36g7L6Z9M.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 21
+      }
+    },
+    {
+      "task_id": "ovon_pillow_ef36g7l6z9m_1723",
+      "slug": "pillow-ef36g7l6z9m-1723",
+      "text": "Find and approach a pillow.",
+      "scene": "eF36g7L6Z9M",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          3.9368,
+          0.02975,
+          17.21407
+        ],
+        "start_rotation": [
+          0.0,
+          0.4073,
+          0.0,
+          -0.91329
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "pillow",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/eF36g7L6Z9M.json.gz",
+      "source_episode_id": "1723",
+      "goal_key": "eF36g7L6Z9M.basis.glb_pillow",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/eF36g7L6Z9M.json.gz",
+        "source_episode_id": "1723",
+        "goal_key": "eF36g7L6Z9M.basis.glb_pillow",
+        "object_category": "pillow",
+        "initial_geodesic_distance_m": 18.517507553100586,
+        "goal_instance_count": 22,
+        "goal_viewpoint_count": 236,
+        "hm3d_scene_id": "hm3d/val//00821-eF36g7L6Z9M/eF36g7L6Z9M.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 33
+      }
+    },
+    {
+      "task_id": "ovon_refrigerator_ef36g7l6z9m_3292",
+      "slug": "refrigerator-ef36g7l6z9m-3292",
+      "text": "Find and approach a refrigerator.",
+      "scene": "eF36g7L6Z9M",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.34521,
+          -3.49171,
+          6.83614
+        ],
+        "start_rotation": [
+          0.0,
+          0.40885,
+          0.0,
+          0.9126
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "refrigerator",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/eF36g7L6Z9M.json.gz",
+      "source_episode_id": "3292",
+      "goal_key": "eF36g7L6Z9M.basis.glb_refrigerator",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/eF36g7L6Z9M.json.gz",
+        "source_episode_id": "3292",
+        "goal_key": "eF36g7L6Z9M.basis.glb_refrigerator",
+        "object_category": "refrigerator",
+        "initial_geodesic_distance_m": 1.7612290382385254,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 24,
+        "hm3d_scene_id": "hm3d/val//00821-eF36g7L6Z9M/eF36g7L6Z9M.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 54
+      }
+    },
+    {
+      "task_id": "ovon_pillow_h1zeeawlh9z_1190",
+      "slug": "pillow-h1zeeawlh9z-1190",
+      "text": "Find and approach a pillow.",
+      "scene": "h1zeeAwLh9Z",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.15784,
+          0.04902,
+          -0.05737
+        ],
+        "start_rotation": [
+          0.0,
+          0.55485,
+          0.0,
+          -0.83195
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "pillow",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/h1zeeAwLh9Z.json.gz",
+      "source_episode_id": "1190",
+      "goal_key": "h1zeeAwLh9Z.basis.glb_pillow",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/h1zeeAwLh9Z.json.gz",
+        "source_episode_id": "1190",
+        "goal_key": "h1zeeAwLh9Z.basis.glb_pillow",
+        "object_category": "pillow",
+        "initial_geodesic_distance_m": 6.498673915863037,
+        "goal_instance_count": 5,
+        "goal_viewpoint_count": 53,
+        "hm3d_scene_id": "hm3d/val//00815-h1zeeAwLh9Z/h1zeeAwLh9Z.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 19
+      }
+    },
+    {
+      "task_id": "ovon_stair_k1cupfywxj6_2096",
+      "slug": "stair-k1cupfywxj6-2096",
+      "text": "Find and approach a stair.",
+      "scene": "k1cupFYWXJ6",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          1.13786,
+          6.47745,
+          0.0543
+        ],
+        "start_rotation": [
+          0.0,
+          0.33723,
+          0.0,
+          0.94142
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "stair",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/k1cupFYWXJ6.json.gz",
+      "source_episode_id": "2096",
+      "goal_key": "k1cupFYWXJ6.basis.glb_stair",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/k1cupFYWXJ6.json.gz",
+        "source_episode_id": "2096",
+        "goal_key": "k1cupFYWXJ6.basis.glb_stair",
+        "object_category": "stair",
+        "initial_geodesic_distance_m": 1.481590986251831,
+        "goal_instance_count": 11,
+        "goal_viewpoint_count": 726,
+        "hm3d_scene_id": "hm3d/val//00803-k1cupFYWXJ6/k1cupFYWXJ6.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 36
+      }
+    },
+    {
+      "task_id": "ovon_refrigerator_ml8thkuavtm_3235",
+      "slug": "refrigerator-ml8thkuavtm-3235",
+      "text": "Find and approach a refrigerator.",
+      "scene": "mL8ThkuaVTM",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          5.53737,
+          0.0631,
+          -1.43649
+        ],
+        "start_rotation": [
+          0.0,
+          0.6864,
+          0.0,
+          -0.72722
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "refrigerator",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/mL8ThkuaVTM.json.gz",
+      "source_episode_id": "3235",
+      "goal_key": "mL8ThkuaVTM.basis.glb_refrigerator",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/mL8ThkuaVTM.json.gz",
+        "source_episode_id": "3235",
+        "goal_key": "mL8ThkuaVTM.basis.glb_refrigerator",
+        "object_category": "refrigerator",
+        "initial_geodesic_distance_m": 1.283994436264038,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 36,
+        "hm3d_scene_id": "hm3d/val//00820-mL8ThkuaVTM/mL8ThkuaVTM.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 54
+      }
+    },
+    {
+      "task_id": "ovon_stair_ml8thkuavtm_2371",
+      "slug": "stair-ml8thkuavtm-2371",
+      "text": "Find and approach a stair.",
+      "scene": "mL8ThkuaVTM",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          1.86234,
+          0.02399,
+          0.15096
+        ],
+        "start_rotation": [
+          0.0,
+          0.23661,
+          0.0,
+          -0.97161
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "stair",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/mL8ThkuaVTM.json.gz",
+      "source_episode_id": "2371",
+      "goal_key": "mL8ThkuaVTM.basis.glb_stair",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/mL8ThkuaVTM.json.gz",
+        "source_episode_id": "2371",
+        "goal_key": "mL8ThkuaVTM.basis.glb_stair",
+        "object_category": "stair",
+        "initial_geodesic_distance_m": 1.1064975261688232,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 25,
+        "hm3d_scene_id": "hm3d/val//00820-mL8ThkuaVTM/mL8ThkuaVTM.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 39
+      }
+    },
+    {
+      "task_id": "ovon_flower_vase_mv2huxq3b53_4029",
+      "slug": "flower_vase-mv2huxq3b53-4029",
+      "text": "Find and approach a flower vase.",
+      "scene": "mv2HUxq3B53",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -9.28452,
+          0.05035,
+          7.64956
+        ],
+        "start_rotation": [
+          0.0,
+          0.8271,
+          0.0,
+          0.56205
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "flower vase",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/mv2HUxq3B53.json.gz",
+      "source_episode_id": "4029",
+      "goal_key": "mv2HUxq3B53.basis.glb_flower vase",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/mv2HUxq3B53.json.gz",
+        "source_episode_id": "4029",
+        "goal_key": "mv2HUxq3B53.basis.glb_flower vase",
+        "object_category": "flower vase",
+        "initial_geodesic_distance_m": 25.7863826751709,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 17,
+        "hm3d_scene_id": "hm3d/val//00876-mv2HUxq3B53/mv2HUxq3B53.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 68
+      }
+    },
+    {
+      "task_id": "ovon_microwave_mv2huxq3b53_1160",
+      "slug": "microwave-mv2huxq3b53-1160",
+      "text": "Find and approach a microwave.",
+      "scene": "mv2HUxq3B53",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -9.80001,
+          0.05035,
+          7.0149
+        ],
+        "start_rotation": [
+          0.0,
+          0.82113,
+          0.0,
+          0.57074
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "microwave",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/mv2HUxq3B53.json.gz",
+      "source_episode_id": "1160",
+      "goal_key": "mv2HUxq3B53.basis.glb_microwave",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/mv2HUxq3B53.json.gz",
+        "source_episode_id": "1160",
+        "goal_key": "mv2HUxq3B53.basis.glb_microwave",
+        "object_category": "microwave",
+        "initial_geodesic_distance_m": 21.68978500366211,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 16,
+        "hm3d_scene_id": "hm3d/val//00876-mv2HUxq3B53/mv2HUxq3B53.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 18
+      }
+    },
+    {
+      "task_id": "ovon_refrigerator_mv2huxq3b53_1550",
+      "slug": "refrigerator-mv2huxq3b53-1550",
+      "text": "Find and approach a refrigerator.",
+      "scene": "mv2HUxq3B53",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          5.11026,
+          0.04193,
+          13.7891
+        ],
+        "start_rotation": [
+          0.0,
+          0.53441,
+          0.0,
+          -0.84522
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "refrigerator",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/mv2HUxq3B53.json.gz",
+      "source_episode_id": "1550",
+      "goal_key": "mv2HUxq3B53.basis.glb_refrigerator",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/mv2HUxq3B53.json.gz",
+        "source_episode_id": "1550",
+        "goal_key": "mv2HUxq3B53.basis.glb_refrigerator",
+        "object_category": "refrigerator",
+        "initial_geodesic_distance_m": 14.86902141571045,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 24,
+        "hm3d_scene_id": "hm3d/val//00876-mv2HUxq3B53/mv2HUxq3B53.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 25
+      }
+    },
+    {
+      "task_id": "ovon_shower_glass_mv2huxq3b53_4548",
+      "slug": "shower_glass-mv2huxq3b53-4548",
+      "text": "Find and approach a shower glass.",
+      "scene": "mv2HUxq3B53",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          1.80895,
+          0.05035,
+          3.88208
+        ],
+        "start_rotation": [
+          0.0,
+          0.74538,
+          0.0,
+          0.66664
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "shower glass",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/mv2HUxq3B53.json.gz",
+      "source_episode_id": "4548",
+      "goal_key": "mv2HUxq3B53.basis.glb_shower glass",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/mv2HUxq3B53.json.gz",
+        "source_episode_id": "4548",
+        "goal_key": "mv2HUxq3B53.basis.glb_shower glass",
+        "object_category": "shower glass",
+        "initial_geodesic_distance_m": 12.743025779724121,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 39,
+        "hm3d_scene_id": "hm3d/val//00876-mv2HUxq3B53/mv2HUxq3B53.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 77
+      }
+    },
+    {
+      "task_id": "ovon_bedframe_p53sfw6mjze_6448",
+      "slug": "bedframe-p53sfw6mjze-6448",
+      "text": "Find and approach a bedframe.",
+      "scene": "p53SfW6mjZe",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -3.38431,
+          -3.09519,
+          6.5598
+        ],
+        "start_rotation": [
+          0.0,
+          0.95389,
+          0.0,
+          0.30015
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "bedframe",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/p53SfW6mjZe.json.gz",
+      "source_episode_id": "6448",
+      "goal_key": "p53SfW6mjZe.basis.glb_bedframe",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/p53SfW6mjZe.json.gz",
+        "source_episode_id": "6448",
+        "goal_key": "p53SfW6mjZe.basis.glb_bedframe",
+        "object_category": "bedframe",
+        "initial_geodesic_distance_m": 10.780203819274902,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 69,
+        "hm3d_scene_id": "hm3d/val//00814-p53SfW6mjZe/p53SfW6mjZe.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 97
+      }
+    },
+    {
+      "task_id": "ovon_book_p53sfw6mjze_4743",
+      "slug": "book-p53sfw6mjze-4743",
+      "text": "Find and approach a book.",
+      "scene": "p53SfW6mjZe",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -11.97368,
+          0.00481,
+          -0.94854
+        ],
+        "start_rotation": [
+          0.0,
+          0.86278,
+          0.0,
+          0.50558
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "book",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/p53SfW6mjZe.json.gz",
+      "source_episode_id": "4743",
+      "goal_key": "p53SfW6mjZe.basis.glb_book",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/p53SfW6mjZe.json.gz",
+        "source_episode_id": "4743",
+        "goal_key": "p53SfW6mjZe.basis.glb_book",
+        "object_category": "book",
+        "initial_geodesic_distance_m": 19.247119903564453,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 15,
+        "hm3d_scene_id": "hm3d/val//00814-p53SfW6mjZe/p53SfW6mjZe.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 73
+      }
+    },
+    {
+      "task_id": "ovon_carpet_p53sfw6mjze_360",
+      "slug": "carpet-p53sfw6mjze-360",
+      "text": "Find and approach a carpet.",
+      "scene": "p53SfW6mjZe",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -16.2601,
+          2.84702,
+          -1.79
+        ],
+        "start_rotation": [
+          0.0,
+          0.82856,
+          0.0,
+          -0.55991
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "carpet",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/p53SfW6mjZe.json.gz",
+      "source_episode_id": "360",
+      "goal_key": "p53SfW6mjZe.basis.glb_carpet",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/p53SfW6mjZe.json.gz",
+        "source_episode_id": "360",
+        "goal_key": "p53SfW6mjZe.basis.glb_carpet",
+        "object_category": "carpet",
+        "initial_geodesic_distance_m": 7.978775501251221,
+        "goal_instance_count": 6,
+        "goal_viewpoint_count": 867,
+        "hm3d_scene_id": "hm3d/val//00814-p53SfW6mjZe/p53SfW6mjZe.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 4
+      }
+    },
+    {
+      "task_id": "ovon_carpet_p53sfw6mjze_435",
+      "slug": "carpet-p53sfw6mjze-435",
+      "text": "Find and approach a carpet.",
+      "scene": "p53SfW6mjZe",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -11.48983,
+          2.80481,
+          -1.88643
+        ],
+        "start_rotation": [
+          0.0,
+          0.62437,
+          0.0,
+          0.78113
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "carpet",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/p53SfW6mjZe.json.gz",
+      "source_episode_id": "435",
+      "goal_key": "p53SfW6mjZe.basis.glb_carpet",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/p53SfW6mjZe.json.gz",
+        "source_episode_id": "435",
+        "goal_key": "p53SfW6mjZe.basis.glb_carpet",
+        "object_category": "carpet",
+        "initial_geodesic_distance_m": 3.7286605834960938,
+        "goal_instance_count": 6,
+        "goal_viewpoint_count": 867,
+        "hm3d_scene_id": "hm3d/val//00814-p53SfW6mjZe/p53SfW6mjZe.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 5
+      }
+    },
+    {
+      "task_id": "ovon_microwave_p53sfw6mjze_4328",
+      "slug": "microwave-p53sfw6mjze-4328",
+      "text": "Find and approach a microwave.",
+      "scene": "p53SfW6mjZe",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          5.17289,
+          0.04159,
+          6.40059
+        ],
+        "start_rotation": [
+          0.0,
+          0.59197,
+          0.0,
+          -0.80596
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "microwave",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/p53SfW6mjZe.json.gz",
+      "source_episode_id": "4328",
+      "goal_key": "p53SfW6mjZe.basis.glb_microwave",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/p53SfW6mjZe.json.gz",
+        "source_episode_id": "4328",
+        "goal_key": "p53SfW6mjZe.basis.glb_microwave",
+        "object_category": "microwave",
+        "initial_geodesic_distance_m": 13.479889869689941,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 25,
+        "hm3d_scene_id": "hm3d/val//00814-p53SfW6mjZe/p53SfW6mjZe.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 71
+      }
+    },
+    {
+      "task_id": "ovon_refrigerator_p53sfw6mjze_3745",
+      "slug": "refrigerator-p53sfw6mjze-3745",
+      "text": "Find and approach a refrigerator.",
+      "scene": "p53SfW6mjZe",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          0.63548,
+          0.00481,
+          4.01792
+        ],
+        "start_rotation": [
+          0.0,
+          0.76327,
+          0.0,
+          0.64607
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "refrigerator",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/p53SfW6mjZe.json.gz",
+      "source_episode_id": "3745",
+      "goal_key": "p53SfW6mjZe.basis.glb_refrigerator",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/p53SfW6mjZe.json.gz",
+        "source_episode_id": "3745",
+        "goal_key": "p53SfW6mjZe.basis.glb_refrigerator",
+        "object_category": "refrigerator",
+        "initial_geodesic_distance_m": 4.335371971130371,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 49,
+        "hm3d_scene_id": "hm3d/val//00814-p53SfW6mjZe/p53SfW6mjZe.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 60
+      }
+    },
+    {
+      "task_id": "ovon_glass_q3zu7yy5e5s_2085",
+      "slug": "glass-q3zu7yy5e5s-2085",
+      "text": "Find and approach a glass.",
+      "scene": "q3zU7Yy5E5s",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -3.43413,
+          0.03522,
+          -0.07538
+        ],
+        "start_rotation": [
+          0.0,
+          0.65631,
+          0.0,
+          -0.75449
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "glass",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q3zU7Yy5E5s.json.gz",
+      "source_episode_id": "2085",
+      "goal_key": "q3zU7Yy5E5s.basis.glb_glass",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q3zU7Yy5E5s.json.gz",
+        "source_episode_id": "2085",
+        "goal_key": "q3zU7Yy5E5s.basis.glb_glass",
+        "object_category": "glass",
+        "initial_geodesic_distance_m": 2.374375343322754,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 15,
+        "hm3d_scene_id": "hm3d/val//00835-q3zU7Yy5E5s/q3zU7Yy5E5s.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 33
+      }
+    },
+    {
+      "task_id": "ovon_picture_q3zu7yy5e5s_614",
+      "slug": "picture-q3zu7yy5e5s-614",
+      "text": "Find and approach a picture.",
+      "scene": "q3zU7Yy5E5s",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -4.82547,
+          0.03522,
+          0.28603
+        ],
+        "start_rotation": [
+          0.0,
+          0.16396,
+          0.0,
+          -0.98647
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "picture",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q3zU7Yy5E5s.json.gz",
+      "source_episode_id": "614",
+      "goal_key": "q3zU7Yy5E5s.basis.glb_picture",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q3zU7Yy5E5s.json.gz",
+        "source_episode_id": "614",
+        "goal_key": "q3zU7Yy5E5s.basis.glb_picture",
+        "object_category": "picture",
+        "initial_geodesic_distance_m": 1.4338842630386353,
+        "goal_instance_count": 10,
+        "goal_viewpoint_count": 102,
+        "hm3d_scene_id": "hm3d/val//00835-q3zU7Yy5E5s/q3zU7Yy5E5s.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 15
+      }
+    },
+    {
+      "task_id": "ovon_pillow_q3zu7yy5e5s_1031",
+      "slug": "pillow-q3zu7yy5e5s-1031",
+      "text": "Find and approach a pillow.",
+      "scene": "q3zU7Yy5E5s",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -3.21055,
+          0.03522,
+          -0.27428
+        ],
+        "start_rotation": [
+          0.0,
+          0.92985,
+          0.0,
+          -0.36794
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "pillow",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q3zU7Yy5E5s.json.gz",
+      "source_episode_id": "1031",
+      "goal_key": "q3zU7Yy5E5s.basis.glb_pillow",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q3zU7Yy5E5s.json.gz",
+        "source_episode_id": "1031",
+        "goal_key": "q3zU7Yy5E5s.basis.glb_pillow",
+        "object_category": "pillow",
+        "initial_geodesic_distance_m": 1.7021288871765137,
+        "goal_instance_count": 5,
+        "goal_viewpoint_count": 68,
+        "hm3d_scene_id": "hm3d/val//00835-q3zU7Yy5E5s/q3zU7Yy5E5s.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 20
+      }
+    },
+    {
+      "task_id": "ovon_exercise_bike_q5qzseehe5g_6989",
+      "slug": "exercise_bike-q5qzseehe5g-6989",
+      "text": "Find and approach a exercise bike.",
+      "scene": "q5QZSEeHe5g",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          2.93615,
+          -2.34612,
+          -3.44924
+        ],
+        "start_rotation": [
+          0.0,
+          0.94806,
+          0.0,
+          -0.31809
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "exercise bike",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q5QZSEeHe5g.json.gz",
+      "source_episode_id": "6989",
+      "goal_key": "q5QZSEeHe5g.basis.glb_exercise bike",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q5QZSEeHe5g.json.gz",
+        "source_episode_id": "6989",
+        "goal_key": "q5QZSEeHe5g.basis.glb_exercise bike",
+        "object_category": "exercise bike",
+        "initial_geodesic_distance_m": 2.9960994720458984,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 40,
+        "hm3d_scene_id": "hm3d/val//00844-q5QZSEeHe5g/q5QZSEeHe5g.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 121
+      }
+    },
+    {
+      "task_id": "ovon_photo_q5qzseehe5g_1954",
+      "slug": "photo-q5qzseehe5g-1954",
+      "text": "Find and approach a photo.",
+      "scene": "q5QZSEeHe5g",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          4.1502,
+          3.30388,
+          -4.20429
+        ],
+        "start_rotation": [
+          0.0,
+          0.73688,
+          0.0,
+          0.67602
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "photo",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q5QZSEeHe5g.json.gz",
+      "source_episode_id": "1954",
+      "goal_key": "q5QZSEeHe5g.basis.glb_photo",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q5QZSEeHe5g.json.gz",
+        "source_episode_id": "1954",
+        "goal_key": "q5QZSEeHe5g.basis.glb_photo",
+        "object_category": "photo",
+        "initial_geodesic_distance_m": 3.8467626571655273,
+        "goal_instance_count": 5,
+        "goal_viewpoint_count": 60,
+        "hm3d_scene_id": "hm3d/val//00844-q5QZSEeHe5g/q5QZSEeHe5g.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 34
+      }
+    },
+    {
+      "task_id": "ovon_pillow_q5qzseehe5g_1266",
+      "slug": "pillow-q5qzseehe5g-1266",
+      "text": "Find and approach a pillow.",
+      "scene": "q5QZSEeHe5g",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          11.23781,
+          0.05388,
+          2.74503
+        ],
+        "start_rotation": [
+          0.0,
+          0.62945,
+          0.0,
+          -0.77704
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "pillow",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q5QZSEeHe5g.json.gz",
+      "source_episode_id": "1266",
+      "goal_key": "q5QZSEeHe5g.basis.glb_pillow",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q5QZSEeHe5g.json.gz",
+        "source_episode_id": "1266",
+        "goal_key": "q5QZSEeHe5g.basis.glb_pillow",
+        "object_category": "pillow",
+        "initial_geodesic_distance_m": 8.530908584594727,
+        "goal_instance_count": 6,
+        "goal_viewpoint_count": 43,
+        "hm3d_scene_id": "hm3d/val//00844-q5QZSEeHe5g/q5QZSEeHe5g.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 22
+      }
+    },
+    {
+      "task_id": "ovon_refrigerator_q5qzseehe5g_4520",
+      "slug": "refrigerator-q5qzseehe5g-4520",
+      "text": "Find and approach a refrigerator.",
+      "scene": "q5QZSEeHe5g",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          9.90955,
+          0.05388,
+          0.12521
+        ],
+        "start_rotation": [
+          0.0,
+          0.04555,
+          0.0,
+          -0.99896
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "refrigerator",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q5QZSEeHe5g.json.gz",
+      "source_episode_id": "4520",
+      "goal_key": "q5QZSEeHe5g.basis.glb_refrigerator",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q5QZSEeHe5g.json.gz",
+        "source_episode_id": "4520",
+        "goal_key": "q5QZSEeHe5g.basis.glb_refrigerator",
+        "object_category": "refrigerator",
+        "initial_geodesic_distance_m": 4.724614143371582,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 25,
+        "hm3d_scene_id": "hm3d/val//00844-q5QZSEeHe5g/q5QZSEeHe5g.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 82
+      }
+    },
+    {
+      "task_id": "ovon_rug_q5qzseehe5g_3710",
+      "slug": "rug-q5qzseehe5g-3710",
+      "text": "Find and approach a rug.",
+      "scene": "q5QZSEeHe5g",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -1.76124,
+          0.00388,
+          -2.12039
+        ],
+        "start_rotation": [
+          0.0,
+          0.13269,
+          0.0,
+          0.99116
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "rug",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q5QZSEeHe5g.json.gz",
+      "source_episode_id": "3710",
+      "goal_key": "q5QZSEeHe5g.basis.glb_rug",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/q5QZSEeHe5g.json.gz",
+        "source_episode_id": "3710",
+        "goal_key": "q5QZSEeHe5g.basis.glb_rug",
+        "object_category": "rug",
+        "initial_geodesic_distance_m": 1.0681157112121582,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 64,
+        "hm3d_scene_id": "hm3d/val//00844-q5QZSEeHe5g/q5QZSEeHe5g.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 67
+      }
+    },
+    {
+      "task_id": "ovon_dishwasher_qyaac8rv8zk_2665",
+      "slug": "dishwasher-qyaac8rv8zk-2665",
+      "text": "Find and approach a dishwasher.",
+      "scene": "qyAac8rV8Zk",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.53173,
+          0.0192,
+          1.66243
+        ],
+        "start_rotation": [
+          0.0,
+          0.58629,
+          0.0,
+          0.8101
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "dishwasher",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/qyAac8rV8Zk.json.gz",
+      "source_episode_id": "2665",
+      "goal_key": "qyAac8rV8Zk.basis.glb_dishwasher",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/qyAac8rV8Zk.json.gz",
+        "source_episode_id": "2665",
+        "goal_key": "qyAac8rV8Zk.basis.glb_dishwasher",
+        "object_category": "dishwasher",
+        "initial_geodesic_distance_m": 7.802955150604248,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 30,
+        "hm3d_scene_id": "hm3d/val//00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 40
+      }
+    },
+    {
+      "task_id": "ovon_dresser_qyaac8rv8zk_1450",
+      "slug": "dresser-qyaac8rv8zk-1450",
+      "text": "Find and approach a dresser.",
+      "scene": "qyAac8rV8Zk",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -7.42203,
+          3.0692,
+          4.45804
+        ],
+        "start_rotation": [
+          0.0,
+          0.73717,
+          0.0,
+          0.67571
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "dresser",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/qyAac8rV8Zk.json.gz",
+      "source_episode_id": "1450",
+      "goal_key": "qyAac8rV8Zk.basis.glb_dresser",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/qyAac8rV8Zk.json.gz",
+        "source_episode_id": "1450",
+        "goal_key": "qyAac8rV8Zk.basis.glb_dresser",
+        "object_category": "dresser",
+        "initial_geodesic_distance_m": 9.815200805664062,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 22,
+        "hm3d_scene_id": "hm3d/val//00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 17
+      }
+    },
+    {
+      "task_id": "ovon_flower_vase_svbbv1pavdk_2096",
+      "slug": "flower_vase-svbbv1pavdk-2096",
+      "text": "Find and approach a flower vase.",
+      "scene": "svBbv1Pavdk",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          0.56165,
+          0.02755,
+          0.97609
+        ],
+        "start_rotation": [
+          0.0,
+          0.76936,
+          0.0,
+          -0.63882
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "flower vase",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/svBbv1Pavdk.json.gz",
+      "source_episode_id": "2096",
+      "goal_key": "svBbv1Pavdk.basis.glb_flower vase",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/svBbv1Pavdk.json.gz",
+        "source_episode_id": "2096",
+        "goal_key": "svBbv1Pavdk.basis.glb_flower vase",
+        "object_category": "flower vase",
+        "initial_geodesic_distance_m": 2.0684335231781006,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 39,
+        "hm3d_scene_id": "hm3d/val//00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 36
+      }
+    },
+    {
+      "task_id": "ovon_flower_vase_svbbv1pavdk_2188",
+      "slug": "flower_vase-svbbv1pavdk-2188",
+      "text": "Find and approach a flower vase.",
+      "scene": "svBbv1Pavdk",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          8.40379,
+          0.02755,
+          5.16174
+        ],
+        "start_rotation": [
+          0.0,
+          0.46419,
+          0.0,
+          -0.88573
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "flower vase",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/svBbv1Pavdk.json.gz",
+      "source_episode_id": "2188",
+      "goal_key": "svBbv1Pavdk.basis.glb_flower vase",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/svBbv1Pavdk.json.gz",
+        "source_episode_id": "2188",
+        "goal_key": "svBbv1Pavdk.basis.glb_flower vase",
+        "object_category": "flower vase",
+        "initial_geodesic_distance_m": 4.074156761169434,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 39,
+        "hm3d_scene_id": "hm3d/val//00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 39
+      }
+    },
+    {
+      "task_id": "ovon_microwave_svbbv1pavdk_2688",
+      "slug": "microwave-svbbv1pavdk-2688",
+      "text": "Find and approach a microwave.",
+      "scene": "svBbv1Pavdk",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          5.02767,
+          0.02755,
+          0.41487
+        ],
+        "start_rotation": [
+          0.0,
+          0.46665,
+          0.0,
+          0.88444
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "microwave",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/svBbv1Pavdk.json.gz",
+      "source_episode_id": "2688",
+      "goal_key": "svBbv1Pavdk.basis.glb_microwave",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/svBbv1Pavdk.json.gz",
+        "source_episode_id": "2688",
+        "goal_key": "svBbv1Pavdk.basis.glb_microwave",
+        "object_category": "microwave",
+        "initial_geodesic_distance_m": 4.7569684982299805,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 18,
+        "hm3d_scene_id": "hm3d/val//00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 47
+      }
+    },
+    {
+      "task_id": "ovon_picture_svbbv1pavdk_132",
+      "slug": "picture-svbbv1pavdk-132",
+      "text": "Find and approach a picture.",
+      "scene": "svBbv1Pavdk",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          0.08953,
+          0.02755,
+          6.18167
+        ],
+        "start_rotation": [
+          0.0,
+          0.99798,
+          0.0,
+          0.06357
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "picture",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/svBbv1Pavdk.json.gz",
+      "source_episode_id": "132",
+      "goal_key": "svBbv1Pavdk.basis.glb_picture",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/svBbv1Pavdk.json.gz",
+        "source_episode_id": "132",
+        "goal_key": "svBbv1Pavdk.basis.glb_picture",
+        "object_category": "picture",
+        "initial_geodesic_distance_m": 7.065962791442871,
+        "goal_instance_count": 8,
+        "goal_viewpoint_count": 102,
+        "hm3d_scene_id": "hm3d/val//00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 5
+      }
+    },
+    {
+      "task_id": "ovon_dishwasher_wcojb4tft35_4674",
+      "slug": "dishwasher-wcojb4tft35-4674",
+      "text": "Find and approach a dishwasher.",
+      "scene": "wcojb4TFT35",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.39632,
+          0.04492,
+          -0.19779
+        ],
+        "start_rotation": [
+          0.0,
+          0.1203,
+          0.0,
+          0.99274
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "dishwasher",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/wcojb4TFT35.json.gz",
+      "source_episode_id": "4674",
+      "goal_key": "wcojb4TFT35.basis.glb_dishwasher",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/wcojb4TFT35.json.gz",
+        "source_episode_id": "4674",
+        "goal_key": "wcojb4TFT35.basis.glb_dishwasher",
+        "object_category": "dishwasher",
+        "initial_geodesic_distance_m": 8.861551284790039,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 23,
+        "hm3d_scene_id": "hm3d/val//00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 80
+      }
+    },
+    {
+      "task_id": "ovon_microwave_wcojb4tft35_5457",
+      "slug": "microwave-wcojb4tft35-5457",
+      "text": "Find and approach a microwave.",
+      "scene": "wcojb4TFT35",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.5759,
+          -0.00508,
+          -7.5747
+        ],
+        "start_rotation": [
+          0.0,
+          0.82733,
+          0.0,
+          -0.56172
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "microwave",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/wcojb4TFT35.json.gz",
+      "source_episode_id": "5457",
+      "goal_key": "wcojb4TFT35.basis.glb_microwave",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/wcojb4TFT35.json.gz",
+        "source_episode_id": "5457",
+        "goal_key": "wcojb4TFT35.basis.glb_microwave",
+        "object_category": "microwave",
+        "initial_geodesic_distance_m": 3.5234360694885254,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 8,
+        "hm3d_scene_id": "hm3d/val//00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 85
+      }
+    },
+    {
+      "task_id": "ovon_picture_wcojb4tft35_666",
+      "slug": "picture-wcojb4tft35-666",
+      "text": "Find and approach a picture.",
+      "scene": "wcojb4TFT35",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          1.11148,
+          -2.35508,
+          -1.36448
+        ],
+        "start_rotation": [
+          0.0,
+          0.61172,
+          0.0,
+          -0.79107
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "picture",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/wcojb4TFT35.json.gz",
+      "source_episode_id": "666",
+      "goal_key": "wcojb4TFT35.basis.glb_picture",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/wcojb4TFT35.json.gz",
+        "source_episode_id": "666",
+        "goal_key": "wcojb4TFT35.basis.glb_picture",
+        "object_category": "picture",
+        "initial_geodesic_distance_m": 1.946435570716858,
+        "goal_instance_count": 13,
+        "goal_viewpoint_count": 107,
+        "hm3d_scene_id": "hm3d/val//00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 11
+      }
+    },
+    {
+      "task_id": "ovon_freezer_y9htuuggdiq_4556",
+      "slug": "freezer-y9htuuggdiq-4556",
+      "text": "Find and approach a freezer.",
+      "scene": "y9hTuugGdiq",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          6.99218,
+          0.01139,
+          -0.79753
+        ],
+        "start_rotation": [
+          0.0,
+          0.61724,
+          0.0,
+          0.78678
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "freezer",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/y9hTuugGdiq.json.gz",
+      "source_episode_id": "4556",
+      "goal_key": "y9hTuugGdiq.basis.glb_freezer",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/y9hTuugGdiq.json.gz",
+        "source_episode_id": "4556",
+        "goal_key": "y9hTuugGdiq.basis.glb_freezer",
+        "object_category": "freezer",
+        "initial_geodesic_distance_m": 7.327736854553223,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 22,
+        "hm3d_scene_id": "hm3d/val//00808-y9hTuugGdiq/y9hTuugGdiq.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 75
+      }
+    },
+    {
+      "task_id": "ovon_refrigerator_y9htuuggdiq_5409",
+      "slug": "refrigerator-y9htuuggdiq-5409",
+      "text": "Find and approach a refrigerator.",
+      "scene": "y9hTuugGdiq",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          0.48681,
+          -2.78861,
+          -0.48965
+        ],
+        "start_rotation": [
+          0.0,
+          0.22534,
+          0.0,
+          0.97428
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "refrigerator",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/y9hTuugGdiq.json.gz",
+      "source_episode_id": "5409",
+      "goal_key": "y9hTuugGdiq.basis.glb_refrigerator",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/y9hTuugGdiq.json.gz",
+        "source_episode_id": "5409",
+        "goal_key": "y9hTuugGdiq.basis.glb_refrigerator",
+        "object_category": "refrigerator",
+        "initial_geodesic_distance_m": 5.086728572845459,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 47,
+        "hm3d_scene_id": "hm3d/val//00808-y9hTuugGdiq/y9hTuugGdiq.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 85
+      }
+    },
+    {
+      "task_id": "ovon_rug_y9htuuggdiq_6971",
+      "slug": "rug-y9htuuggdiq-6971",
+      "text": "Find and approach a rug.",
+      "scene": "y9hTuugGdiq",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -4.59547,
+          -2.78861,
+          0.8783
+        ],
+        "start_rotation": [
+          0.0,
+          0.31117,
+          0.0,
+          0.95035
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "rug",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/y9hTuugGdiq.json.gz",
+      "source_episode_id": "6971",
+      "goal_key": "y9hTuugGdiq.basis.glb_rug",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/y9hTuugGdiq.json.gz",
+        "source_episode_id": "6971",
+        "goal_key": "y9hTuugGdiq.basis.glb_rug",
+        "object_category": "rug",
+        "initial_geodesic_distance_m": 9.220078468322754,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 150,
+        "hm3d_scene_id": "hm3d/val//00808-y9hTuugGdiq/y9hTuugGdiq.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 111
+      }
+    },
+    {
+      "task_id": "ovon_statue_y9htuuggdiq_4467",
+      "slug": "statue-y9htuuggdiq-4467",
+      "text": "Find and approach a statue.",
+      "scene": "y9hTuugGdiq",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -9.36212,
+          0.01139,
+          -0.53734
+        ],
+        "start_rotation": [
+          0.0,
+          0.44314,
+          0.0,
+          0.89645
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "statue",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/y9hTuugGdiq.json.gz",
+      "source_episode_id": "4467",
+      "goal_key": "y9hTuugGdiq.basis.glb_statue",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/y9hTuugGdiq.json.gz",
+        "source_episode_id": "4467",
+        "goal_key": "y9hTuugGdiq.basis.glb_statue",
+        "object_category": "statue",
+        "initial_geodesic_distance_m": 20.053058624267578,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 14,
+        "hm3d_scene_id": "hm3d/val//00808-y9hTuugGdiq/y9hTuugGdiq.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 70
+      }
+    },
+    {
+      "task_id": "ovon_handrail_yr17pdcnddw_2549",
+      "slug": "handrail-yr17pdcnddw-2549",
+      "text": "Find and approach a handrail.",
+      "scene": "yr17PDCnDDW",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -0.12062,
+          2.44839,
+          5.19633
+        ],
+        "start_rotation": [
+          0.0,
+          0.23982,
+          0.0,
+          -0.97082
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "handrail",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/yr17PDCnDDW.json.gz",
+      "source_episode_id": "2549",
+      "goal_key": "yr17PDCnDDW.basis.glb_handrail",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/yr17PDCnDDW.json.gz",
+        "source_episode_id": "2549",
+        "goal_key": "yr17PDCnDDW.basis.glb_handrail",
+        "object_category": "handrail",
+        "initial_geodesic_distance_m": 9.661300659179688,
+        "goal_instance_count": 2,
+        "goal_viewpoint_count": 135,
+        "hm3d_scene_id": "hm3d/val//00831-yr17PDCnDDW/yr17PDCnDDW.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 47
+      }
+    },
+    {
+      "task_id": "ovon_plant_yr17pdcnddw_225",
+      "slug": "plant-yr17pdcnddw-225",
+      "text": "Find and approach a plant.",
+      "scene": "yr17PDCnDDW",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -6.22166,
+          -0.94288,
+          3.1198
+        ],
+        "start_rotation": [
+          0.0,
+          0.7435,
+          0.0,
+          -0.66873
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "plant",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/yr17PDCnDDW.json.gz",
+      "source_episode_id": "225",
+      "goal_key": "yr17PDCnDDW.basis.glb_plant",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/yr17PDCnDDW.json.gz",
+        "source_episode_id": "225",
+        "goal_key": "yr17PDCnDDW.basis.glb_plant",
+        "object_category": "plant",
+        "initial_geodesic_distance_m": 1.1958057880401611,
+        "goal_instance_count": 12,
+        "goal_viewpoint_count": 478,
+        "hm3d_scene_id": "hm3d/val//00831-yr17PDCnDDW/yr17PDCnDDW.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 4
+      }
+    },
+    {
+      "task_id": "ovon_vase_yr17pdcnddw_1753",
+      "slug": "vase-yr17pdcnddw-1753",
+      "text": "Find and approach a vase.",
+      "scene": "yr17PDCnDDW",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -7.99714,
+          -0.95161,
+          -6.4287
+        ],
+        "start_rotation": [
+          0.0,
+          0.98084,
+          0.0,
+          0.19484
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "vase",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/yr17PDCnDDW.json.gz",
+      "source_episode_id": "1753",
+      "goal_key": "yr17PDCnDDW.basis.glb_vase",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/yr17PDCnDDW.json.gz",
+        "source_episode_id": "1753",
+        "goal_key": "yr17PDCnDDW.basis.glb_vase",
+        "object_category": "vase",
+        "initial_geodesic_distance_m": 2.4612016677856445,
+        "goal_instance_count": 9,
+        "goal_viewpoint_count": 245,
+        "hm3d_scene_id": "hm3d/val//00831-yr17PDCnDDW/yr17PDCnDDW.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 24
+      }
+    },
+    {
+      "task_id": "ovon_mirror_ziup5kvtccr_126",
+      "slug": "mirror-ziup5kvtccr-126",
+      "text": "Find and approach a mirror.",
+      "scene": "ziup5kvtCCR",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -6.26409,
+          0.02122,
+          6.51057
+        ],
+        "start_rotation": [
+          0.0,
+          0.27642,
+          0.0,
+          0.96104
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "mirror",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/ziup5kvtCCR.json.gz",
+      "source_episode_id": "126",
+      "goal_key": "ziup5kvtCCR.basis.glb_mirror",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/ziup5kvtCCR.json.gz",
+        "source_episode_id": "126",
+        "goal_key": "ziup5kvtCCR.basis.glb_mirror",
+        "object_category": "mirror",
+        "initial_geodesic_distance_m": 3.8488543033599854,
+        "goal_instance_count": 9,
+        "goal_viewpoint_count": 146,
+        "hm3d_scene_id": "hm3d/val//00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 6
+      }
+    },
+    {
+      "task_id": "ovon_mirror_ziup5kvtccr_263",
+      "slug": "mirror-ziup5kvtccr-263",
+      "text": "Find and approach a mirror.",
+      "scene": "ziup5kvtCCR",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          5.41665,
+          0.02122,
+          4.08718
+        ],
+        "start_rotation": [
+          0.0,
+          0.83993,
+          0.0,
+          0.5427
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "mirror",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/ziup5kvtCCR.json.gz",
+      "source_episode_id": "263",
+      "goal_key": "ziup5kvtCCR.basis.glb_mirror",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/ziup5kvtCCR.json.gz",
+        "source_episode_id": "263",
+        "goal_key": "ziup5kvtCCR.basis.glb_mirror",
+        "object_category": "mirror",
+        "initial_geodesic_distance_m": 2.2516050338745117,
+        "goal_instance_count": 9,
+        "goal_viewpoint_count": 146,
+        "hm3d_scene_id": "hm3d/val//00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 5
+      }
+    },
+    {
+      "task_id": "ovon_picture_zt1rvoi7pcg_1891",
+      "slug": "picture-zt1rvoi7pcg-1891",
+      "text": "Find and approach a picture.",
+      "scene": "zt1RVoi7PcG",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          4.95278,
+          0.01294,
+          1.89001
+        ],
+        "start_rotation": [
+          0.0,
+          0.79103,
+          0.0,
+          -0.61178
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "picture",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/zt1RVoi7PcG.json.gz",
+      "source_episode_id": "1891",
+      "goal_key": "zt1RVoi7PcG.basis.glb_picture",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/zt1RVoi7PcG.json.gz",
+        "source_episode_id": "1891",
+        "goal_key": "zt1RVoi7PcG.basis.glb_picture",
+        "object_category": "picture",
+        "initial_geodesic_distance_m": 5.329244136810303,
+        "goal_instance_count": 8,
+        "goal_viewpoint_count": 115,
+        "hm3d_scene_id": "hm3d/val//00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 30
+      }
+    },
+    {
+      "task_id": "ovon_pillow_zt1rvoi7pcg_270",
+      "slug": "pillow-zt1rvoi7pcg-270",
+      "text": "Find and approach a pillow.",
+      "scene": "zt1RVoi7PcG",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          5.51587,
+          -3.03706,
+          9.70373
+        ],
+        "start_rotation": [
+          0.0,
+          0.59232,
+          0.0,
+          -0.8057
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "pillow",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/zt1RVoi7PcG.json.gz",
+      "source_episode_id": "270",
+      "goal_key": "zt1RVoi7PcG.basis.glb_pillow",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/zt1RVoi7PcG.json.gz",
+        "source_episode_id": "270",
+        "goal_key": "zt1RVoi7PcG.basis.glb_pillow",
+        "object_category": "pillow",
+        "initial_geodesic_distance_m": 1.3474823236465454,
+        "goal_instance_count": 12,
+        "goal_viewpoint_count": 111,
+        "hm3d_scene_id": "hm3d/val//00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 7
+      }
+    },
+    {
+      "task_id": "ovon_stair_zt1rvoi7pcg_4089",
+      "slug": "stair-zt1rvoi7pcg-4089",
+      "text": "Find and approach a stair.",
+      "scene": "zt1RVoi7PcG",
+      "scene_dataset_config_file": "/hpc2ssd/JH_DATA/spooler/yichenwang/supernav/terra_high_repro_20261016_r6/prepared/scene_overlay/hm3d_eval.scene_dataset_config.json",
+      "spawn": {
+        "start_position": [
+          -3.53421,
+          -3.03706,
+          0.70721
+        ],
+        "start_rotation": [
+          0.0,
+          0.84192,
+          0.0,
+          -0.5396
+        ],
+        "sensor_height": 1.25
+      },
+      "object_category": "stair",
+      "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/zt1RVoi7PcG.json.gz",
+      "source_episode_id": "4089",
+      "goal_key": "zt1RVoi7PcG.basis.glb_stair",
+      "ground_truth": {
+        "task_type": "objectnav",
+        "source_episode": "/hpc2hdd/JH_DATA/jhai_data/yichenwang/projects/SuperNav/data/runs/benchmark_assets/datasets/ovon/hm3d/val_unseen/content/zt1RVoi7PcG.json.gz",
+        "source_episode_id": "4089",
+        "goal_key": "zt1RVoi7PcG.basis.glb_stair",
+        "object_category": "stair",
+        "initial_geodesic_distance_m": 6.050372123718262,
+        "goal_instance_count": 1,
+        "goal_viewpoint_count": 48,
+        "hm3d_scene_id": "hm3d/val//00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+        "hm3d_split": "val",
+        "closest_goal_object_id": null,
+        "mtu3d_episode_index": 66
+      }
+    }
+  ]
+}
