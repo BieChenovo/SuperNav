@@ -394,6 +394,22 @@ def navigate_with_localnav(
     execute_actions = max(1, _env_int("NAV_LOCALNAV_EXEC_ACTIONS", 3))
     control_dt_s = _env_float("NAV_LOCALNAV_CONTROL_DT_S", 0.5)
     done_threshold = _env_float("NAV_LOCALNAV_DONE_THRESHOLD", 0.5)
+    # Explicit MCP-bound values take precedence over the bridge's own defaults.
+    # Do not mutate os.environ: different arms can share a persistent bridge.
+    try:
+        if "done_threshold" in payload:
+            done_threshold = float(payload["done_threshold"])
+            if not math.isfinite(done_threshold) or not 0.0 <= done_threshold <= 1.0:
+                raise ValueError("done threshold must be a probability in [0, 1]")
+        if "execute_actions" in payload:
+            execute_actions = int(payload["execute_actions"])
+            if execute_actions < 1 or execute_actions != payload["execute_actions"]:
+                raise ValueError("execute actions must be a positive integer")
+    except (TypeError, ValueError, OverflowError) as exc:
+        return {"ok": False, "code": "invalid_config", "error": str(exc)}
+    print(json.dumps({"event": "localnav_control_parameters", "session_id": str(session_id),
+                      "done_threshold": done_threshold, "execute_actions": execute_actions}),
+          file=sys.stderr, flush=True)
     # Confirm stopping across replans and corroborate with motion or holding still.
     done_confirmations = max(1, _env_int("NAV_LOCALNAV_DONE_CONFIRMATIONS", 2))
     min_steps_before_done = _env_int("NAV_LOCALNAV_MIN_STEPS_BEFORE_DONE", 4)

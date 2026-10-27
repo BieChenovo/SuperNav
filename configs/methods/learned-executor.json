@@ -20,8 +20,8 @@
       "skill_mode": "native",
       "skill_name": "global-navigation-learned-executor",
       "environment": {
-        "NAV_LOCALNAV_DONE_THRESHOLD": "0.5",
-        "NAV_LOCALNAV_EXEC_ACTIONS": "2"
+        "NAV_LOCALNAV_DONE_THRESHOLD": "0.1",
+        "NAV_LOCALNAV_EXEC_ACTIONS": "3"
       },
       "tool_whitelist": [
         "hab_init_scene",
