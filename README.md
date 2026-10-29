@@ -1,6 +1,6 @@
 # SuperNav v2
 
-新增：[InteriorGS 四版本与论文比较](results/interiorgs/README.md)。目前完成 172/400 条；Windows 双击 `打开可视化.cmd` 后选择 **InteriorGS**。支持相同 episode 配对、两种距离阈值及逐步回放。
+新增：[InteriorGS 四版本与论文比较](results/interiorgs/README.md)。已完成 400/400 条；Windows 双击 `打开可视化.cmd` 后选择 **InteriorGS**。支持相同 episode 配对、两种距离阈值及逐步回放。
 
 当前 v2：Geo 采用局部删除 junction 和不可用工具提示后的 120 条结果，Learned 采用参数传递修复、实际使用 0.1 / 3 的 120 条结果。两组来自分别完成的两次运行，全部 Skill 保持官方原版。
 

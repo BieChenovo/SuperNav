@@ -65,6 +65,7 @@ function drawDistance(){
 }
 function stop(){if(S.timer)clearInterval(S.timer);S.timer=null;$('play').textContent='播放';}
 $('progress').textContent=`已完成 ${D.completed}/${D.expected} 条 · 剩余 ${D.remaining} 条 · 四版本计划各 50 条单目标 + 50 条多目标`;
+$('runNotice').textContent=D.status==='complete'?'全部 400 条已完成。1 米结果为保存轨迹的离线重评分；同时保留公开代码的 0.1 米评分。':'部分结果 · OpenAI 连接中断后停止。未完成任务不计为失败。1 米结果是保存轨迹的离线重评分。';
 for(const id of ['task','method','outcome'])$(id).onchange=list;$('search').oninput=list;$('cohort').onchange=compare;
 $('threshold').onchange=()=>{compare();list();render();};$('before').onchange=render;$('document').onchange=documentText;
 $('prev').onclick=()=>{if(S.case){S.step=Math.max(0,S.step-1);render();}};$('next').onclick=()=>{if(S.case){S.step=Math.min(S.case.events.length-1,S.step+1);render();}};

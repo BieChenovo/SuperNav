@@ -2,7 +2,7 @@
   "status": "passed",
   "mode": "file:// without web server",
   "checks": [
-    "172 cases, partial-run label, paired denominators and six comparison rows",
+    "400 cases, correct completion label, paired denominators and six comparison rows",
     "all four methods: completed multi-goal replay, real RGB, target stages and frozen prompt/Skills",
     "threshold switch updates score, plots, target stages and success filters",
     "VLM pixel marker overlays the corresponding pre-navigation frame"

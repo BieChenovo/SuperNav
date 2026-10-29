@@ -5,6 +5,7 @@ implements the paper's 1 m criterion and is checked against all released scores
 at 0.1 m before exporting. Only public tool exchanges and agent RGB are exported.
 """
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from functools import lru_cache
 import argparse
@@ -45,7 +46,7 @@ def clean(value):
     if isinstance(value, list):
         return [clean(v) for v in value]
     if isinstance(value, str):
-        return re.sub(r'/(?:hpc2hdd|hpc2ssd|tmp|home)/[^\s\"<>]+', '[server path]', value)
+        return re.sub(r'/(?:hpc2hdd|hpc2ssd|tmp|home|data/user)/[^\s\"<>]+', '[server path]', value)
     return value
 
 
@@ -142,6 +143,7 @@ def main(args):
     out.mkdir(parents=True, exist_ok=True)
     source_runtime = Path(manifest['runtime'])
     media, maps, public_rows, local_rows, planned_files = {}, {}, [], [], []
+    io_pool = ThreadPoolExecutor(max_workers=8)
     pf = habitat_sim.PathFinder()
     current_scene = None
     cache = {}
@@ -156,8 +158,6 @@ def main(args):
 
     def locate(path):
         p = Path(path)
-        if p.is_relative_to(source_runtime) and p.is_file():
-            return p
         if p.is_relative_to(source_runtime):
             archived = archive/p.relative_to(source_runtime)
             if archived.is_file():
@@ -167,20 +167,28 @@ def main(args):
         raise FileNotFoundError(p)
 
     def frame(image):
-        p = locate(image['path'])
-        assert p.suffix.lower() in {'.png','.jpg','.jpeg'}
         # Only downsampled images that the tool actually returned to the agent.
         assert image.get('width') <= 256 and image.get('height') <= 256
-        identifier = hashlib.sha256(p.read_bytes()).hexdigest()
-        relative = 'media/'+identifier+p.suffix.lower()
-        if relative not in media:
-            dst = target/relative
-            if not dst.exists():
-                shutil.copyfile(p,dst)
-            assert hashlib.sha256(dst.read_bytes()).hexdigest() == identifier
-            media[relative] = {'sha256': identifier, 'bytes': dst.stat().st_size}
+        relative = loaded_images[image['path']][0]
         return {'url': relative, 'view': image.get('view') or image.get('direction'),
                 'ref': image.get('image_ref'), 'width': image['width'], 'height': image['height']}
+
+    def load_image(path):
+        p = locate(path)
+        assert p.suffix.lower() in {'.png','.jpg','.jpeg'}
+        payload = p.read_bytes()
+        identifier = hashlib.sha256(payload).hexdigest()
+        return path, ('media/'+identifier+p.suffix.lower(), payload)
+
+    def store_image(item):
+        relative, payload = item
+        dst = target/relative
+        if dst.exists():
+            assert hashlib.sha256(dst.read_bytes()).hexdigest() == dst.stem
+        else:
+            dst.write_bytes(payload)
+        # The publication gate independently hashes every stored image again.
+        return relative, {'sha256': dst.stem, 'bytes': len(payload)}
 
     sorted_results = sorted(results,key=lambda r:(episode_by_id[r['task'],r['task_id']]['scene']['id'],r['case_id']))
     for ordinal, result in enumerate(sorted_results):
@@ -203,8 +211,21 @@ def main(args):
         assert not scores['0.1']['success'] or scores['1.0']['success']
         run = attempt/'runs/trial'
         metric, execution = read(run/'metrics.json'), read(run/'execution.resolved.json')
-        assert metric['session_closed']
+        canonical = [json.loads(line) for line in (run/'canonical.jsonl').read_text().splitlines()]
+        image_paths = {}
+        for event in canonical:
+            if event.get('type') != 'tool_result':
+                continue
+            audit = event.get('audit') or {}
+            for im in audit.get('panorama_images') or (audit.get('scene_info')or{}).get('panorama_images') or []:
+                assert im['width'] <= 256 and im['height'] <= 256
+                image_paths[im['path']] = None
+        loaded_images = dict(io_pool.map(load_image, image_paths))
+        pending_images = {relative: payload for relative, payload in loaded_images.values() if relative not in media}
+        media.update(io_pool.map(store_image, pending_images.items()))
         trajectories = list((attempt/'visuals').glob('*.trajectory.json'))
+        if metric.get('session_id'):
+            trajectories=[p for p in trajectories if p.name==metric['session_id']+'.trajectory.json']
         assert len(trajectories)==1
         trajectory = read(trajectories[0])
         sparse = {e.get('tool_seq'):e for e in trajectory['events']}
@@ -212,8 +233,7 @@ def main(args):
         primitive = submission['events']
         # Match tool boundary positions to actual submitted primitive positions.
         cursor, events, images, call, intro = 0, [], [], {}, []
-        for line in (run/'canonical.jsonl').open():
-            e=json.loads(line)
+        for e in canonical:
             if e.get('type')=='assistant_text':
                 (events[-1]['text'] if events else intro).append(clean(e.get('text','')))
             elif e.get('type')=='tool_call':
@@ -275,6 +295,7 @@ def main(args):
         if ordinal%10==0:
             write(out/'progress.json',{'status':'building','completed':ordinal+1,'total':len(results),'images':len(media)})
             print('built',ordinal+1,'/',len(results),flush=True)
+    io_pool.shutdown()
     common={task:sorted(set.intersection(*[{r['task_id'] for r in public_rows if r['task']==task and r['method']==m} for m in METHODS])) for task in ['objectnav','multi-objectnav']}
     aggregates=[]
     for cohort in ['all_completed','matched']:
@@ -286,12 +307,13 @@ def main(args):
                     aggregates.append({'cohort':cohort,'task':task,'method':method,'threshold_m':float(threshold),
                                        'n':len(group),'successes':successes,'sr':successes/len(group),
                                        'spl':sum(r['scores'][threshold]['spl'] for r in group)/len(group)})
-    index={'generated_at':datetime.now(timezone.utc).isoformat(),'status':'incomplete','expected':400,'completed':len(results),
+    complete=len(results)==400
+    index={'generated_at':datetime.now(timezone.utc).isoformat(),'status':'complete' if complete else 'incomplete','expected':400,'completed':len(results),
            'remaining':400-len(results),'cases':public_rows,'common':common,'aggregates':aggregates,'paper':PAPER,
            'paper_url':PAPER_URL,'maps':maps,'labels':LABELS,
-           'stop_reason':'OpenAI transport unavailable; workers stopped between episodes',
-           'notes':['部分完成结果，不能当作完整的 50+50 评测。','1 米是对已保存轨迹的离线重评分；不改变运行，也不是重新执行。',
-                    '论文每类 150 条；本轮计划每类相同 50 条，目前完成数不同。默认比较四方法共有的 episode。',
+           'stop_reason':None if complete else 'OpenAI transport unavailable; workers stopped between episodes',
+           'notes':['四版本各完成相同 50 条单目标和 50 条多目标。' if complete else '部分完成结果，不能当作完整的 50+50 评测。','1 米是对已保存轨迹的离线重评分；不改变运行，也不是重新执行。',
+                    '论文每类 150 条；本轮每类相同 50 条。默认比较四方法共有的 episode。' if complete else '论文每类 150 条；本轮计划每类相同 50 条，目前完成数不同。默认比较四方法共有的 episode。',
                     '原版与 v2 的区别沿用本轮冻结快照；地图、批准观察点和评分曲线只供评测后检查，不是 Agent 输入。',
                     '单目标检查最终 STOP 位置；多目标检查保存轨迹中的顺序到达及最终 STOP。目标区域可重叠，不插值。']}
     (target/'data.js').write_text('window.INTERIOR_DATA='+js(index)+';window.INTERIOR_CASES={};\n')

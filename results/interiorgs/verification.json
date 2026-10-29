@@ -1,1 +1,22 @@
-{"status":"passed","cases":172,"released_0_1m_scores_matched":172,"rule_checks":["strict threshold boundary","explicit STOP","overlapping ordered goals at start","target order","no interpolated arrivals","single-object final position"],"source_scorer_sha256":"37bb98a11141eae72fa68b464a8c1a9ea32773b83e74ac5745a4211992b6716e","dataset_revision":"4f4f96921dfe4f8e8f720422c5a3d3e5fd70ee57","source_revision":"334dfeea4e0241033b4e5de97c01bc7c9c080530","selection_seed":42,"raw_or_hidden_reasoning_exported":false,"images":11088,"image_bytes":616997511,"scenes":19}
+{
+  "status": "passed",
+  "cases": 400,
+  "released_0_1m_scores_matched": 400,
+  "rule_checks": [
+    "strict threshold boundary",
+    "explicit STOP",
+    "overlapping ordered goals at start",
+    "target order",
+    "no interpolated arrivals",
+    "single-object final position"
+  ],
+  "source_scorer_sha256": "37bb98a11141eae72fa68b464a8c1a9ea32773b83e74ac5745a4211992b6716e",
+  "dataset_revision": "4f4f96921dfe4f8e8f720422c5a3d3e5fd70ee57",
+  "source_revision": "334dfeea4e0241033b4e5de97c01bc7c9c080530",
+  "selection_seed": 42,
+  "raw_or_hidden_reasoning_exported": false,
+  "images": 31994,
+  "image_bytes": 1682124867,
+  "scenes": 54,
+  "io_equivalence_cases": 61
+}
